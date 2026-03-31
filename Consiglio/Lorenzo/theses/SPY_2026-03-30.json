@@ -1,0 +1,30 @@
+{
+  "ticker": "SPY",
+  "date": "2026-03-30",
+  "bias": "bearish",
+  "confidence": 7,
+  "thesis": "The market is in a confirmed downtrend with price well below both the 50-day and 200-day SMAs, supported by a high VIX of 28.0 and strong negative momentum across almost all oscillators. While mean-reversion signals like the Z-score and WillR suggest extreme oversold conditions, the breadth is collapsing with only 12% of stocks above the 50-day SMA, indicating a narrow market that often precedes further downside. The ADX is rising at 40.6, confirming the strength of the trend rather than a reversal, making the current low the most logical entry point for a short position.",
+  "setup": {
+    "entry_trigger": "Close above the 20-day Donchian lower band (629.29) or a retest of the 630 level with volume confirmation.",
+    "stop_loss": "634.50 (just above the 20-day Donchian lower and recent swing low)",
+    "target": "615.00 (psychological level and previous resistance)",
+    "timeframe": "3-5 days"
+  },
+  "key_indicators": [
+    "ADX_14",
+    "SMA_50",
+    "SMA_200",
+    "VIX",
+    "BREADTH_PCT_ABOVE_50SMA",
+    "DONCHIAN_20",
+    "ZSCORE_50",
+    "CMF_20"
+  ],
+  "concerns": [
+    "Extreme oversold readings (WillR -94, RSI 21) could trigger a violent mean reversion before the next leg down.",
+    "The Hurst exponent (0.52) is neutral, suggesting the trend might pause rather than accelerate.",
+    "Sector weakness is concentrated in tech (XLK, XLV) but financials (XLF) are showing relative strength, which could fuel a defensive rally."
+  ],
+  "would_trade": true,
+  "why_not": "None. The risk structure is clear: price is below the 200-day SMA with a rising ADX, confirming the downtrend. The downside is defined by the 20-day Donchian lower band, and the reward-to-risk ratio is favorable given the breadth collapse. I am comfortable buying fear when the trend is structurally intact."
+}

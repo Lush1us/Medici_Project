@@ -1,0 +1,28 @@
+{
+  "ticker": "SPY",
+  "date": "2026-03-30",
+  "bias": "neutral",
+  "confidence": 2,
+  "thesis": "The market is trapped in a deep downtrend with price well below both the 50-day and 200-day SMAs, confirming a structural bearish regime. While the ADX is elevated at 40.67, the minus_di (42.85) significantly outweighs the plus_di (10.82), indicating that selling momentum is dominant and there is no confluence for a long setup. The VIX at 28.0 and negative volume-price correlation suggest panic selling rather than accumulation, making this a low-probability environment for my style.",
+  "setup": {
+    "entry_trigger": "Price must reclaim the 50-day SMA (676.72) with volume confirmation and a shift in ADX where plus_di crosses above minus_di.",
+    "stop_loss": "Below the most recent swing low at 629.29 (Donchian lower band).",
+    "target": "Measured move from the 629.29 low to the 676.72 resistance level, approximately 7.4% upside.",
+    "timeframe": "2-4 weeks if the trend reversal holds"
+  },
+  "key_indicators": [
+    "SMA_50",
+    "SMA_200",
+    "ADX_14",
+    "VIX",
+    "CMF_20",
+    "BREADTH_PCT_ABOVE_50SMA"
+  ],
+  "concerns": [
+    "Extreme overextension on the downside (RSI 7 at 21, WILLR at -94) creates a high probability of a mean-reversion bounce that could trigger a stop if I were forced to take a short, but my bias is long.",
+    "Negative volume flow (CMF -0.28) suggests distribution is ongoing, not accumulation.",
+    "Sector breadth is extremely weak with most sectors flat or negative, indicating a lack of institutional buying."
+  ],
+  "would_trade": false,
+  "why_not": "My 3-signal confluence rule is not met. I require trend alignment (price above MAs), momentum confirmation (positive ADX or MACD histogram expansion), and volume support. Currently, all signals point to a continuation of the downtrend. The VIX is elevated, which increases the risk of a volatility squeeze or further decline. I am sitting in cash until I see price structure break above the 50-day SMA with a clear shift in momentum."
+}

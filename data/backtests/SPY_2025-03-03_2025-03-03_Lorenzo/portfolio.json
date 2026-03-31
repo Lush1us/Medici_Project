@@ -1,0 +1,16 @@
+{
+  "starting_cash": 1000.0,
+  "cash": 1000.0,
+  "positions": {},
+  "trade_log": [],
+  "daily_snapshots": [
+    {
+      "date": "2025-03-03",
+      "cash": 1000.0,
+      "positions": {},
+      "total_value": 1000.0,
+      "total_return_pct": 0.0,
+      "num_positions": 0
+    }
+  ]
+}

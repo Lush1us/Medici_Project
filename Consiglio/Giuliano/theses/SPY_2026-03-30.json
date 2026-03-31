@@ -1,0 +1,27 @@
+{
+  "ticker": "SPY",
+  "date": "2026-03-30",
+  "bias": "bearish",
+  "confidence": 7,
+  "thesis": "The market is screaming exhaustion; RSI and WillR are in deep overbought territory (21 and -94) while the efficiency ratio is only 0.59, suggesting a massive divergence between price action and underlying volume quality. With the Hurst exponent hovering near 0.52, we are in a transitional regime where volatility is expanding (BB width percentile 85th), creating a perfect storm for a mean-reversion squeeze. The crowd is trapped below the 200 SMA, and I'm looking for a violent rejection of the current lows before the next leg down.",
+  "setup": {
+    "entry_trigger": "A 30-minute candle closes above the 20-period VWAP with a volume spike exceeding 1.5x average, confirming a failed breakout attempt.",
+    "stop_loss": "634.50 (below the recent low and the lower Bollinger Band)",
+    "target": "626.00 (psychological round number and prior swing low)",
+    "timeframe": "3-5 days"
+  },
+  "key_indicators": [
+    "RSI_7",
+    "WILLR_14",
+    "BBANDS_20_2",
+    "HURST_100",
+    "EFFICIENCY_RATIO_10",
+    "CMF_20"
+  ],
+  "concerns": [
+    "If the SKEWNESS_60 (-0.35) indicates fat tails on the upside, a sudden long-stop hunt could blow the stop before the mean reversion kicks in.",
+    "The ADX is high (40), which usually implies strong trends, but the negative divergence with the price action suggests the trend is losing momentum."
+  ],
+  "would_trade": true,
+  "why_not": "None. The setup is textbook exhaustion. Everyone is buying the 'breakout' above the lows while the volume quality (Efficiency Ratio) is terrible. This is exactly the kind of asymmetric trap I live for."
+}

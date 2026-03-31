@@ -1,0 +1,369 @@
+{
+  "starting_cash": 1000.0,
+  "cash": 240.0,
+  "positions": {
+    "SPY": {
+      "shares": 1.326205533885544,
+      "avg_cost": 571.420918082598
+    }
+  },
+  "trade_log": [
+    {
+      "date": "2025-03-04",
+      "ticker": "SPY",
+      "action": "buy",
+      "shares": 1.435019,
+      "price": 571.4209,
+      "value": 820.0,
+      "cash_after": 180.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "SPY",
+      "action": "sell",
+      "shares": 0.108814,
+      "price": 551.4012,
+      "value": 60.0,
+      "realized_pnl": -2.1784,
+      "cash_after": 240.0
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2025-03-03",
+      "cash": 180.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.435019,
+          "avg_cost": 571.4209,
+          "current_price": 575.4228,
+          "market_value": 825.7428,
+          "unrealized_pnl": 5.7428
+        }
+      },
+      "total_value": 1005.7428,
+      "total_return_pct": 0.5743,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-04",
+      "cash": 180.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.435019,
+          "avg_cost": 571.4209,
+          "current_price": 568.6116,
+          "market_value": 815.9686,
+          "unrealized_pnl": -4.0314
+        }
+      },
+      "total_value": 995.9686,
+      "total_return_pct": -0.4031,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-05",
+      "cash": 180.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.435019,
+          "avg_cost": 571.4209,
+          "current_price": 574.723,
+          "market_value": 824.7385,
+          "unrealized_pnl": 4.7385
+        }
+      },
+      "total_value": 1004.7385,
+      "total_return_pct": 0.4738,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-06",
+      "cash": 180.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.435019,
+          "avg_cost": 571.4209,
+          "current_price": 564.521,
+          "market_value": 810.0985,
+          "unrealized_pnl": -9.9015
+        }
+      },
+      "total_value": 990.0985,
+      "total_return_pct": -0.9902,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-07",
+      "cash": 180.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.435019,
+          "avg_cost": 571.4209,
+          "current_price": 567.685,
+          "market_value": 814.6389,
+          "unrealized_pnl": -5.3611
+        }
+      },
+      "total_value": 994.6389,
+      "total_return_pct": -0.5361,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-10",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 552.5645,
+          "market_value": 732.814,
+          "unrealized_pnl": -25.0075
+        }
+      },
+      "total_value": 972.814,
+      "total_return_pct": -2.7186,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-11",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 547.9709,
+          "market_value": 726.7221,
+          "unrealized_pnl": -31.0995
+        }
+      },
+      "total_value": 966.7221,
+      "total_return_pct": -3.3278,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-12",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 550.8788,
+          "market_value": 730.5786,
+          "unrealized_pnl": -27.243
+        }
+      },
+      "total_value": 970.5786,
+      "total_return_pct": -2.9421,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-13",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 543.5353,
+          "market_value": 720.8396,
+          "unrealized_pnl": -36.982
+        }
+      },
+      "total_value": 960.8396,
+      "total_return_pct": -3.916,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-14",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 554.7625,
+          "market_value": 735.729,
+          "unrealized_pnl": -22.0926
+        }
+      },
+      "total_value": 975.729,
+      "total_return_pct": -2.4271,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-17",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 559.0403,
+          "market_value": 741.4024,
+          "unrealized_pnl": -16.4192
+        }
+      },
+      "total_value": 981.4024,
+      "total_return_pct": -1.8598,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-18",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 552.998,
+          "market_value": 733.3891,
+          "unrealized_pnl": -24.4325
+        }
+      },
+      "total_value": 973.3891,
+      "total_return_pct": -2.6611,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-19",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 559.0206,
+          "market_value": 741.3763,
+          "unrealized_pnl": -16.4453
+        }
+      },
+      "total_value": 981.3763,
+      "total_return_pct": -1.8624,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-20",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 557.4042,
+          "market_value": 739.2325,
+          "unrealized_pnl": -18.5891
+        }
+      },
+      "total_value": 979.2325,
+      "total_return_pct": -2.0767,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-21",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 557.588,
+          "market_value": 739.4763,
+          "unrealized_pnl": -18.3453
+        }
+      },
+      "total_value": 979.4763,
+      "total_return_pct": -2.0524,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-24",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 567.5736,
+          "market_value": 752.7193,
+          "unrealized_pnl": -5.1023
+        }
+      },
+      "total_value": 992.7193,
+      "total_return_pct": -0.7281,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-25",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 568.938,
+          "market_value": 754.5287,
+          "unrealized_pnl": -3.2929
+        }
+      },
+      "total_value": 994.5287,
+      "total_return_pct": -0.5471,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-26",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 562.1459,
+          "market_value": 745.521,
+          "unrealized_pnl": -12.3006
+        }
+      },
+      "total_value": 985.521,
+      "total_return_pct": -1.4479,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-27",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 560.653,
+          "market_value": 743.5411,
+          "unrealized_pnl": -14.2805
+        }
+      },
+      "total_value": 983.5411,
+      "total_return_pct": -1.6459,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-28",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 549.3623,
+          "market_value": 728.5673,
+          "unrealized_pnl": -29.2543
+        }
+      },
+      "total_value": 968.5673,
+      "total_return_pct": -3.1433,
+      "num_positions": 1
+    },
+    {
+      "date": "2025-03-31",
+      "cash": 240.0,
+      "positions": {
+        "SPY": {
+          "shares": 1.326206,
+          "avg_cost": 571.4209,
+          "current_price": 553.0501,
+          "market_value": 733.4581,
+          "unrealized_pnl": -24.3635
+        }
+      },
+      "total_value": 973.4581,
+      "total_return_pct": -2.6542,
+      "num_positions": 1
+    }
+  ]
+}

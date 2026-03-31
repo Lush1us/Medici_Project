@@ -1,0 +1,47 @@
+{
+  "starting_cash": 1000.0,
+  "cash": 500.0,
+  "positions": {
+    "SPY": {
+      "shares": 0.8795940437223082,
+      "avg_cost": 568.4440493526719
+    }
+  },
+  "trade_log": [
+    {
+      "date": "2025-03-05",
+      "ticker": "SPY",
+      "action": "buy",
+      "shares": 0.879594,
+      "price": 568.444,
+      "value": 500.0,
+      "cash_after": 500.0
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2025-03-03",
+      "cash": 1000.0,
+      "positions": {},
+      "total_value": 1000.0,
+      "total_return_pct": 0.0,
+      "num_positions": 0
+    },
+    {
+      "date": "2025-03-04",
+      "cash": 500.0,
+      "positions": {
+        "SPY": {
+          "shares": 0.879594,
+          "avg_cost": 568.444,
+          "current_price": 568.6116,
+          "market_value": 500.1474,
+          "unrealized_pnl": 0.1474
+        }
+      },
+      "total_value": 1000.1474,
+      "total_return_pct": 0.0147,
+      "num_positions": 1
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "ticker": "SPY",
+  "date": "2026-03-30",
+  "context": {
+    "ticker": "SPY",
+    "date": "2026-03-30",
+    "close": 631.97,
+    "open": 640.11,
+    "high": 640.37,
+    "low": 629.29,
+    "volume": 92476229,
+    "change_pct": -0.33,
+    "volume_vs_avg": 0.93,
+    "sma_50": 676.72,
+    "sma_200": 658.15,
+    "vix": 28.0,
+    "regime": "Downtrend Price below 50-SMA, below 200-SMA. High volatility (VIX 28.0)."
+  },
+  "scoring_summary": {
+    "total_evaluated": 94,
+    "kept": 84,
+    "dropped": [
+      "STOCHRSI_14",
+      "EMA_12",
+      "EMA_26",
+      "STDDEV_20",
+      "NVI",
+      "ROLL_SPREAD_20",
+      "CORWIN_SCHULTZ_SPREAD",
+      "COPPOCK",
+      "HALF_LIFE_50",
+      "LOG_RETURN"
+    ],
+    "redundancy_groups": [
+      {
+        "group": "Momentum Oscillators",
+        "members": [
+          "RSI_14",
+          "RSI_7",
+          "STOCH_14_3_3",
+          "WILLR_14",
+          "TRIX_15",
+          "PPO",
+          "STOCHRSI_14",
+          "TSI",
+          "UO"
+        ],
+        "keep": "RSI_14",
+        "why": "All measure similar overbought/oversold conditions; RSI_14 is the standard baseline for trend analysis."
+      },
+      {
+        "group": "Trend Components",
+        "members": [
+          "MACD_12_26_9",
+          "EMA_12",
+          "EMA_26"
+        ],
+        "keep": "SMA_50",
+        "why": "SMA_50 and SMA_200 are critical for regime confirmation; MACD components are redundant."
+      },
+      {
+        "group": "Volatility Envelopes",
+        "members": [
+          "BBANDS_20_2",
+          "KELTNER_20_1.5",
+          "STDDEV_20"
+        ],
+        "keep": "BBANDS_20_2",
+        "why": "BBANDS includes STDDEV and offers %B; KELTNER is similar but less comprehensive."
+      },
+      {
+        "group": "Trend Strength",
+        "members": [
+          "ADX_14",
+          "AROON_25",
+          "DPO_20",
+          "KST",
+          "MASS_INDEX",
+          "STC",
+          "VORTEX_14"
+        ],
+        "keep": "ADX_14",
+        "why": "ADX is the most direct measure of trend strength; others are redundant or less reliable."
+      },
+      {
+        "group": "Volume Flow",
+        "members": [
+          "OBV",
+          "ADI",
+          "VPT"
+        ],
+        "keep": "CMF_20",
+        "why": "CMF is superior for identifying accumulation/distribution in volatile markets."
+      },
+      {
+        "group": "Volatility Estimators",
+        "members": [
+          "GARMAN_KLASS_20",
+          "PARKINSON_20",
+          "ROGERS_SATCHELL_20",
+          "YANG_ZHANG_20"
+        ],
+        "keep": "REALIZED_VOL_20",
+        "why": "Realized Vol is the standard for risk management; others are mathematically redundant."
+      },
+      {
+        "group": "Volatility Ratios",
+        "members": [
+          "VOL_RATIO_10_60",
+          "REALIZED_VOL_10",
+          "REALIZED_VOL_60"
+        ],
+        "keep": "REALIZED_VOL_20",
+        "why": "Single realized vol term is sufficient; ratios add noise without new info."
+      },
+      {
+        "group": "Microstructure",
+        "members": [
+          "ROLL_SPREAD_20",
+          "CORWIN_SCHULTZ_SPREAD",
+          "AMIHUD_20"
+        ],
+        "keep": "AMIHUD_20",
+        "why": "AMIHUD is the only one with practical utility for SPY liquidity."
+      },
+      {
+        "group": "Volume Analysis",
+        "members": [
+          "RVOL_20",
+          "VROC_14",
+          "UP_DOWN_VOL_RATIO_20",
+          "PRICE_VOL_CORR_20"
+        ],
+        "keep": "RVOL_20",
+        "why": "RVOL_20 is the most direct measure of volume intensity relative to recent norms."
+      },
+      {
+        "group": "Momentum Acceleration",
+        "members": [
+          "MOM_ACCEL_5",
+          "FISHER_TRANSFORM_10"
+        ],
+        "keep": "MOM_ACCEL_5",
+        "why": "MOM_ACCEL_5 is a simpler, more standard measure of second derivative."
+      },
+      {
+        "group": "Mean Reversion Deviation",
+        "members": [
+          "ZSCORE_50",
+          "ZSCORE_200",
+          "PERCENTILE_RANK_252",
+          "DIST_52W_RANGE"
+        ],
+        "keep": "ZSCORE_50",
+        "why": "ZSCORE_50 provides the most actionable statistical context for the current downtrend."
+      },
+      {
+        "group": "Divergence Signals",
+        "members": [
+          "RSI_BULLISH_DIV",
+          "RSI_BEARISH_DIV"
+        ],
+        "keep": "RSI_BEARISH_DIV",
+        "why": "In a downtrend, bearish divergence is the only relevant signal."
+      },
+      {
+        "group": "Long-term Skewness",
+        "members": [
+          "SKEWNESS_20",
+          "SKEWNESS_60"
+        ],
+        "keep": "SKEWNESS_20",
+        "why": "20-day skewness is more responsive to current crash risk in high VIX regime."
+      },
+      {
+        "group": "Long-term Kurtosis",
+        "members": [
+          "KURTOSIS_20",
+          "KURTOSIS_60"
+        ],
+        "keep": "KURTOSIS_20",
+        "why": "20-day kurtosis better captures immediate volatility clustering for stop placement."
+      },
+      {
+        "group": "Long-term Correlation",
+        "members": [
+          "CORR_SPY_20",
+          "CORR_SPY_60",
+          "BETA_SPY_60"
+        ],
+        "keep": "CORR_SPY_20",
+        "why": "20-day correlation provides the most relevant signal for current beta regime shifts."
+      },
+      {
+        "group": "Long-term Breadth",
+        "members": [
+          "BREADTH_PCT_ABOVE_50SMA",
+          "BREADTH_PCT_ABOVE_200SMA"
+        ],
+        "keep": "BREADTH_PCT_ABOVE_50SMA",
+        "why": "50-SMA breadth is more sensitive to current market structure than 200-SMA."
+      },
+      {
+        "group": "Foundational Data",
+        "members": [
+          "LOG_RETURN"
+        ],
+        "keep": "LOG_RETURN",
+        "why": "Retained as input; all other statistical indicators depend on it."
+      }
+    ]
+  },
+  "indicators": {
+    "RSI_14": 27.725,
+    "RSI_7": 21.0481,
+    "STOCH_14_3_3": {
+      "k": 5.4763,
+      "d": 2.8359
+    },
+    "WILLR_14": -94.5237,
+    "CCI_20": -178.2726,
+    "MFI_14": 28.1598,
+    "ROC_12": -4.859,
+    "TRIX_15": -0.1733,
+    "AO": -25.1998,
+    "KAMA_10": 656.3251,
+    "PPO": {
+      "ppo": -1.6561,
+      "signal": -1.2145,
+      "histogram": -0.4416
+    },
+    "PVO": {
+      "pvo": 4.1959,
+      "signal": 5.5014,
+      "histogram": -1.3055
+    },
+    "TSI": -31.6308,
+    "UO": 30.5195,
+    "MACD_12_26_9": {
+      "macd": -10.9721,
+      "signal": -8.1088,
+      "histogram": -2.8634
+    },
+    "SMA_50": 676.7182,
+    "SMA_200": 658.1464,
+    "WMA_20": 654.7902,
+    "ADX_14": {
+      "adx": 40.6687,
+      "plus_di": 10.8159,
+      "minus_di": 42.8535
+    },
+    "ICHIMOKU": {
+      "tenkan": 648.593,
+      "kijun": 660.5404,
+      "senkou_a": 654.5667,
+      "senkou_b": 662.6147
+    },
+    "PSAR": 657.6435,
+    "AROON_25": {
+      "up": 8.0,
+      "down": 100.0
+    },
+    "DPO_20": -1.5951,
+    "KST": {
+      "kst": -45.2544,
+      "signal": -32.7044
+    },
+    "MASS_INDEX": 25.1258,
+    "STC": 0.0001,
+    "VORTEX_14": {
+      "pos": 0.5698,
+      "neg": 1.1289
+    },
+    "ATR_14": 9.8899,
+    "BBANDS_20_2": {
+      "upper": 690.5176,
+      "middle": 662.0813,
+      "lower": 633.6449,
+      "pct_b": -0.0295,
+      "width": 8.59
+    },
+    "KELTNER_20_1.5": {
+      "upper": 671.5672,
+      "middle": 662.7095,
+      "lower": 653.8518,
+      "width": 2.6732
+    },
+    "DONCHIAN_20": {
+      "upper": 685.2187,
+      "middle": 657.2543,
+      "lower": 629.29,
+      "width": 8.4474
+    },
+    "ULCER_INDEX_14": 4.2493,
+    "OBV": 1434553071.0,
+    "CMF_20": -0.2804,
+    "VWAP": 601.0564,
+    "ADI": 2429975355.1912,
+    "EOM_14": -28.7493,
+    "FORCE_INDEX_13": -364001263.2721,
+    "VPT": -9179416.1074,
+    "GARMAN_KLASS_20": 0.1363,
+    "PARKINSON_20": 0.1346,
+    "ROGERS_SATCHELL_20": 0.1337,
+    "YANG_ZHANG_20": 0.1837,
+    "REALIZED_VOL_10": 0.1594,
+    "REALIZED_VOL_20": 0.1486,
+    "REALIZED_VOL_60": 0.1305,
+    "VOL_RATIO_10_60": 1.2214,
+    "VOL_PERCENTILE_252": 0.7659,
+    "NATR_14": 1.5649,
+    "BB_WIDTH_PERCENTILE_252": 0.8492,
+    "AMIHUD_20": 0.0,
+    "CLV": -0.5162,
+    "BAR_RANGE_RATIO": 1.2509,
+    "RVOL_20": 0.9295,
+    "VROC_14": 13.4604,
+    "UP_DOWN_VOL_RATIO_20": 0.4078,
+    "PRICE_VOL_CORR_20": -0.4935,
+    "ELDER_IMPULSE": -1.0,
+    "EFFICIENCY_RATIO_10": 0.5908,
+    "MOM_ACCEL_5": -11.5822,
+    "FISHER_TRANSFORM_10": -3.0659,
+    "FRAMA_20": 648.6881,
+    "HURST_100": 0.5231,
+    "ZSCORE_50": -2.8676,
+    "ZSCORE_200": -0.9685,
+    "PERCENTILE_RANK_252": 0.377,
+    "DIST_52W_RANGE": 0.696,
+    "RSI_BULLISH_DIV": 0,
+    "RSI_BEARISH_DIV": 1,
+    "SKEWNESS_20": 0.0605,
+    "SKEWNESS_60": -0.3529,
+    "KURTOSIS_20": -1.1904,
+    "KURTOSIS_60": -0.0433,
+    "AUTOCORR_LAG1_20": -0.1631,
+    "MAX_DRAWDOWN_60": -0.0888,
+    "ENTROPY_20": 2.8282,
+    "CORR_SPY_20": 1.0,
+    "CORR_SPY_60": 1.0,
+    "BETA_SPY_60": 1.0,
+    "VIX_TERM_STRUCTURE": null,
+    "CREDIT_SPREAD_20": 0.0,
+    "BREADTH_PCT_ABOVE_50SMA": 11.93,
+    "BREADTH_PCT_ABOVE_200SMA": 39.56,
+    "SECTOR_REL_STRENGTH": {
+      "XLF": 10.05,
+      "XLE": -0.16,
+      "XLK": -0.16,
+      "XLV": -0.16,
+      "XLI": -0.16,
+      "XLP": -0.16,
+      "XLY": -0.16,
+      "XLU": -0.16,
+      "XLRE": -0.16,
+      "XLB": 0.27,
+      "XLC": 0.27
+    }
+  }
+}

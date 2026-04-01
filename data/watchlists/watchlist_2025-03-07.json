@@ -1,0 +1,2046 @@
+{
+  "date": "2025-03-07",
+  "generated_at": "2026-03-31 19:06:31",
+  "elapsed_seconds": 6988,
+  "macro_regime": {
+    "regime": "risk-off",
+    "confidence": 8,
+    "reasoning": "The market is in a clear risk-off phase as SPY has fallen 5% over two weeks while credit spreads are tightening, indicated by HYG underperforming TLT. The breadth metric of only 48.5% above the 200 SMA confirms the rally is structurally hollow, with few stocks supporting the index.",
+    "bias_for_longs": "unfavorable",
+    "sectors_favored": [],
+    "sectors_avoid": [
+      "Technology",
+      "Growth",
+      "Small Caps"
+    ]
+  },
+  "watchlist": [
+    {
+      "ticker": "CMI",
+      "advocates": [
+        "Cosimo",
+        "Lorenzo",
+        "Giuliano"
+      ],
+      "reasons": {
+        "Cosimo": "The stock is showing a clear structural breakout above the 200-day SMA with strong volume confirmation (RVOL > 2.0) and positive momentum, which aligns with my preference for trend continuation setups in liquid large-caps.",
+        "Lorenzo": "The Z50 reading of 3.24 indicates a severe statistical overextension into overbought territory, which combined with the elevated RSI and strong momentum suggests a potential mean reversion opportunity worth checking against credit spread deterioration.",
+        "Giuliano": "The stock is showing a classic volatility expansion setup with RVOL above 2.0 and a strong positive CMF, riding a clear trend above the 200-day SMA with high momentum."
+      },
+      "close": 94.41,
+      "adx": 30.1,
+      "rsi": 69.6,
+      "rvol": 2.19,
+      "zscore_50": 3.24
+    },
+    {
+      "ticker": "NFLX",
+      "advocates": [
+        "Lorenzo",
+        "Caterina",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The confluence of a Z50 reading of -2.33 (statistical extreme) combined with a negative CMF and low OBV% suggests a structural oversold condition where selling pressure is drying up, making it a candidate for a mean reversion play despite the risk-off macro environment.",
+        "Caterina": "The combination of a historically low Amihud (0.0) indicating massive institutional absorption and a CLV of 0.83 showing buyers firmly controlling the close, despite the price being below the SMA50, suggests a strong accumulation phase that could trigger a breakout soon.",
+        "Piero": "NFLX presents a compelling mean-reversion setup with a Z-score of -2.33 indicating significant overextension below the 50-day mean, confirmed by RSI divergence at 29.8 and low market entropy suggesting an orderly market poised for a snapback."
+      },
+      "close": 173.5,
+      "adx": 24.1,
+      "rsi": 29.8,
+      "rvol": 1.25,
+      "zscore_50": -2.33
+    },
+    {
+      "ticker": "NTAP",
+      "advocates": [
+        "Lorenzo",
+        "Caterina",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 of -2.33 combined with a negative RSI and a risk-off macro environment suggests a potential mean reversion opportunity, though the ADX of 24.1 indicates the trend is still too strong for a high-conviction entry without further cross-asset confirmation.",
+        "Caterina": "The combination of a massive Amihud spike (0.0) indicating extreme fragility and a high CLV (0.83) suggests institutions are absorbing supply quietly before a violent liquidity vacuum move.",
+        "Piero": "NTAP shows a compelling mean-reversion setup with a Z-score of -2.33 (deeply oversold) combined with RSI divergence at 29.8, suggesting momentum is fading at an extreme low."
+      },
+      "close": 173.5,
+      "adx": 24.1,
+      "rsi": 29.8,
+      "rvol": 1.25,
+      "zscore_50": -2.33
+    },
+    {
+      "ticker": "NWSA",
+      "advocates": [
+        "Lorenzo",
+        "Caterina",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z-Score of -2.33 indicates a statistical extreme in oversold territory, and the negative Credit Spread Proxy (CMF) aligns with the risk-off macro regime, suggesting a potential mean-reversion opportunity if volatility compresses.",
+        "Caterina": "The combination of a high CLV (0.83) indicating buyer control at the close, coupled with an extreme low Amihud (0.0) suggests institutions are quietly absorbing supply before a potential liquidity vacuum and volatility expansion.",
+        "Piero": "The stock shows a compelling mean-reversion setup with a Z-score of -2.33 indicating significant overextension below the 50-day mean, supported by an RSI of 29.8 and a percentile rank of 0.6%, suggesting a high probability of a snapback toward equilibrium."
+      },
+      "close": 173.5,
+      "adx": 24.1,
+      "rsi": 29.8,
+      "rvol": 1.25,
+      "zscore_50": -2.33
+    },
+    {
+      "ticker": "STZ",
+      "advocates": [
+        "Lorenzo",
+        "Caterina",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.52 combined with a negative CMF and low RSI creates a statistically significant oversold divergence that warrants a deeper look at whether the risk-off macro environment is a temporary compression or a structural breakdown.",
+        "Caterina": "The combination of a near-record Amihud (0.0001) indicating massive institutional absorption of supply and a CLV of 0.94 confirming buyers are firmly in control at the close suggests a microstructure inflection point despite the bearish macro backdrop.",
+        "Piero": "STZ presents a classic mean-reversion setup with a Z-score of -2.52 indicating significant overextension below the 50-day mean, combined with RSI at 31.0 and negative MACD momentum suggesting fading downside pressure."
+      },
+      "close": 68.93,
+      "adx": 27.4,
+      "rsi": 31.0,
+      "rvol": 1.45,
+      "zscore_50": -2.52
+    },
+    {
+      "ticker": "ACGL",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 of -2.66 combined with a negative MACD and low CMF indicates a statistically significant oversold condition that aligns with the current risk-off macro regime, making it a candidate for a mean reversion play if credit spreads stabilize.",
+        "Piero": "ACGL presents a compelling mean-reversion setup with a Z-score of -2.66 (deeply oversold) combined with RSI divergence and a negative autocorrelation regime, suggesting a high-probability snapback toward the 200-day mean."
+      },
+      "close": 270.33,
+      "adx": 29.2,
+      "rsi": 26.4,
+      "rvol": 1.45,
+      "zscore_50": -2.66
+    },
+    {
+      "ticker": "ADP",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z-50 of -2.27 combined with a massive OBV% divergence of -282.55 suggests a structural oversold condition where price has detached significantly from volume, creating a potential mean reversion setup worth verifying against credit spreads.",
+        "Piero": "ADP presents a compelling mean-reversion setup with a Z-score of -2.27 and RSI at 29.3, indicating significant overextension that aligns with my strategy to fade extremes."
+      },
+      "close": 17.91,
+      "adx": 24.0,
+      "rsi": 29.3,
+      "rvol": 0.82,
+      "zscore_50": -2.27
+    },
+    {
+      "ticker": "ADSK",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "ADSK presents a compelling risk structure with a Z50 score of -2.66 indicating extreme oversold conditions, which aligns with the macro 'risk-off' regime where fear-based dips often precede mean reversion, though the ADX of 31.3 suggests the current move still lacks the structural strength required for a full-scale entry.",
+        "Piero": "ADSK presents a classic mean-reversion setup with a Z-score of -2.66 indicating significant overextension below the 50-day mean, combined with RSI at 25.0 confirming momentum exhaustion and a negative autocorrelation regime favoring a snapback."
+      },
+      "close": 130.4,
+      "adx": 31.3,
+      "rsi": 25.0,
+      "rvol": 1.57,
+      "zscore_50": -2.66
+    },
+    {
+      "ticker": "AIG",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with a negative CMF and low Amihud volume suggests a structural oversold condition that may be ripe for a mean reversion play, though the risk-off macro environment requires confirmation from credit spreads before committing capital.",
+        "Piero": "The stock shows a compelling mean-reversion setup with the price at a Z-score of -2.05 (overextended) and RSI at 28.4 (divergence territory), while the low Amihud ratio and negative CMF suggest the selling pressure is fading and a snapback is statistically probable."
+      },
+      "close": 173.75,
+      "adx": 28.8,
+      "rsi": 28.4,
+      "rvol": 1.54,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "AMCR",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with the deep -23.8% deviation from the 200 SMA creates a structural oversold condition that warrants a deeper look at credit spread confirmation and volatility percentile alignment.",
+        "Piero": "The stock is statistically overextended at a -2.05 Z-score with a negative RSI, creating a classic mean-reversion setup where the price is significantly below its 200-day mean."
+      },
+      "close": 173.75,
+      "adx": 28.8,
+      "rsi": 28.4,
+      "rvol": 1.54,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "AMT",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 of -2.05 combined with a negative CMF and OBV% confirms a structural oversold condition where price is decoupling from the deteriorating credit spread environment, creating a high-probability mean reversion setup.",
+        "Piero": "AMT presents a compelling mean-reversion setup with a Z-score of -2.05 indicating significant overextension below the 50-day mean, combined with a low RSI of 28.4 suggesting fading momentum that often precedes a snapback."
+      },
+      "close": 173.75,
+      "adx": 28.8,
+      "rsi": 28.4,
+      "rvol": 1.54,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "APTV",
+      "advocates": [
+        "Cosimo",
+        "Lorenzo"
+      ],
+      "reasons": {
+        "Cosimo": "The stock is showing a clear structural breakout above the 200-day SMA with strong volume confirmation (RVOL 0.86) and positive momentum, which aligns with my preference for trend continuation plays after consolidation.",
+        "Lorenzo": "The Z50 reading of 2.03 indicates a significant statistical overbustion at the 50-day mean, which aligns with the risk-off macro environment to create a potential contrarian long setup, though the low ADX suggests the trend is still consolidating before a move."
+      },
+      "close": 79.34,
+      "adx": 20.3,
+      "rsi": 64.0,
+      "rvol": 0.86,
+      "zscore_50": 2.03
+    },
+    {
+      "ticker": "ATO",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z-Score of 3.04 at the 50-period level indicates extreme overbought conditions, which aligns with the RSI of 76.1 and the risk-off macro environment, suggesting a potential mean reversion opportunity if credit spreads or volatility percentiles confirm the divergence.",
+        "Piero": "The Z-Score of 3.04 combined with RSI at 76.1 and a positive MACD histogram signals a severe statistical overextension that aligns with my mean-reversion entry criteria."
+      },
+      "close": 141.83,
+      "adx": 39.5,
+      "rsi": 76.1,
+      "rvol": 1.57,
+      "zscore_50": 3.04
+    },
+    {
+      "ticker": "AVGO",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 of -2.56 combined with the significant OBV% divergence of -250.4 suggests a structural oversold condition where price has detached from volume, warranting a deeper look at credit spread alignment.",
+        "Piero": "AVGO shows a strong mean-reversion setup with a Z-score of -2.56 and RSI divergence, confirming significant overextension that warrants a deeper look."
+      },
+      "close": 40.49,
+      "adx": 23.2,
+      "rsi": 31.5,
+      "rvol": 1.27,
+      "zscore_50": -2.56
+    },
+    {
+      "ticker": "AXP",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with a -23.8% drop from the 200 SMA and negative cross-asset momentum (CMF, OBV%) creates a multi-factor alignment suggesting a potential mean reversion setup, though the risk-off macro regime requires confirmation on credit spreads before sizing.",
+        "Piero": "The stock is statistically overextended at a Z-score of -2.05 with RSI divergence and negative autocorrelation, creating a high-probability mean-reversion setup despite the macro risk-off environment."
+      },
+      "close": 173.75,
+      "adx": 28.8,
+      "rsi": 28.4,
+      "rvol": 1.54,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "AZO",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 score of -2.27 combined with a deeply negative OBV% (-282.55) and a significant drop from the 50-day SMA suggests a structural oversold condition that warrants checking for credit spread confirmation before considering a mean reversion play.",
+        "Piero": "The Z-Score of -2.27 combined with RSI at 29.3 and a significant OBV% divergence suggests a statistically overextended sell-off that aligns with my mean-reversion thesis."
+      },
+      "close": 17.91,
+      "adx": 24.0,
+      "rsi": 29.3,
+      "rvol": 0.82,
+      "zscore_50": -2.27
+    },
+    {
+      "ticker": "BR",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.56 confirms a statistical extreme in oversold territory, and the OBV% of -250.4 provides the necessary cross-asset confirmation of severe volume divergence that often precedes a mean reversion bounce.",
+        "Piero": "The stock is statistically overextended at a Z-score of -2.56 with RSI divergence, creating a high-probability mean-reversion fade setup despite the risk-off macro environment."
+      },
+      "close": 40.49,
+      "adx": 23.2,
+      "rsi": 31.5,
+      "rvol": 1.27,
+      "zscore_50": -2.56
+    },
+    {
+      "ticker": "BRK-B",
+      "advocates": [
+        "Cosimo",
+        "Giuliano"
+      ],
+      "reasons": {
+        "Cosimo": "The stock shows a clear structural trend with price above both SMAs and a strong ADX, but the negative OBV% and CMF suggest institutional distribution is occurring within that uptrend, creating a potential divergence worth investigating.",
+        "Giuliano": "The RVOL of 2.7 combined with a strong ADX of 39.8 and price well above the 200 SMA signals a high-conviction, volume-backed trend that warrants a deeper look for entry points."
+      },
+      "close": 320.82,
+      "adx": 39.8,
+      "rsi": 50.8,
+      "rvol": 2.7,
+      "zscore_50": 0.84
+    },
+    {
+      "ticker": "CARR",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 score of -2.99 indicates a significant statistical overextension below the 50-day mean, and the risk-off macro environment provides the necessary cross-asset confirmation for a potential mean-reversion long.",
+        "Piero": "CARR shows a strong mean-reversion setup with a Z-score of -2.99 (deeply oversold) and RSI at 29.3, indicating significant overextension that aligns with my strategy to fade extremes."
+      },
+      "close": 154.18,
+      "adx": 28.9,
+      "rsi": 29.3,
+      "rvol": 1.73,
+      "zscore_50": -2.99
+    },
+    {
+      "ticker": "COST",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 of -2.17 indicates the stock is in statistical oversold territory, and the negative CMF alongside a risk-off macro regime suggests potential capitulation before a mean reversion bounce.",
+        "Piero": "The stock shows a classic mean-reversion setup with a Z-score of -2.17 below the 200-day mean and an RSI of 29.2 indicating oversold conditions, suggesting a potential snapback toward the 200-day SMA."
+      },
+      "close": 40.17,
+      "adx": 20.8,
+      "rsi": 29.2,
+      "rvol": 1.29,
+      "zscore_50": -2.17
+    },
+    {
+      "ticker": "CPB",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "CPB shows a compelling structural confluence with Z50 at -2.42 confirming a deep mean-reversion zone, while the negative CMF and OBV% indicate selling pressure is exhausted and waiting for a reversal.",
+        "Piero": "The Z-score of -2.42 combined with RSI at 28.4 indicates a statistically significant overextension into the mean, creating a high-probability fade setup despite the risk-off macro environment."
+      },
+      "close": 140.37,
+      "adx": 32.0,
+      "rsi": 28.4,
+      "rvol": 1.54,
+      "zscore_50": -2.42
+    },
+    {
+      "ticker": "CRH",
+      "advocates": [
+        "Lorenzo",
+        "Giuliano"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 score of 3.24 indicates a severe statistical overextension on the 50-day mean, which aligns with the risk-off macro regime to suggest a potential mean reversion opportunity if credit spreads stabilize.",
+        "Giuliano": "RVOL is screaming at 2.19 while price is aggressively pulling away from the 50-day SMA with a massive Bar Range Ratio of 2.73, signaling a violent volatility expansion that fits the breakout profile."
+      },
+      "close": 94.41,
+      "adx": 30.1,
+      "rsi": 69.6,
+      "rvol": 2.19,
+      "zscore_50": 3.24
+    },
+    {
+      "ticker": "CTRA",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.12 combined with a negative MACD histogram and low RSI indicates a statistically significant oversold condition that warrants a deeper check on credit spread confirmation before considering a long entry.",
+        "Piero": "CTRA shows a compelling mean-reversion setup with price at a Z-score of -2.12 (below the 200-day mean) and RSI divergence, suggesting the stock is statistically overextended and due for a snapback."
+      },
+      "close": 66.54,
+      "adx": 24.7,
+      "rsi": 32.1,
+      "rvol": 1.56,
+      "zscore_50": -2.12
+    },
+    {
+      "ticker": "DELL",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "Dell presents a compelling risk-off setup with Z-score and 200-day percentile both at -2.2, indicating a statistical extreme, while the negative CMF and low Amihud volume confirm the lack of selling pressure despite the downtrend.",
+        "Piero": "Dell shows a compelling mean-reversion setup with price at a Z-score of -2.2 below the 50-day mean, confirmed by RSI at 27.2 and a negative CMF indicating selling pressure, suggesting a potential fade into the oversold zone."
+      },
+      "close": 53.74,
+      "adx": 28.0,
+      "rsi": 27.2,
+      "rvol": 1.05,
+      "zscore_50": -2.2
+    },
+    {
+      "ticker": "DHR",
+      "advocates": [
+        "Lorenzo",
+        "Giuliano"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 score of 3.24 indicates a significant statistical overextension into overbought territory, which aligns with the risk-off macro environment and suggests a potential mean reversion opportunity if credit spreads stabilize.",
+        "Giuliano": "RVOL of 2.19 confirms significant volume expansion, and the strong ADX of 30.1 with a high CMF indicates genuine momentum acceleration rather than a lagging trend, making this a candidate for a breakout continuation setup."
+      },
+      "close": 94.41,
+      "adx": 30.1,
+      "rsi": 69.6,
+      "rvol": 2.19,
+      "zscore_50": 3.24
+    },
+    {
+      "ticker": "ED",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.25 combined with a negative CMF and low OBV% suggests a structural oversold condition where volume is declining, creating a potential mean reversion setup that warrants deeper cross-asset confirmation.",
+        "Piero": "ED shows a clear mean-reversion setup with a Z-score of -2.25 and RSI divergence, but the macro risk-off environment and low ADX suggest the snapback may be delayed or incomplete, requiring careful monitoring."
+      },
+      "close": 50.23,
+      "adx": 23.3,
+      "rsi": 32.9,
+      "rvol": 1.9,
+      "zscore_50": -2.25
+    },
+    {
+      "ticker": "EIX",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z-50 reading of -2.1 combined with the macro risk-off regime and negative OBV% suggests a structural oversold condition that warrants a deeper check on credit spread alignment before considering a mean reversion play.",
+        "Piero": "The stock shows a compelling mean-reversion setup with a Z-score of -2.1 and RSI at 26.3, indicating significant overextension that aligns with my strategy for fading oversold conditions."
+      },
+      "close": 109.63,
+      "adx": 40.4,
+      "rsi": 26.3,
+      "rvol": 0.92,
+      "zscore_50": -2.1
+    },
+    {
+      "ticker": "ETN",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.1 combined with a negative momentum divergence (MACD_H, CMF) and a risk-off macro environment suggests a structural oversold condition that may be ripe for a mean reversion play, provided credit spreads stabilize.",
+        "Piero": "The stock shows a compelling mean-reversion setup with price at a -2.1 Z-score against the 50-day mean and significant RSI divergence, suggesting an oversold condition ripe for a snapback despite the macro risk-off environment."
+      },
+      "close": 109.63,
+      "adx": 40.4,
+      "rsi": 26.3,
+      "rvol": 0.92,
+      "zscore_50": -2.1
+    },
+    {
+      "ticker": "EW",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "EW presents a compelling multi-factor alignment with a Z50 of -2.1 indicating a statistical extreme in oversold territory, supported by a negative 200-day percentile and a risk-off macro environment that historically precedes mean reversion rallies.",
+        "Piero": "The stock shows a compelling mean-reversion setup with a Z-score of -2.1 (approaching the \u00b12.0 entry threshold) combined with strong RSI oversold conditions and a significant percentile rank, suggesting a potential snapback to the 200-day mean."
+      },
+      "close": 109.63,
+      "adx": 40.4,
+      "rsi": 26.3,
+      "rvol": 0.92,
+      "zscore_50": -2.1
+    },
+    {
+      "ticker": "FANG",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 at -2.2 combined with a negative CMF and low Amihud suggests a structural oversold condition where mean reversion is statistically probable, warranting a deeper look despite the risk-off macro backdrop.",
+        "Piero": "FANG presents a classic mean-reversion setup with a Z-score of -2.2 and RSI at 27.2, indicating significant overextension that warrants deeper investigation for a fade."
+      },
+      "close": 53.74,
+      "adx": 28.0,
+      "rsi": 27.2,
+      "rvol": 1.05,
+      "zscore_50": -2.2
+    },
+    {
+      "ticker": "FIX",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z-Score of -2.25 indicates a statistically extreme oversold condition on the 50-day mean, and the negative Credit Spread Proxy suggests the risk-off macro environment is priced in, creating a potential mean reversion opportunity if volatility compresses.",
+        "Piero": "The stock shows a compelling mean-reversion setup with a Z-score of -2.25 and RSI divergence at 32.9, suggesting an oversold condition ripe for a snapback to the 50-day mean."
+      },
+      "close": 50.23,
+      "adx": 23.3,
+      "rsi": 32.9,
+      "rvol": 1.9,
+      "zscore_50": -2.25
+    },
+    {
+      "ticker": "GWW",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with the negative CMF and OBV% indicates a structural oversold condition where price is decoupling from volume, creating a potential mean-reversion opportunity in a risk-off regime.",
+        "Piero": "The Z-score of -2.05 combined with a negative autocorrelation regime (implied by the mean-reverting context) and significant volume divergence (high RVOL with negative OBV% and CMF) suggests a statistical overextension that warrants a deeper look for a fade setup."
+      },
+      "close": 94.19,
+      "adx": 35.1,
+      "rsi": 33.0,
+      "rvol": 1.58,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "LUV",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.21 indicates a statistical extreme in oversold territory, and the risk-off macro environment provides the necessary structural context for a mean-reversion play, though the lack of credit spread confirmation keeps this as a watch rather than an immediate entry.",
+        "Piero": "LUV shows a Z-score of -2.21 against the 50-day mean with an RSI of 34, indicating statistical overextension and potential mean reversion despite the weak macro environment."
+      },
+      "close": 76.01,
+      "adx": 29.6,
+      "rsi": 34.0,
+      "rvol": 1.39,
+      "zscore_50": -2.21
+    },
+    {
+      "ticker": "MCK",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 at -2.21 combined with a negative CMF and low OBV% signals a structural oversold condition where selling pressure is drying up, creating a potential mean reversion opportunity in a risk-off environment.",
+        "Piero": "The Z50 score of -2.21 combined with the RSI at 28.0 suggests significant overextension and potential mean reversion, despite the high ADX indicating a strong downtrend that might delay the snapback."
+      },
+      "close": 80.78,
+      "adx": 41.1,
+      "rsi": 28.0,
+      "rvol": 1.46,
+      "zscore_50": -2.21
+    },
+    {
+      "ticker": "NDAQ",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.33 combined with the risk-off macro regime and negative OBV% suggests a structural oversold condition in a risk-off environment, warranting a deeper look for a mean reversion play once credit spreads stabilize.",
+        "Piero": "NDAQ shows a compelling mean-reversion setup with a Z-score of -2.33 and RSI divergence at 29.8, confirming significant overextension into the bottom 5% of its range."
+      },
+      "close": 173.5,
+      "adx": 24.1,
+      "rsi": 29.8,
+      "rvol": 1.25,
+      "zscore_50": -2.33
+    },
+    {
+      "ticker": "NEE",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "NEE presents a compelling multi-factor alignment with a Z-50 of -2.06 indicating deep mean reversion territory, supported by a bearish MACD crossover and negative CMF, which suggests the recent decline has exhausted momentum and could be a structural bottom.",
+        "Piero": "The stock shows a compelling mean-reversion setup with Z50 at -2.06 indicating significant oversold conditions and RSI at 31.4 suggesting fading momentum, which aligns with my strategy of fading extremes in large caps."
+      },
+      "close": 260.29,
+      "adx": 26.8,
+      "rsi": 31.4,
+      "rvol": 1.24,
+      "zscore_50": -2.06
+    },
+    {
+      "ticker": "NEM",
+      "advocates": [
+        "Caterina",
+        "Piero"
+      ],
+      "reasons": {
+        "Caterina": "The combination of a very low Amihud (0.0) indicating hidden absorption and a high CLV (0.83) showing buyers controlling the close, despite the price being below the 50-day SMA, suggests institutional accumulation before a potential liquidity vacuum.",
+        "Piero": "The Z-score of -2.33 combined with RSI divergence and a low percentile rank creates a statistically significant mean-reversion setup where the price is deeply oversold relative to its 200-day mean."
+      },
+      "close": 173.5,
+      "adx": 24.1,
+      "rsi": 29.8,
+      "rvol": 1.25,
+      "zscore_50": -2.33
+    },
+    {
+      "ticker": "NKE",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.06 indicates a statistical extreme in oversold territory, and the negative MACD histogram combined with a risk-off macro environment suggests a potential mean reversion opportunity worth verifying against credit spreads.",
+        "Piero": "NKE shows a clear mean-reversion setup with a Z-score of -2.06 indicating significant overextension below the 50-day mean, supported by a low RSI of 31.4 that confirms fading momentum."
+      },
+      "close": 260.29,
+      "adx": 26.8,
+      "rsi": 31.4,
+      "rvol": 1.24,
+      "zscore_50": -2.06
+    },
+    {
+      "ticker": "NWS",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z-Score of -2.06 at the 50-period level indicates a statistical extreme in oversold territory, and the negative MACD histogram combined with a risk-off macro environment suggests a potential mean reversion play where the mean is likely below current price.",
+        "Piero": "The stock shows a compelling mean-reversion setup with a Z-score of -2.06 and RSI divergence at 31.4, indicating oversold conditions that align with the statistical edge I look for."
+      },
+      "close": 260.29,
+      "adx": 26.8,
+      "rsi": 31.4,
+      "rvol": 1.24,
+      "zscore_50": -2.06
+    },
+    {
+      "ticker": "PEG",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.07 combined with a negative RSI and low ADX indicates a structural oversold condition in a risk-off regime, warranting a deeper check on cross-asset credit spreads to confirm the mean reversion thesis.",
+        "Piero": "The stock is statistically overextended with a Z50 of -2.07 and RSI at 33.4, suggesting a potential mean-reversion fade into the downside."
+      },
+      "close": 87.01,
+      "adx": 14.5,
+      "rsi": 33.4,
+      "rvol": 1.49,
+      "zscore_50": -2.07
+    },
+    {
+      "ticker": "PG",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.07 combined with the risk-off macro environment suggests a potential mean reversion opportunity, though the lack of credit spread confirmation and the extremely low ADX indicate the setup is not yet structurally complete.",
+        "Piero": "PG shows a Z50 of -2.07 with RSI at 33.4, indicating a statistically significant oversold condition that aligns with my mean-reversion criteria."
+      },
+      "close": 87.01,
+      "adx": 14.5,
+      "rsi": 33.4,
+      "rvol": 1.49,
+      "zscore_50": -2.07
+    },
+    {
+      "ticker": "PGR",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.07 combined with a negative RSI divergence and a risk-off macro environment suggests a structural oversold condition where a mean reversion play could be viable if credit spreads stabilize.",
+        "Piero": "The Z-score of -2.07 combined with a negative autocorrelation environment (ADX 14.5) suggests a statistically overextended condition ripe for a mean-reversion fade, though the RSI divergence is not yet confirmed."
+      },
+      "close": 87.01,
+      "adx": 14.5,
+      "rsi": 33.4,
+      "rvol": 1.49,
+      "zscore_50": -2.07
+    },
+    {
+      "ticker": "PLD",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.07 combined with the risk-off macro environment and negative OBV% creates a structural oversold alignment worth investigating for a mean reversion play.",
+        "Piero": "The stock is statistically overextended at a Z-score of -2.07 with RSI divergence and low entropy, creating a high-probability mean-reversion fade setup despite the risk-off macro environment."
+      },
+      "close": 87.01,
+      "adx": 14.5,
+      "rsi": 33.4,
+      "rvol": 1.49,
+      "zscore_50": -2.07
+    },
+    {
+      "ticker": "PRU",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.07 indicates a significant statistical oversold condition, and the negative CMF (-26.82) confirms that selling pressure has recently exhausted, creating a potential mean reversion setup that warrants deeper cross-asset confirmation.",
+        "Piero": "PRU is showing a classic mean-reversion setup with a Z-score of -2.07 and RSI divergence, confirming significant overextension that warrants a deeper look despite the risk-off macro environment."
+      },
+      "close": 87.01,
+      "adx": 14.5,
+      "rsi": 33.4,
+      "rvol": 1.49,
+      "zscore_50": -2.07
+    },
+    {
+      "ticker": "PTC",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.07 combined with the negative OBV% and low ADX suggests a deep statistical oversold condition where a mean reversion setup is forming, warranting a closer look at whether credit spreads confirm the risk-off environment.",
+        "Piero": "PTC presents a classic mean-reversion setup with a Z-score of -2.07 indicating significant oversold conditions and an RSI of 33.4 showing divergent momentum that suggests a potential bounce toward the 200-day mean."
+      },
+      "close": 87.01,
+      "adx": 14.5,
+      "rsi": 33.4,
+      "rvol": 1.49,
+      "zscore_50": -2.07
+    },
+    {
+      "ticker": "SATS",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 at -2.1 combined with the -14% percentile rank and negative OBV% suggests a structural oversold condition that warrants a deeper check on credit spread alignment before committing.",
+        "Piero": "The stock shows a compelling mean-reversion setup with a Z-score of -2.1 indicating significant overextension below the 50-day mean, combined with RSI at 26.3 suggesting fading momentum that often precedes a snapback."
+      },
+      "close": 109.63,
+      "adx": 40.4,
+      "rsi": 26.3,
+      "rvol": 0.92,
+      "zscore_50": -2.1
+    },
+    {
+      "ticker": "T",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 score of 3.04 indicates extreme overbought conditions, and while the high ADX suggests momentum, the risk-off macro environment and lack of credit spread confirmation mean this is a candidate for a contrarian short setup only if volatility percentiles confirm a mean reversion regime.",
+        "Piero": "The Z50 score of 3.04 indicates severe overextension at the 50-day mean with RSI divergence likely present given the 76.1 reading, creating a high-probability fade setup despite the elevated ADX."
+      },
+      "close": 141.83,
+      "adx": 39.5,
+      "rsi": 76.1,
+      "rvol": 1.57,
+      "zscore_50": 3.04
+    },
+    {
+      "ticker": "TROW",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with a negative CMF and OBV% suggests a structural oversold condition where price is decoupling from the 50-day mean, warranting a deeper look at whether credit spreads are confirming the risk-off thesis.",
+        "Piero": "The stock shows a clear mean-reversion setup with a Z-score of -2.05 and RSI at 28.2, indicating significant overselling that aligns with my strategy to fade extremes."
+      },
+      "close": 141.5,
+      "adx": 39.9,
+      "rsi": 28.2,
+      "rvol": 0.64,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "TSN",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.27 combined with a 200-period percentile of -6.7% indicates a statistical oversold condition, but the lack of credit spread confirmation and the risk-off macro environment make this a low-conviction setup to add to the watchlist for now.",
+        "Piero": "The stock presents a classic mean-reversion setup with a Z-score of -2.27 indicating significant overextension below the 50-day mean, supported by an RSI of 25.5 showing oversold momentum conditions."
+      },
+      "close": 170.13,
+      "adx": 32.4,
+      "rsi": 25.5,
+      "rvol": 1.48,
+      "zscore_50": -2.27
+    },
+    {
+      "ticker": "TXT",
+      "advocates": [
+        "Cosimo",
+        "Caterina"
+      ],
+      "reasons": {
+        "Cosimo": "The stock is trading above both the 50 and 200-day SMAs with a strong positive divergence (OBV% at 19.54 while price is up 6.2%), indicating institutional accumulation despite the macro risk-off environment, and the ADX of 32.3 confirms a sufficiently strong trend to justify a position-sized entry.",
+        "Caterina": "The combination of a high CLV (0.85) indicating buyer control at the close alongside a low Amihud (0.0001) suggests institutions are quietly absorbing supply before a potential breakout."
+      },
+      "close": 51.17,
+      "adx": 32.3,
+      "rsi": 58.4,
+      "rvol": 0.9,
+      "zscore_50": 1.25
+    },
+    {
+      "ticker": "TYL",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "TYL presents a compelling structural confluence with a Z50 at -2.27 confirming deep oversold conditions, while the negative CMF and OBV% indicate significant volume divergence that often precedes a mean reversion bounce.",
+        "Piero": "The stock shows a classic mean-reversion setup with a Z-score of -2.27 indicating significant overextension below the 50-day mean, supported by a deep RSI divergence at 25.5 and negative autocorrelation implied by the trend structure."
+      },
+      "close": 170.13,
+      "adx": 32.4,
+      "rsi": 25.5,
+      "rvol": 1.48,
+      "zscore_50": -2.27
+    },
+    {
+      "ticker": "UBER",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "UBER presents a compelling structural confluence with a Z-Score of -2.27 at the 50-day mean, confirming a deep statistical oversold condition that aligns with the broader risk-off macro regime and negative price momentum relative to key moving averages.",
+        "Piero": "UBER shows a compelling mean-reversion setup with a Z-score of -2.27 and RSI at 25.5, indicating significant overextension and fading momentum that aligns with my statistical entry criteria."
+      },
+      "close": 170.13,
+      "adx": 32.4,
+      "rsi": 25.5,
+      "rvol": 1.48,
+      "zscore_50": -2.27
+    },
+    {
+      "ticker": "USB",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "USB presents a compelling risk structure with a Z50 of -2.27 indicating extreme oversold conditions, which aligns with the macro risk-off sentiment and negative OBV% suggesting selling pressure is exhausted.",
+        "Piero": "USB shows a compelling mean-reversion setup with a Z-score of -2.27 indicating significant overextension below the 50-day mean, combined with a deep RSI of 25.5 and negative autocorrelation implied by the low ADX and negative OBV%, suggesting the market is due for a statistical snapback."
+      },
+      "close": 170.13,
+      "adx": 32.4,
+      "rsi": 25.5,
+      "rvol": 1.48,
+      "zscore_50": -2.27
+    },
+    {
+      "ticker": "VMC",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with a negative CMF and OBV% confirms a structural oversold condition that warrants a deeper look for a mean reversion setup.",
+        "Piero": "The stock shows a compelling mean-reversion setup with Z50 at -2.05 and RSI divergence, though the high ADX suggests the trend strength is still elevated enough to warrant a closer look before fading."
+      },
+      "close": 94.19,
+      "adx": 35.1,
+      "rsi": 33.0,
+      "rvol": 1.58,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "VST",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.05 combined with a negative CMF and OBV% indicates a structural oversold condition where price is decoupling from volume, suggesting a potential mean reversion opportunity if the credit spread proxy confirms the risk-off sentiment is a temporary compression rather than a structural break.",
+        "Piero": "VST shows a compelling mean-reversion setup with a Z-score of -2.05 and RSI divergence, confirming significant overextension that aligns with my statistical entry criteria."
+      },
+      "close": 94.19,
+      "adx": 35.1,
+      "rsi": 33.0,
+      "rvol": 1.58,
+      "zscore_50": -2.05
+    },
+    {
+      "ticker": "WAT",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "WAT presents a compelling risk-off structure with a Z50 of -2.08 confirming oversold conditions, while the negative CMF and OBV% indicate underlying selling pressure that may be exhausted, making it a candidate for a contrarian entry if credit spreads stabilize.",
+        "Piero": "WAT presents a compelling mean-reversion setup with a Z-score of -2.08 indicating significant oversold conditions and RSI at 26.8 confirming momentum exhaustion, though the high ADX of 33.8 suggests a strong trend that requires careful confirmation before fading."
+      },
+      "close": 262.67,
+      "adx": 33.8,
+      "rsi": 26.8,
+      "rvol": 1.12,
+      "zscore_50": -2.08
+    },
+    {
+      "ticker": "WEC",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.08 combined with a negative CMF and OBV% confirms a structural oversold divergence that warrants a deeper look into cross-asset credit spread confirmation before entry.",
+        "Piero": "The stock is statistically overextended at a Z-score of -2.08 with RSI divergence, creating a mean-reversion setup despite the elevated ADX."
+      },
+      "close": 262.67,
+      "adx": 33.8,
+      "rsi": 26.8,
+      "rvol": 1.12,
+      "zscore_50": -2.08
+    },
+    {
+      "ticker": "WM",
+      "advocates": [
+        "Lorenzo",
+        "Piero"
+      ],
+      "reasons": {
+        "Lorenzo": "The Z50 reading of -2.43 combined with a negative CMF and low RSI indicates a statistical oversold condition that warrants checking if credit spreads or volatility percentiles confirm a mean reversion opportunity.",
+        "Piero": "WM is showing a strong mean-reversion setup with a Z-score of -2.43 and RSI at 29.4, indicating significant overextension that aligns with my strategy for fading extremes."
+      },
+      "close": 110.04,
+      "adx": 27.2,
+      "rsi": 29.4,
+      "rvol": 1.12,
+      "zscore_50": -2.43
+    }
+  ],
+  "pitch_summary": {
+    "A": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "APD": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "ALL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GOOGL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GOOG": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "AMZN": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AMCR": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AEE": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "AEP": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AXP": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AIG": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AMT": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AWK": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AMAT": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "APP": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "APTV": {
+      "Cosimo": true,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "ACGL": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ADM": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "ARES": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "ANET": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "AJG": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "T": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ATO": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ADSK": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ADP": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AZO": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AVB": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "AVY": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "BAX": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "BDX": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "BRK-B": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "BBY": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "TECH": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "BLK": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "BK": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "AVGO": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "BR": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "BF-B": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "BLDR": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "BG": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "BXP": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "CPB": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "CARR": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "CRL": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "CVX": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "CMG": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "CB": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "CINF": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "COIN": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "CMCSA": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "FIX": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "COP": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "ED": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "STZ": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": true
+    },
+    "CPRT": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "GLW": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "CPAY": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "CTVA": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "COST": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "CTRA": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "CRH": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "CRWD": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "CCI": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "CMI": {
+      "Cosimo": true,
+      "Lorenzo": true,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "CVS": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "DHR": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": true,
+      "Caterina": false,
+      "Piero": false
+    },
+    "DRI": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "DELL": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "DVN": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "DXCM": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "FANG": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "D": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "DOV": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "DD": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ETN": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "EBAY": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "SATS": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ECL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "EIX": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "EW": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "EQIX": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "FIS": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GEN": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GD": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GIS": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GDDY": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "GS": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "HAL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "HCA": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "DOC": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "HPE": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "HLT": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "HOLX": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "HD": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "HUM": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "ISRG": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "JNJ": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "KDP": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "KR": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "LIN": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "LYV": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "MCK": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "MDT": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "MET": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "MSCI": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "NDAQ": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "NTAP": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": true
+    },
+    "NFLX": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": true
+    },
+    "NEM": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": true
+    },
+    "NWSA": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": true
+    },
+    "NWS": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "NEE": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "NKE": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "PPG": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "PPL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "PG": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "PGR": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "PLD": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "PRU": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "PEG": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "PTC": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "ROP": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "CRM": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "SLB": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "LUV": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "TMUS": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "TROW": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "TPL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "TXT": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "TMO": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "TJX": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "TSCO": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "TYL": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "TSN": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "USB": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "UBER": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "UDR": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "ULTA": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "UAL": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "UNH": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "VLO": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "VTR": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "VLTO": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "VRTX": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": true,
+      "Piero": false
+    },
+    "V": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "VST": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "VMC": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "WRB": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "GWW": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "WAB": {
+      "Cosimo": true,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": false
+    },
+    "WM": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "WAT": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "WEC": {
+      "Cosimo": false,
+      "Lorenzo": true,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    },
+    "WFC": {
+      "Cosimo": false,
+      "Lorenzo": false,
+      "Giuliano": false,
+      "Caterina": false,
+      "Piero": true
+    }
+  },
+  "qna": {},
+  "votes": {}
+}

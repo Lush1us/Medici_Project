@@ -1,0 +1,2954 @@
+{
+  "starting_cash": 1000.0,
+  "cash": 0.0,
+  "positions": {
+    "CMI": {
+      "shares": 0.10648945773743539,
+      "avg_cost": 93.90600921883174
+    },
+    "NFLX": {
+      "shares": 0.11881163352219816,
+      "avg_cost": 168.3336842285171
+    },
+    "NTAP": {
+      "shares": 0.11881163352219816,
+      "avg_cost": 168.3336842285171
+    },
+    "NWSA": {
+      "shares": 0.17828087582641405,
+      "avg_cost": 168.27379751718274
+    },
+    "ACGL": {
+      "shares": 0.1537462930225272,
+      "avg_cost": 257.80460273056605
+    },
+    "ADSK": {
+      "shares": 0.15602033416433275,
+      "avg_cost": 128.1884192026819
+    },
+    "AIG": {
+      "shares": 0.12173822766843778,
+      "avg_cost": 164.286932568719
+    },
+    "AMCR": {
+      "shares": 0.1809518687797055,
+      "avg_cost": 165.78994294069773
+    },
+    "AMT": {
+      "shares": 0.1809518687797055,
+      "avg_cost": 165.78994294069773
+    },
+    "AVGO": {
+      "shares": 0.7670267957273931,
+      "avg_cost": 39.112062534334484
+    },
+    "AXP": {
+      "shares": 0.1809518687797055,
+      "avg_cost": 165.78994294069773
+    },
+    "AZO": {
+      "shares": 0.5506186118834725,
+      "avg_cost": 18.161391177449524
+    },
+    "BR": {
+      "shares": 0.7670267957273931,
+      "avg_cost": 39.112062534334484
+    },
+    "CARR": {
+      "shares": 0.06756756756756757,
+      "avg_cost": 148.0
+    },
+    "COST": {
+      "shares": 0.771985931429644,
+      "avg_cost": 38.86081180837437
+    },
+    "CRH": {
+      "shares": 0.10648945773743539,
+      "avg_cost": 93.90600921883174
+    },
+    "CTRA": {
+      "shares": 0.15780337965207816,
+      "avg_cost": 63.369998931884766
+    },
+    "DELL": {
+      "shares": 0.18867924528301888,
+      "avg_cost": 53.0
+    },
+    "EIX": {
+      "shares": 0.19426015352940182,
+      "avg_cost": 102.95472147340264
+    },
+    "ETN": {
+      "shares": 0.19426015352940182,
+      "avg_cost": 102.95472147340264
+    },
+    "EW": {
+      "shares": 0.2935551598932912,
+      "avg_cost": 102.19544432775481
+    },
+    "FANG": {
+      "shares": 0.3772161952715043,
+      "avg_cost": 53.019992913095486
+    },
+    "FIX": {
+      "shares": 0.39792377201670015,
+      "avg_cost": 50.260882627441106
+    },
+    "GWW": {
+      "shares": 0.2375250362016223,
+      "avg_cost": 91.31457927645667
+    },
+    "MCK": {
+      "shares": 0.12530170698515505,
+      "avg_cost": 79.80737246608089
+    },
+    "NDAQ": {
+      "shares": 0.11883908812951947,
+      "avg_cost": 168.29479521251918
+    },
+    "NEE": {
+      "shares": 0.08031040833006016,
+      "avg_cost": 249.03372322307078
+    },
+    "NKE": {
+      "shares": 0.1216950412883348,
+      "avg_cost": 246.5178505418337
+    },
+    "NWS": {
+      "shares": 0.1216950412883348,
+      "avg_cost": 246.5178505418337
+    },
+    "PEG": {
+      "shares": 0.23076987304903773,
+      "avg_cost": 86.66642545558828
+    },
+    "PG": {
+      "shares": 0.46153974609807547,
+      "avg_cost": 86.66642545558828
+    },
+    "PGR": {
+      "shares": 0.23076987304903773,
+      "avg_cost": 86.66642545558828
+    },
+    "PLD": {
+      "shares": 0.23076987304903773,
+      "avg_cost": 86.66642545558828
+    },
+    "PRU": {
+      "shares": 0.23076987304903773,
+      "avg_cost": 86.66642545558828
+    },
+    "PTC": {
+      "shares": 0.23076987304903773,
+      "avg_cost": 86.66642545558828
+    },
+    "SATS": {
+      "shares": 0.19426015352940182,
+      "avg_cost": 102.95472147340264
+    },
+    "T": {
+      "shares": 0.06890012256187457,
+      "avg_cost": 145.13762281075293
+    },
+    "TROW": {
+      "shares": 0.14462149967726196,
+      "avg_cost": 138.29202466183864
+    },
+    "TSN": {
+      "shares": 0.12239530568165502,
+      "avg_cost": 163.40495976225714
+    },
+    "TYL": {
+      "shares": 0.12239530568165502,
+      "avg_cost": 163.40495976225714
+    },
+    "UBER": {
+      "shares": 0.12239530568165502,
+      "avg_cost": 163.40495976225714
+    },
+    "USB": {
+      "shares": 0.12239530568165502,
+      "avg_cost": 163.40495976225714
+    },
+    "VMC": {
+      "shares": 0.21821564344304922,
+      "avg_cost": 91.65245756186897
+    },
+    "VST": {
+      "shares": 0.22007299415249595,
+      "avg_cost": 91.62595025846143
+    },
+    "WAT": {
+      "shares": 0.08483309620525856,
+      "avg_cost": 235.75704406224722
+    },
+    "WM": {
+      "shares": 0.18436121989290868,
+      "avg_cost": 108.48268421969411
+    },
+    "CPB": {
+      "shares": 0.07269213156803227,
+      "avg_cost": 137.56647087231224
+    },
+    "ED": {
+      "shares": 0.1971608785355895,
+      "avg_cost": 50.720001220703125
+    }
+  },
+  "trade_log": [
+    {
+      "date": "2025-03-11",
+      "ticker": "CMI",
+      "action": "buy",
+      "shares": 0.106489,
+      "price": 93.906,
+      "value": 10.0,
+      "cash_after": 990.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NFLX",
+      "action": "buy",
+      "shares": 0.05937,
+      "price": 168.4357,
+      "value": 10.0,
+      "cash_after": 980.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NTAP",
+      "action": "buy",
+      "shares": 0.05937,
+      "price": 168.4357,
+      "value": 10.0,
+      "cash_after": 970.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NWSA",
+      "action": "buy",
+      "shares": 0.05937,
+      "price": 168.4357,
+      "value": 10.0,
+      "cash_after": 960.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "STZ",
+      "action": "buy",
+      "shares": 0.161865,
+      "price": 61.78,
+      "value": 10.0,
+      "cash_after": 950.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "ACGL",
+      "action": "buy",
+      "shares": 0.039254,
+      "price": 254.749,
+      "value": 10.0,
+      "cash_after": 940.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "ADSK",
+      "action": "buy",
+      "shares": 0.080148,
+      "price": 124.7687,
+      "value": 10.0,
+      "cash_after": 930.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "AIG",
+      "action": "buy",
+      "shares": 0.060606,
+      "price": 165.0,
+      "value": 10.0,
+      "cash_after": 920.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "AMCR",
+      "action": "buy",
+      "shares": 0.060606,
+      "price": 165.0,
+      "value": 10.0,
+      "cash_after": 910.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "AMT",
+      "action": "buy",
+      "shares": 0.060606,
+      "price": 165.0,
+      "value": 10.0,
+      "cash_after": 900.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "AVGO",
+      "action": "buy",
+      "shares": 0.257555,
+      "price": 38.8267,
+      "value": 10.0,
+      "cash_after": 890.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "AXP",
+      "action": "buy",
+      "shares": 0.060606,
+      "price": 165.0,
+      "value": 10.0,
+      "cash_after": 880.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "AZO",
+      "action": "buy",
+      "shares": 0.550619,
+      "price": 18.1614,
+      "value": 10.0,
+      "cash_after": 870.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "BR",
+      "action": "buy",
+      "shares": 0.257555,
+      "price": 38.8267,
+      "value": 10.0,
+      "cash_after": 860.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "CARR",
+      "action": "buy",
+      "shares": 0.067568,
+      "price": 148.0,
+      "value": 10.0,
+      "cash_after": 850.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "COST",
+      "action": "buy",
+      "shares": 0.261362,
+      "price": 38.261,
+      "value": 10.0,
+      "cash_after": 840.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "CRH",
+      "action": "buy",
+      "shares": 0.106489,
+      "price": 93.906,
+      "value": 10.0,
+      "cash_after": 830.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "CTRA",
+      "action": "buy",
+      "shares": 0.157803,
+      "price": 63.37,
+      "value": 10.0,
+      "cash_after": 820.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "DELL",
+      "action": "buy",
+      "shares": 0.188679,
+      "price": 53.0,
+      "value": 10.0,
+      "cash_after": 810.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "EIX",
+      "action": "buy",
+      "shares": 0.098493,
+      "price": 101.53,
+      "value": 10.0,
+      "cash_after": 800.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "ETN",
+      "action": "buy",
+      "shares": 0.098493,
+      "price": 101.53,
+      "value": 10.0,
+      "cash_after": 790.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "EW",
+      "action": "buy",
+      "shares": 0.098493,
+      "price": 101.53,
+      "value": 10.0,
+      "cash_after": 780.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "FANG",
+      "action": "buy",
+      "shares": 0.188679,
+      "price": 53.0,
+      "value": 10.0,
+      "cash_after": 770.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "FIX",
+      "action": "buy",
+      "shares": 0.200763,
+      "price": 49.81,
+      "value": 10.0,
+      "cash_after": 760.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "GWW",
+      "action": "buy",
+      "shares": 0.108117,
+      "price": 92.4928,
+      "value": 10.0,
+      "cash_after": 750.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "MCK",
+      "action": "buy",
+      "shares": 0.125302,
+      "price": 79.8074,
+      "value": 10.0,
+      "cash_after": 740.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NDAQ",
+      "action": "buy",
+      "shares": 0.05937,
+      "price": 168.4357,
+      "value": 10.0,
+      "cash_after": 730.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NEE",
+      "action": "buy",
+      "shares": 0.039607,
+      "price": 252.483,
+      "value": 10.0,
+      "cash_after": 720.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NEM",
+      "action": "buy",
+      "shares": 0.05937,
+      "price": 168.4357,
+      "value": 10.0,
+      "cash_after": 710.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NKE",
+      "action": "buy",
+      "shares": 0.039607,
+      "price": 252.483,
+      "value": 10.0,
+      "cash_after": 700.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "NWS",
+      "action": "buy",
+      "shares": 0.039607,
+      "price": 252.483,
+      "value": 10.0,
+      "cash_after": 690.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "PEG",
+      "action": "buy",
+      "shares": 0.119515,
+      "price": 83.6712,
+      "value": 10.0,
+      "cash_after": 680.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "PG",
+      "action": "buy",
+      "shares": 0.239031,
+      "price": 83.6712,
+      "value": 20.0,
+      "cash_after": 660.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "PGR",
+      "action": "buy",
+      "shares": 0.119515,
+      "price": 83.6712,
+      "value": 10.0,
+      "cash_after": 650.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "PLD",
+      "action": "buy",
+      "shares": 0.119515,
+      "price": 83.6712,
+      "value": 10.0,
+      "cash_after": 640.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "PRU",
+      "action": "buy",
+      "shares": 0.119515,
+      "price": 83.6712,
+      "value": 10.0,
+      "cash_after": 630.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "PTC",
+      "action": "buy",
+      "shares": 0.119515,
+      "price": 83.6712,
+      "value": 10.0,
+      "cash_after": 620.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "SATS",
+      "action": "buy",
+      "shares": 0.098493,
+      "price": 101.53,
+      "value": 10.0,
+      "cash_after": 610.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "T",
+      "action": "buy",
+      "shares": 0.0689,
+      "price": 145.1376,
+      "value": 10.0,
+      "cash_after": 600.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "TROW",
+      "action": "buy",
+      "shares": 0.073513,
+      "price": 136.0307,
+      "value": 10.0,
+      "cash_after": 590.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "TSN",
+      "action": "buy",
+      "shares": 0.0625,
+      "price": 160.0,
+      "value": 10.0,
+      "cash_after": 580.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "TYL",
+      "action": "buy",
+      "shares": 0.0625,
+      "price": 160.0,
+      "value": 10.0,
+      "cash_after": 570.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "UBER",
+      "action": "buy",
+      "shares": 0.0625,
+      "price": 160.0,
+      "value": 10.0,
+      "cash_after": 560.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "USB",
+      "action": "buy",
+      "shares": 0.0625,
+      "price": 160.0,
+      "value": 10.0,
+      "cash_after": 550.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "VMC",
+      "action": "buy",
+      "shares": 0.108117,
+      "price": 92.4928,
+      "value": 10.0,
+      "cash_after": 540.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "VST",
+      "action": "buy",
+      "shares": 0.108117,
+      "price": 92.4928,
+      "value": 10.0,
+      "cash_after": 530.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "WAT",
+      "action": "buy",
+      "shares": 0.044383,
+      "price": 225.31,
+      "value": 10.0,
+      "cash_after": 520.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "WEC",
+      "action": "buy",
+      "shares": 0.044383,
+      "price": 225.31,
+      "value": 10.0,
+      "cash_after": 510.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "WM",
+      "action": "buy",
+      "shares": 0.091803,
+      "price": 108.9291,
+      "value": 10.0,
+      "cash_after": 500.0
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "NWSA",
+      "action": "buy",
+      "shares": 0.059469,
+      "price": 168.1542,
+      "value": 10.0,
+      "cash_after": 490.0
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "STZ",
+      "action": "sell",
+      "shares": 0.161865,
+      "price": 66.21,
+      "value": 10.7171,
+      "realized_pnl": 0.7171,
+      "cash_after": 500.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "ACGL",
+      "action": "buy",
+      "shares": 0.038844,
+      "price": 257.4404,
+      "value": 10.0,
+      "cash_after": 490.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "ADSK",
+      "action": "buy",
+      "shares": 0.075872,
+      "price": 131.8009,
+      "value": 10.0,
+      "cash_after": 480.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "AMCR",
+      "action": "buy",
+      "shares": 0.059214,
+      "price": 168.88,
+      "value": 10.0,
+      "cash_after": 470.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "AMT",
+      "action": "buy",
+      "shares": 0.059214,
+      "price": 168.88,
+      "value": 10.0,
+      "cash_after": 460.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "AVGO",
+      "action": "buy",
+      "shares": 0.253657,
+      "price": 39.4233,
+      "value": 10.0,
+      "cash_after": 450.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "AXP",
+      "action": "buy",
+      "shares": 0.059214,
+      "price": 168.88,
+      "value": 10.0,
+      "cash_after": 440.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "BR",
+      "action": "buy",
+      "shares": 0.253657,
+      "price": 39.4233,
+      "value": 10.0,
+      "cash_after": 430.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "COST",
+      "action": "buy",
+      "shares": 0.255689,
+      "price": 39.11,
+      "value": 10.0,
+      "cash_after": 420.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "CPB",
+      "action": "buy",
+      "shares": 0.072692,
+      "price": 137.5665,
+      "value": 10.0,
+      "cash_after": 410.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "ED",
+      "action": "buy",
+      "shares": 0.197161,
+      "price": 50.72,
+      "value": 10.0,
+      "cash_after": 400.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "EIX",
+      "action": "buy",
+      "shares": 0.095767,
+      "price": 104.42,
+      "value": 10.0,
+      "cash_after": 390.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "ETN",
+      "action": "buy",
+      "shares": 0.095767,
+      "price": 104.42,
+      "value": 10.0,
+      "cash_after": 380.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "EW",
+      "action": "buy",
+      "shares": 0.095767,
+      "price": 104.42,
+      "value": 10.0,
+      "cash_after": 370.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "FIX",
+      "action": "buy",
+      "shares": 0.197161,
+      "price": 50.72,
+      "value": 10.0,
+      "cash_after": 360.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "GWW",
+      "action": "buy",
+      "shares": 0.110099,
+      "price": 90.8273,
+      "value": 10.0,
+      "cash_after": 350.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "NDAQ",
+      "action": "buy",
+      "shares": 0.059469,
+      "price": 168.1542,
+      "value": 10.0,
+      "cash_after": 340.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "NEE",
+      "action": "buy",
+      "shares": 0.040704,
+      "price": 245.6774,
+      "value": 10.0,
+      "cash_after": 330.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "NEM",
+      "action": "buy",
+      "shares": 0.059469,
+      "price": 168.1542,
+      "value": 10.0,
+      "cash_after": 320.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "NKE",
+      "action": "buy",
+      "shares": 0.040704,
+      "price": 245.6774,
+      "value": 10.0,
+      "cash_after": 310.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "NWS",
+      "action": "buy",
+      "shares": 0.040704,
+      "price": 245.6774,
+      "value": 10.0,
+      "cash_after": 300.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "PEG",
+      "action": "buy",
+      "shares": 0.111254,
+      "price": 89.8841,
+      "value": 10.0,
+      "cash_after": 290.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "PG",
+      "action": "buy",
+      "shares": 0.222509,
+      "price": 89.8841,
+      "value": 20.0,
+      "cash_after": 270.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "PGR",
+      "action": "buy",
+      "shares": 0.111254,
+      "price": 89.8841,
+      "value": 10.0,
+      "cash_after": 260.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "PLD",
+      "action": "buy",
+      "shares": 0.111254,
+      "price": 89.8841,
+      "value": 10.0,
+      "cash_after": 250.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "PRU",
+      "action": "buy",
+      "shares": 0.111254,
+      "price": 89.8841,
+      "value": 10.0,
+      "cash_after": 240.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "PTC",
+      "action": "buy",
+      "shares": 0.111254,
+      "price": 89.8841,
+      "value": 10.0,
+      "cash_after": 230.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "SATS",
+      "action": "buy",
+      "shares": 0.095767,
+      "price": 104.42,
+      "value": 10.0,
+      "cash_after": 220.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "TROW",
+      "action": "buy",
+      "shares": 0.071109,
+      "price": 140.6298,
+      "value": 10.0,
+      "cash_after": 210.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "TSN",
+      "action": "buy",
+      "shares": 0.059895,
+      "price": 166.958,
+      "value": 10.0,
+      "cash_after": 200.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "TYL",
+      "action": "buy",
+      "shares": 0.059895,
+      "price": 166.958,
+      "value": 10.0,
+      "cash_after": 190.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "UBER",
+      "action": "buy",
+      "shares": 0.059895,
+      "price": 166.958,
+      "value": 10.0,
+      "cash_after": 180.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "USB",
+      "action": "buy",
+      "shares": 0.059895,
+      "price": 166.958,
+      "value": 10.0,
+      "cash_after": 170.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "VMC",
+      "action": "buy",
+      "shares": 0.110099,
+      "price": 90.8273,
+      "value": 10.0,
+      "cash_after": 160.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "VST",
+      "action": "buy",
+      "shares": 0.110099,
+      "price": 90.8273,
+      "value": 10.0,
+      "cash_after": 150.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "WAT",
+      "action": "buy",
+      "shares": 0.04045,
+      "price": 247.22,
+      "value": 10.0,
+      "cash_after": 140.7171
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "WEC",
+      "action": "sell",
+      "shares": 0.044383,
+      "price": 247.22,
+      "value": 10.9724,
+      "realized_pnl": 0.9724,
+      "cash_after": 151.6895
+    },
+    {
+      "date": "2025-03-12",
+      "ticker": "WM",
+      "action": "buy",
+      "shares": 0.092558,
+      "price": 108.0399,
+      "value": 10.0,
+      "cash_after": 141.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "NFLX",
+      "action": "buy",
+      "shares": 0.059442,
+      "price": 168.2318,
+      "value": 10.0,
+      "cash_after": 131.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "NTAP",
+      "action": "buy",
+      "shares": 0.059442,
+      "price": 168.2318,
+      "value": 10.0,
+      "cash_after": 121.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "NWSA",
+      "action": "buy",
+      "shares": 0.059442,
+      "price": 168.2318,
+      "value": 10.0,
+      "cash_after": 111.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "STZ",
+      "action": "buy",
+      "shares": 0.152091,
+      "price": 65.75,
+      "value": 10.0,
+      "cash_after": 101.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "ACGL",
+      "action": "buy",
+      "shares": 0.038923,
+      "price": 256.916,
+      "value": 10.0,
+      "cash_after": 91.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "AIG",
+      "action": "buy",
+      "shares": 0.061132,
+      "price": 163.58,
+      "value": 10.0,
+      "cash_after": 81.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "AMCR",
+      "action": "buy",
+      "shares": 0.061132,
+      "price": 163.58,
+      "value": 10.0,
+      "cash_after": 71.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "AMT",
+      "action": "buy",
+      "shares": 0.061132,
+      "price": 163.58,
+      "value": 10.0,
+      "cash_after": 61.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "AVGO",
+      "action": "buy",
+      "shares": 0.255815,
+      "price": 39.0908,
+      "value": 10.0,
+      "cash_after": 51.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "AXP",
+      "action": "buy",
+      "shares": 0.061132,
+      "price": 163.58,
+      "value": 10.0,
+      "cash_after": 41.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "BR",
+      "action": "buy",
+      "shares": 0.255815,
+      "price": 39.0908,
+      "value": 10.0,
+      "cash_after": 31.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "COST",
+      "action": "buy",
+      "shares": 0.254934,
+      "price": 39.2258,
+      "value": 10.0,
+      "cash_after": 21.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "EW",
+      "action": "buy",
+      "shares": 0.099295,
+      "price": 100.71,
+      "value": 10.0,
+      "cash_after": 11.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "FANG",
+      "action": "buy",
+      "shares": 0.188537,
+      "price": 53.04,
+      "value": 10.0,
+      "cash_after": 1.6895
+    },
+    {
+      "date": "2025-03-13",
+      "ticker": "GWW",
+      "action": "buy",
+      "shares": 0.019309,
+      "price": 87.4962,
+      "value": 1.6895,
+      "cash_after": 0.0
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "STZ",
+      "action": "sell",
+      "shares": 0.152091,
+      "price": 63.36,
+      "value": 9.6365,
+      "realized_pnl": -0.3635,
+      "cash_after": 9.6365
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "ACGL",
+      "action": "buy",
+      "shares": 0.036725,
+      "price": 262.3977,
+      "value": 9.6365,
+      "cash_after": 0.0
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "NEM",
+      "action": "sell",
+      "shares": 0.118839,
+      "price": 169.6782,
+      "value": 20.1644,
+      "realized_pnl": 0.1644,
+      "cash_after": 20.1644
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "NKE",
+      "action": "buy",
+      "shares": 0.041385,
+      "price": 241.6356,
+      "value": 10.0,
+      "cash_after": 10.1644
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "NWS",
+      "action": "buy",
+      "shares": 0.041385,
+      "price": 241.6356,
+      "value": 10.0,
+      "cash_after": 0.1644
+    },
+    {
+      "date": "2025-03-17",
+      "ticker": "VST",
+      "action": "buy",
+      "shares": 0.001857,
+      "price": 88.5117,
+      "value": 0.1644,
+      "cash_after": 0.0
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2025-03-10",
+      "cash": 500.0,
+      "positions": {
+        "CMI": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 95.1552,
+          "market_value": 10.133,
+          "unrealized_pnl": 0.133
+        },
+        "NFLX": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 168.6589,
+          "market_value": 10.0133,
+          "unrealized_pnl": 0.0133
+        },
+        "NTAP": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 168.6589,
+          "market_value": 10.0133,
+          "unrealized_pnl": 0.0133
+        },
+        "NWSA": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 168.6589,
+          "market_value": 10.0133,
+          "unrealized_pnl": 0.0133
+        },
+        "STZ": {
+          "shares": 0.161865,
+          "avg_cost": 61.78,
+          "current_price": 65.53,
+          "market_value": 10.607,
+          "unrealized_pnl": 0.607
+        },
+        "ACGL": {
+          "shares": 0.039254,
+          "avg_cost": 254.749,
+          "current_price": 258.5684,
+          "market_value": 10.1499,
+          "unrealized_pnl": 0.1499
+        },
+        "ADSK": {
+          "shares": 0.080148,
+          "avg_cost": 124.7687,
+          "current_price": 124.1088,
+          "market_value": 9.9471,
+          "unrealized_pnl": -0.0529
+        },
+        "AIG": {
+          "shares": 0.060606,
+          "avg_cost": 165.0,
+          "current_price": 163.39,
+          "market_value": 9.9024,
+          "unrealized_pnl": -0.0976
+        },
+        "AMCR": {
+          "shares": 0.060606,
+          "avg_cost": 165.0,
+          "current_price": 163.39,
+          "market_value": 9.9024,
+          "unrealized_pnl": -0.0976
+        },
+        "AMT": {
+          "shares": 0.060606,
+          "avg_cost": 165.0,
+          "current_price": 163.39,
+          "market_value": 9.9024,
+          "unrealized_pnl": -0.0976
+        },
+        "AVGO": {
+          "shares": 0.257555,
+          "avg_cost": 38.8267,
+          "current_price": 38.9538,
+          "market_value": 10.0327,
+          "unrealized_pnl": 0.0327
+        },
+        "AXP": {
+          "shares": 0.060606,
+          "avg_cost": 165.0,
+          "current_price": 163.39,
+          "market_value": 9.9024,
+          "unrealized_pnl": -0.0976
+        },
+        "AZO": {
+          "shares": 0.550619,
+          "avg_cost": 18.1614,
+          "current_price": 18.0853,
+          "market_value": 9.9581,
+          "unrealized_pnl": -0.0419
+        },
+        "BR": {
+          "shares": 0.257555,
+          "avg_cost": 38.8267,
+          "current_price": 38.9538,
+          "market_value": 10.0327,
+          "unrealized_pnl": 0.0327
+        },
+        "CARR": {
+          "shares": 0.067568,
+          "avg_cost": 148.0,
+          "current_price": 148.15,
+          "market_value": 10.0101,
+          "unrealized_pnl": 0.0101
+        },
+        "COST": {
+          "shares": 0.261362,
+          "avg_cost": 38.261,
+          "current_price": 38.4058,
+          "market_value": 10.0378,
+          "unrealized_pnl": 0.0378
+        },
+        "CRH": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 95.1552,
+          "market_value": 10.133,
+          "unrealized_pnl": 0.133
+        },
+        "CTRA": {
+          "shares": 0.157803,
+          "avg_cost": 63.37,
+          "current_price": 62.81,
+          "market_value": 9.9116,
+          "unrealized_pnl": -0.0884
+        },
+        "DELL": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 52.82,
+          "market_value": 9.966,
+          "unrealized_pnl": -0.034
+        },
+        "EIX": {
+          "shares": 0.098493,
+          "avg_cost": 101.53,
+          "current_price": 101.65,
+          "market_value": 10.0118,
+          "unrealized_pnl": 0.0118
+        },
+        "ETN": {
+          "shares": 0.098493,
+          "avg_cost": 101.53,
+          "current_price": 101.65,
+          "market_value": 10.0118,
+          "unrealized_pnl": 0.0118
+        },
+        "EW": {
+          "shares": 0.098493,
+          "avg_cost": 101.53,
+          "current_price": 101.65,
+          "market_value": 10.0118,
+          "unrealized_pnl": 0.0118
+        },
+        "FANG": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 52.82,
+          "market_value": 9.966,
+          "unrealized_pnl": -0.034
+        },
+        "FIX": {
+          "shares": 0.200763,
+          "avg_cost": 49.81,
+          "current_price": 49.83,
+          "market_value": 10.004,
+          "unrealized_pnl": 0.004
+        },
+        "GWW": {
+          "shares": 0.108117,
+          "avg_cost": 92.4928,
+          "current_price": 92.4179,
+          "market_value": 9.9919,
+          "unrealized_pnl": -0.0081
+        },
+        "MCK": {
+          "shares": 0.125302,
+          "avg_cost": 79.8074,
+          "current_price": 79.8457,
+          "market_value": 10.0048,
+          "unrealized_pnl": 0.0048
+        },
+        "NDAQ": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 168.6589,
+          "market_value": 10.0133,
+          "unrealized_pnl": 0.0133
+        },
+        "NEE": {
+          "shares": 0.039607,
+          "avg_cost": 252.483,
+          "current_price": 254.811,
+          "market_value": 10.0922,
+          "unrealized_pnl": 0.0922
+        },
+        "NEM": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 168.6589,
+          "market_value": 10.0133,
+          "unrealized_pnl": 0.0133
+        },
+        "NKE": {
+          "shares": 0.039607,
+          "avg_cost": 252.483,
+          "current_price": 254.811,
+          "market_value": 10.0922,
+          "unrealized_pnl": 0.0922
+        },
+        "NWS": {
+          "shares": 0.039607,
+          "avg_cost": 252.483,
+          "current_price": 254.811,
+          "market_value": 10.0922,
+          "unrealized_pnl": 0.0922
+        },
+        "PEG": {
+          "shares": 0.119515,
+          "avg_cost": 83.6712,
+          "current_price": 83.7798,
+          "market_value": 10.013,
+          "unrealized_pnl": 0.013
+        },
+        "PG": {
+          "shares": 0.239031,
+          "avg_cost": 83.6712,
+          "current_price": 83.7798,
+          "market_value": 20.026,
+          "unrealized_pnl": 0.026
+        },
+        "PGR": {
+          "shares": 0.119515,
+          "avg_cost": 83.6712,
+          "current_price": 83.7798,
+          "market_value": 10.013,
+          "unrealized_pnl": 0.013
+        },
+        "PLD": {
+          "shares": 0.119515,
+          "avg_cost": 83.6712,
+          "current_price": 83.7798,
+          "market_value": 10.013,
+          "unrealized_pnl": 0.013
+        },
+        "PRU": {
+          "shares": 0.119515,
+          "avg_cost": 83.6712,
+          "current_price": 83.7798,
+          "market_value": 10.013,
+          "unrealized_pnl": 0.013
+        },
+        "PTC": {
+          "shares": 0.119515,
+          "avg_cost": 83.6712,
+          "current_price": 83.7798,
+          "market_value": 10.013,
+          "unrealized_pnl": 0.013
+        },
+        "SATS": {
+          "shares": 0.098493,
+          "avg_cost": 101.53,
+          "current_price": 101.65,
+          "market_value": 10.0118,
+          "unrealized_pnl": 0.0118
+        },
+        "T": {
+          "shares": 0.0689,
+          "avg_cost": 145.1376,
+          "current_price": 145.6449,
+          "market_value": 10.035,
+          "unrealized_pnl": 0.035
+        },
+        "TROW": {
+          "shares": 0.073513,
+          "avg_cost": 136.0307,
+          "current_price": 135.8234,
+          "market_value": 9.9848,
+          "unrealized_pnl": -0.0152
+        },
+        "TSN": {
+          "shares": 0.0625,
+          "avg_cost": 160.0,
+          "current_price": 156.766,
+          "market_value": 9.7979,
+          "unrealized_pnl": -0.2021
+        },
+        "TYL": {
+          "shares": 0.0625,
+          "avg_cost": 160.0,
+          "current_price": 156.766,
+          "market_value": 9.7979,
+          "unrealized_pnl": -0.2021
+        },
+        "UBER": {
+          "shares": 0.0625,
+          "avg_cost": 160.0,
+          "current_price": 156.766,
+          "market_value": 9.7979,
+          "unrealized_pnl": -0.2021
+        },
+        "USB": {
+          "shares": 0.0625,
+          "avg_cost": 160.0,
+          "current_price": 156.766,
+          "market_value": 9.7979,
+          "unrealized_pnl": -0.2021
+        },
+        "VMC": {
+          "shares": 0.108117,
+          "avg_cost": 92.4928,
+          "current_price": 92.4179,
+          "market_value": 9.9919,
+          "unrealized_pnl": -0.0081
+        },
+        "VST": {
+          "shares": 0.108117,
+          "avg_cost": 92.4928,
+          "current_price": 92.4179,
+          "market_value": 9.9919,
+          "unrealized_pnl": -0.0081
+        },
+        "WAT": {
+          "shares": 0.044383,
+          "avg_cost": 225.31,
+          "current_price": 222.15,
+          "market_value": 9.8597,
+          "unrealized_pnl": -0.1403
+        },
+        "WEC": {
+          "shares": 0.044383,
+          "avg_cost": 225.31,
+          "current_price": 222.15,
+          "market_value": 9.8597,
+          "unrealized_pnl": -0.1403
+        },
+        "WM": {
+          "shares": 0.091803,
+          "avg_cost": 108.9291,
+          "current_price": 108.8622,
+          "market_value": 9.9939,
+          "unrealized_pnl": -0.0061
+        }
+      },
+      "total_value": 999.8852,
+      "total_return_pct": -0.0115,
+      "num_positions": 49
+    },
+    {
+      "date": "2025-03-11",
+      "cash": 141.6895,
+      "positions": {
+        "CMI": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 91.837,
+          "market_value": 9.7797,
+          "unrealized_pnl": -0.2203
+        },
+        "NFLX": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 166.1545,
+          "market_value": 9.8646,
+          "unrealized_pnl": -0.1354
+        },
+        "NTAP": {
+          "shares": 0.05937,
+          "avg_cost": 168.4357,
+          "current_price": 166.1545,
+          "market_value": 9.8646,
+          "unrealized_pnl": -0.1354
+        },
+        "NWSA": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 166.1545,
+          "market_value": 19.7457,
+          "unrealized_pnl": -0.2543
+        },
+        "ACGL": {
+          "shares": 0.078098,
+          "avg_cost": 256.0876,
+          "current_price": 252.7008,
+          "market_value": 19.7355,
+          "unrealized_pnl": -0.2645
+        },
+        "ADSK": {
+          "shares": 0.15602,
+          "avg_cost": 128.1884,
+          "current_price": 128.4522,
+          "market_value": 20.0412,
+          "unrealized_pnl": 0.0412
+        },
+        "AIG": {
+          "shares": 0.060606,
+          "avg_cost": 165.0,
+          "current_price": 165.14,
+          "market_value": 10.0085,
+          "unrealized_pnl": 0.0085
+        },
+        "AMCR": {
+          "shares": 0.11982,
+          "avg_cost": 166.9175,
+          "current_price": 165.14,
+          "market_value": 19.787,
+          "unrealized_pnl": -0.213
+        },
+        "AMT": {
+          "shares": 0.11982,
+          "avg_cost": 166.9175,
+          "current_price": 165.14,
+          "market_value": 19.787,
+          "unrealized_pnl": -0.213
+        },
+        "AVGO": {
+          "shares": 0.511212,
+          "avg_cost": 39.1227,
+          "current_price": 38.7387,
+          "market_value": 19.8037,
+          "unrealized_pnl": -0.1963
+        },
+        "AXP": {
+          "shares": 0.11982,
+          "avg_cost": 166.9175,
+          "current_price": 165.14,
+          "market_value": 19.787,
+          "unrealized_pnl": -0.213
+        },
+        "AZO": {
+          "shares": 0.550619,
+          "avg_cost": 18.1614,
+          "current_price": 18.2565,
+          "market_value": 10.0524,
+          "unrealized_pnl": 0.0524
+        },
+        "BR": {
+          "shares": 0.511212,
+          "avg_cost": 39.1227,
+          "current_price": 38.7387,
+          "market_value": 19.8037,
+          "unrealized_pnl": -0.1963
+        },
+        "CARR": {
+          "shares": 0.067568,
+          "avg_cost": 148.0,
+          "current_price": 154.06,
+          "market_value": 10.4095,
+          "unrealized_pnl": 0.4095
+        },
+        "COST": {
+          "shares": 0.517051,
+          "avg_cost": 38.6809,
+          "current_price": 38.5022,
+          "market_value": 19.9076,
+          "unrealized_pnl": -0.0924
+        },
+        "CRH": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 91.837,
+          "market_value": 9.7797,
+          "unrealized_pnl": -0.2203
+        },
+        "CTRA": {
+          "shares": 0.157803,
+          "avg_cost": 63.37,
+          "current_price": 66.48,
+          "market_value": 10.4908,
+          "unrealized_pnl": 0.4908
+        },
+        "DELL": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 52.91,
+          "market_value": 9.983,
+          "unrealized_pnl": -0.017
+        },
+        "EIX": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.96,
+          "market_value": 19.8068,
+          "unrealized_pnl": -0.1932
+        },
+        "ETN": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.96,
+          "market_value": 19.8068,
+          "unrealized_pnl": -0.1932
+        },
+        "EW": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.96,
+          "market_value": 19.8068,
+          "unrealized_pnl": -0.1932
+        },
+        "FANG": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 52.91,
+          "market_value": 9.983,
+          "unrealized_pnl": -0.017
+        },
+        "FIX": {
+          "shares": 0.397924,
+          "avg_cost": 50.2609,
+          "current_price": 49.98,
+          "market_value": 19.8882,
+          "unrealized_pnl": -0.1118
+        },
+        "GWW": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 90.1068,
+          "market_value": 19.6627,
+          "unrealized_pnl": -0.3373
+        },
+        "MCK": {
+          "shares": 0.125302,
+          "avg_cost": 79.8074,
+          "current_price": 80.9084,
+          "market_value": 10.138,
+          "unrealized_pnl": 0.138
+        },
+        "NDAQ": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 166.1545,
+          "market_value": 19.7457,
+          "unrealized_pnl": -0.2543
+        },
+        "NEE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 244.0032,
+          "market_value": 19.596,
+          "unrealized_pnl": -0.404
+        },
+        "NEM": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 166.1545,
+          "market_value": 19.7457,
+          "unrealized_pnl": -0.2543
+        },
+        "NKE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 244.0032,
+          "market_value": 19.596,
+          "unrealized_pnl": -0.404
+        },
+        "NWS": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 244.0032,
+          "market_value": 19.596,
+          "unrealized_pnl": -0.404
+        },
+        "PEG": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 87.5333,
+          "market_value": 20.2,
+          "unrealized_pnl": 0.2
+        },
+        "PG": {
+          "shares": 0.46154,
+          "avg_cost": 86.6664,
+          "current_price": 87.5333,
+          "market_value": 40.4001,
+          "unrealized_pnl": 0.4001
+        },
+        "PGR": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 87.5333,
+          "market_value": 20.2,
+          "unrealized_pnl": 0.2
+        },
+        "PLD": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 87.5333,
+          "market_value": 20.2,
+          "unrealized_pnl": 0.2
+        },
+        "PRU": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 87.5333,
+          "market_value": 20.2,
+          "unrealized_pnl": 0.2
+        },
+        "PTC": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 87.5333,
+          "market_value": 20.2,
+          "unrealized_pnl": 0.2
+        },
+        "SATS": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.96,
+          "market_value": 19.8068,
+          "unrealized_pnl": -0.1932
+        },
+        "T": {
+          "shares": 0.0689,
+          "avg_cost": 145.1376,
+          "current_price": 139.9092,
+          "market_value": 9.6398,
+          "unrealized_pnl": -0.3602
+        },
+        "TROW": {
+          "shares": 0.144621,
+          "avg_cost": 138.292,
+          "current_price": 137.8763,
+          "market_value": 19.9399,
+          "unrealized_pnl": -0.0601
+        },
+        "TSN": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 161.68,
+          "market_value": 19.7889,
+          "unrealized_pnl": -0.2111
+        },
+        "TYL": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 161.68,
+          "market_value": 19.7889,
+          "unrealized_pnl": -0.2111
+        },
+        "UBER": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 161.68,
+          "market_value": 19.7889,
+          "unrealized_pnl": -0.2111
+        },
+        "USB": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 161.68,
+          "market_value": 19.7889,
+          "unrealized_pnl": -0.2111
+        },
+        "VMC": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 90.1068,
+          "market_value": 19.6627,
+          "unrealized_pnl": -0.3373
+        },
+        "VST": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 90.1068,
+          "market_value": 19.6627,
+          "unrealized_pnl": -0.3373
+        },
+        "WAT": {
+          "shares": 0.084833,
+          "avg_cost": 235.757,
+          "current_price": 230.58,
+          "market_value": 19.5608,
+          "unrealized_pnl": -0.4392
+        },
+        "WM": {
+          "shares": 0.184361,
+          "avg_cost": 108.4827,
+          "current_price": 107.82,
+          "market_value": 19.8778,
+          "unrealized_pnl": -0.1222
+        },
+        "CPB": {
+          "shares": 0.072692,
+          "avg_cost": 137.5665,
+          "current_price": 133.5918,
+          "market_value": 9.7111,
+          "unrealized_pnl": -0.2889
+        },
+        "ED": {
+          "shares": 0.197161,
+          "avg_cost": 50.72,
+          "current_price": 49.98,
+          "market_value": 9.8541,
+          "unrealized_pnl": -0.1459
+        }
+      },
+      "total_value": 995.9633,
+      "total_return_pct": -0.4037,
+      "num_positions": 49
+    },
+    {
+      "date": "2025-03-12",
+      "cash": 0.0,
+      "positions": {
+        "CMI": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 88.6359,
+          "market_value": 9.4388,
+          "unrealized_pnl": -0.5612
+        },
+        "NFLX": {
+          "shares": 0.118812,
+          "avg_cost": 168.3337,
+          "current_price": 167.0282,
+          "market_value": 19.8449,
+          "unrealized_pnl": -0.1551
+        },
+        "NTAP": {
+          "shares": 0.118812,
+          "avg_cost": 168.3337,
+          "current_price": 167.0282,
+          "market_value": 19.8449,
+          "unrealized_pnl": -0.1551
+        },
+        "NWSA": {
+          "shares": 0.178281,
+          "avg_cost": 168.2738,
+          "current_price": 167.0282,
+          "market_value": 29.7779,
+          "unrealized_pnl": -0.2221
+        },
+        "ACGL": {
+          "shares": 0.117021,
+          "avg_cost": 256.3632,
+          "current_price": 258.0044,
+          "market_value": 30.1921,
+          "unrealized_pnl": 0.1921
+        },
+        "ADSK": {
+          "shares": 0.15602,
+          "avg_cost": 128.1884,
+          "current_price": 132.8843,
+          "market_value": 20.7327,
+          "unrealized_pnl": 0.7327
+        },
+        "AIG": {
+          "shares": 0.121738,
+          "avg_cost": 164.2869,
+          "current_price": 164.57,
+          "market_value": 20.0345,
+          "unrealized_pnl": 0.0345
+        },
+        "AMCR": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 164.57,
+          "market_value": 29.7793,
+          "unrealized_pnl": -0.2207
+        },
+        "AMT": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 164.57,
+          "market_value": 29.7793,
+          "unrealized_pnl": -0.2207
+        },
+        "AVGO": {
+          "shares": 0.767027,
+          "avg_cost": 39.1121,
+          "current_price": 39.0321,
+          "market_value": 29.9387,
+          "unrealized_pnl": -0.0613
+        },
+        "AXP": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 164.57,
+          "market_value": 29.7793,
+          "unrealized_pnl": -0.2207
+        },
+        "AZO": {
+          "shares": 0.550619,
+          "avg_cost": 18.1614,
+          "current_price": 18.6844,
+          "market_value": 10.288,
+          "unrealized_pnl": 0.288
+        },
+        "BR": {
+          "shares": 0.767027,
+          "avg_cost": 39.1121,
+          "current_price": 39.0321,
+          "market_value": 29.9387,
+          "unrealized_pnl": -0.0613
+        },
+        "CARR": {
+          "shares": 0.067568,
+          "avg_cost": 148.0,
+          "current_price": 158.8,
+          "market_value": 10.7297,
+          "unrealized_pnl": 0.7297
+        },
+        "COST": {
+          "shares": 0.771986,
+          "avg_cost": 38.8608,
+          "current_price": 39.0425,
+          "market_value": 30.1402,
+          "unrealized_pnl": 0.1402
+        },
+        "CRH": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 88.6359,
+          "market_value": 9.4388,
+          "unrealized_pnl": -0.5612
+        },
+        "CTRA": {
+          "shares": 0.157803,
+          "avg_cost": 63.37,
+          "current_price": 67.32,
+          "market_value": 10.6233,
+          "unrealized_pnl": 0.6233
+        },
+        "DELL": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 53.04,
+          "market_value": 10.0075,
+          "unrealized_pnl": 0.0075
+        },
+        "EIX": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 102.03,
+          "market_value": 19.8204,
+          "unrealized_pnl": -0.1796
+        },
+        "ETN": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 102.03,
+          "market_value": 19.8204,
+          "unrealized_pnl": -0.1796
+        },
+        "EW": {
+          "shares": 0.293555,
+          "avg_cost": 102.1954,
+          "current_price": 102.03,
+          "market_value": 29.9514,
+          "unrealized_pnl": -0.0486
+        },
+        "FANG": {
+          "shares": 0.377216,
+          "avg_cost": 53.02,
+          "current_price": 53.04,
+          "market_value": 20.0075,
+          "unrealized_pnl": 0.0075
+        },
+        "FIX": {
+          "shares": 0.397924,
+          "avg_cost": 50.2609,
+          "current_price": 50.05,
+          "market_value": 19.9161,
+          "unrealized_pnl": -0.0839
+        },
+        "GWW": {
+          "shares": 0.237525,
+          "avg_cost": 91.3146,
+          "current_price": 87.281,
+          "market_value": 20.7314,
+          "unrealized_pnl": -0.9581
+        },
+        "MCK": {
+          "shares": 0.125302,
+          "avg_cost": 79.8074,
+          "current_price": 82.7657,
+          "market_value": 10.3707,
+          "unrealized_pnl": 0.3707
+        },
+        "NDAQ": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 167.0282,
+          "market_value": 19.8495,
+          "unrealized_pnl": -0.1505
+        },
+        "NEE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 241.5266,
+          "market_value": 19.3971,
+          "unrealized_pnl": -0.6029
+        },
+        "NEM": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 167.0282,
+          "market_value": 19.8495,
+          "unrealized_pnl": -0.1505
+        },
+        "NKE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 241.5266,
+          "market_value": 19.3971,
+          "unrealized_pnl": -0.6029
+        },
+        "NWS": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 241.5266,
+          "market_value": 19.3971,
+          "unrealized_pnl": -0.6029
+        },
+        "PEG": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 91.336,
+          "market_value": 21.0776,
+          "unrealized_pnl": 1.0776
+        },
+        "PG": {
+          "shares": 0.46154,
+          "avg_cost": 86.6664,
+          "current_price": 91.336,
+          "market_value": 42.1552,
+          "unrealized_pnl": 2.1552
+        },
+        "PGR": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 91.336,
+          "market_value": 21.0776,
+          "unrealized_pnl": 1.0776
+        },
+        "PLD": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 91.336,
+          "market_value": 21.0776,
+          "unrealized_pnl": 1.0776
+        },
+        "PRU": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 91.336,
+          "market_value": 21.0776,
+          "unrealized_pnl": 1.0776
+        },
+        "PTC": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 91.336,
+          "market_value": 21.0776,
+          "unrealized_pnl": 1.0776
+        },
+        "SATS": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 102.03,
+          "market_value": 19.8204,
+          "unrealized_pnl": -0.1796
+        },
+        "T": {
+          "shares": 0.0689,
+          "avg_cost": 145.1376,
+          "current_price": 137.4023,
+          "market_value": 9.467,
+          "unrealized_pnl": -0.533
+        },
+        "TROW": {
+          "shares": 0.144621,
+          "avg_cost": 138.292,
+          "current_price": 139.3863,
+          "market_value": 20.1583,
+          "unrealized_pnl": 0.1583
+        },
+        "TSN": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.628,
+          "market_value": 20.6393,
+          "unrealized_pnl": 0.6393
+        },
+        "TYL": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.628,
+          "market_value": 20.6393,
+          "unrealized_pnl": 0.6393
+        },
+        "UBER": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.628,
+          "market_value": 20.6393,
+          "unrealized_pnl": 0.6393
+        },
+        "USB": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.628,
+          "market_value": 20.6393,
+          "unrealized_pnl": 0.6393
+        },
+        "VMC": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 87.281,
+          "market_value": 19.0461,
+          "unrealized_pnl": -0.9539
+        },
+        "VST": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 87.281,
+          "market_value": 19.0461,
+          "unrealized_pnl": -0.9539
+        },
+        "WAT": {
+          "shares": 0.084833,
+          "avg_cost": 235.757,
+          "current_price": 248.09,
+          "market_value": 21.0462,
+          "unrealized_pnl": 1.0462
+        },
+        "WM": {
+          "shares": 0.184361,
+          "avg_cost": 108.4827,
+          "current_price": 102.58,
+          "market_value": 18.9118,
+          "unrealized_pnl": -1.0882
+        },
+        "CPB": {
+          "shares": 0.072692,
+          "avg_cost": 137.5665,
+          "current_price": 135.9128,
+          "market_value": 9.8798,
+          "unrealized_pnl": -0.1202
+        },
+        "ED": {
+          "shares": 0.197161,
+          "avg_cost": 50.72,
+          "current_price": 50.05,
+          "market_value": 9.8679,
+          "unrealized_pnl": -0.1321
+        },
+        "STZ": {
+          "shares": 0.152091,
+          "avg_cost": 65.75,
+          "current_price": 66.4,
+          "market_value": 10.0989,
+          "unrealized_pnl": 0.0989
+        }
+      },
+      "total_value": 1006.2592,
+      "total_return_pct": 0.6259,
+      "num_positions": 50
+    },
+    {
+      "date": "2025-03-13",
+      "cash": 0.0,
+      "positions": {
+        "CMI": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 88.3431,
+          "market_value": 9.4076,
+          "unrealized_pnl": -0.5924
+        },
+        "NFLX": {
+          "shares": 0.118812,
+          "avg_cost": 168.3337,
+          "current_price": 165.475,
+          "market_value": 19.6604,
+          "unrealized_pnl": -0.3396
+        },
+        "NTAP": {
+          "shares": 0.118812,
+          "avg_cost": 168.3337,
+          "current_price": 165.475,
+          "market_value": 19.6604,
+          "unrealized_pnl": -0.3396
+        },
+        "NWSA": {
+          "shares": 0.178281,
+          "avg_cost": 168.2738,
+          "current_price": 165.475,
+          "market_value": 29.501,
+          "unrealized_pnl": -0.499
+        },
+        "ACGL": {
+          "shares": 0.117021,
+          "avg_cost": 256.3632,
+          "current_price": 253.7299,
+          "market_value": 29.6919,
+          "unrealized_pnl": -0.3081
+        },
+        "ADSK": {
+          "shares": 0.15602,
+          "avg_cost": 128.1884,
+          "current_price": 128.275,
+          "market_value": 20.0135,
+          "unrealized_pnl": 0.0135
+        },
+        "AIG": {
+          "shares": 0.121738,
+          "avg_cost": 164.2869,
+          "current_price": 160.51,
+          "market_value": 19.5402,
+          "unrealized_pnl": -0.4598
+        },
+        "AMCR": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 160.51,
+          "market_value": 29.0446,
+          "unrealized_pnl": -0.9554
+        },
+        "AMT": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 160.51,
+          "market_value": 29.0446,
+          "unrealized_pnl": -0.9554
+        },
+        "AVGO": {
+          "shares": 0.767027,
+          "avg_cost": 39.1121,
+          "current_price": 38.7974,
+          "market_value": 29.7586,
+          "unrealized_pnl": -0.2414
+        },
+        "AXP": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 160.51,
+          "market_value": 29.0446,
+          "unrealized_pnl": -0.9554
+        },
+        "AZO": {
+          "shares": 0.550619,
+          "avg_cost": 18.1614,
+          "current_price": 18.1043,
+          "market_value": 9.9686,
+          "unrealized_pnl": -0.0314
+        },
+        "BR": {
+          "shares": 0.767027,
+          "avg_cost": 39.1121,
+          "current_price": 38.7974,
+          "market_value": 29.7586,
+          "unrealized_pnl": -0.2414
+        },
+        "CARR": {
+          "shares": 0.067568,
+          "avg_cost": 148.0,
+          "current_price": 159.32,
+          "market_value": 10.7649,
+          "unrealized_pnl": 0.7649
+        },
+        "COST": {
+          "shares": 0.771986,
+          "avg_cost": 38.8608,
+          "current_price": 38.3286,
+          "market_value": 29.5891,
+          "unrealized_pnl": -0.4109
+        },
+        "CRH": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 88.3431,
+          "market_value": 9.4076,
+          "unrealized_pnl": -0.5924
+        },
+        "CTRA": {
+          "shares": 0.157803,
+          "avg_cost": 63.37,
+          "current_price": 62.4,
+          "market_value": 9.8469,
+          "unrealized_pnl": -0.1531
+        },
+        "DELL": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 52.3,
+          "market_value": 9.8679,
+          "unrealized_pnl": -0.1321
+        },
+        "EIX": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 98.68,
+          "market_value": 19.1696,
+          "unrealized_pnl": -0.8304
+        },
+        "ETN": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 98.68,
+          "market_value": 19.1696,
+          "unrealized_pnl": -0.8304
+        },
+        "EW": {
+          "shares": 0.293555,
+          "avg_cost": 102.1954,
+          "current_price": 98.68,
+          "market_value": 28.968,
+          "unrealized_pnl": -1.032
+        },
+        "FANG": {
+          "shares": 0.377216,
+          "avg_cost": 53.02,
+          "current_price": 52.3,
+          "market_value": 19.7284,
+          "unrealized_pnl": -0.2716
+        },
+        "FIX": {
+          "shares": 0.397924,
+          "avg_cost": 50.2609,
+          "current_price": 48.73,
+          "market_value": 19.3908,
+          "unrealized_pnl": -0.6092
+        },
+        "GWW": {
+          "shares": 0.237525,
+          "avg_cost": 91.3146,
+          "current_price": 86.1208,
+          "market_value": 20.4558,
+          "unrealized_pnl": -1.2337
+        },
+        "MCK": {
+          "shares": 0.125302,
+          "avg_cost": 79.8074,
+          "current_price": 81.4732,
+          "market_value": 10.2087,
+          "unrealized_pnl": 0.2087
+        },
+        "NDAQ": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 165.475,
+          "market_value": 19.6649,
+          "unrealized_pnl": -0.3351
+        },
+        "NEE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 235.0677,
+          "market_value": 18.8784,
+          "unrealized_pnl": -1.1216
+        },
+        "NEM": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 165.475,
+          "market_value": 19.6649,
+          "unrealized_pnl": -0.3351
+        },
+        "NKE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 235.0677,
+          "market_value": 18.8784,
+          "unrealized_pnl": -1.1216
+        },
+        "NWS": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 235.0677,
+          "market_value": 18.8784,
+          "unrealized_pnl": -1.1216
+        },
+        "PEG": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 89.805,
+          "market_value": 20.7243,
+          "unrealized_pnl": 0.7243
+        },
+        "PG": {
+          "shares": 0.46154,
+          "avg_cost": 86.6664,
+          "current_price": 89.805,
+          "market_value": 41.4486,
+          "unrealized_pnl": 1.4486
+        },
+        "PGR": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 89.805,
+          "market_value": 20.7243,
+          "unrealized_pnl": 0.7243
+        },
+        "PLD": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 89.805,
+          "market_value": 20.7243,
+          "unrealized_pnl": 0.7243
+        },
+        "PRU": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 89.805,
+          "market_value": 20.7243,
+          "unrealized_pnl": 0.7243
+        },
+        "PTC": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 89.805,
+          "market_value": 20.7243,
+          "unrealized_pnl": 0.7243
+        },
+        "SATS": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 98.68,
+          "market_value": 19.1696,
+          "unrealized_pnl": -0.8304
+        },
+        "T": {
+          "shares": 0.0689,
+          "avg_cost": 145.1376,
+          "current_price": 139.041,
+          "market_value": 9.5799,
+          "unrealized_pnl": -0.4201
+        },
+        "TROW": {
+          "shares": 0.144621,
+          "avg_cost": 138.292,
+          "current_price": 137.9848,
+          "market_value": 19.9556,
+          "unrealized_pnl": -0.0444
+        },
+        "TSN": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 162.324,
+          "market_value": 19.8677,
+          "unrealized_pnl": -0.1323
+        },
+        "TYL": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 162.324,
+          "market_value": 19.8677,
+          "unrealized_pnl": -0.1323
+        },
+        "UBER": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 162.324,
+          "market_value": 19.8677,
+          "unrealized_pnl": -0.1323
+        },
+        "USB": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 162.324,
+          "market_value": 19.8677,
+          "unrealized_pnl": -0.1323
+        },
+        "VMC": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 86.1208,
+          "market_value": 18.7929,
+          "unrealized_pnl": -1.2071
+        },
+        "VST": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 86.1208,
+          "market_value": 18.7929,
+          "unrealized_pnl": -1.2071
+        },
+        "WAT": {
+          "shares": 0.084833,
+          "avg_cost": 235.757,
+          "current_price": 240.68,
+          "market_value": 20.4176,
+          "unrealized_pnl": 0.4176
+        },
+        "WM": {
+          "shares": 0.184361,
+          "avg_cost": 108.4827,
+          "current_price": 99.9218,
+          "market_value": 18.4217,
+          "unrealized_pnl": -1.5783
+        },
+        "CPB": {
+          "shares": 0.072692,
+          "avg_cost": 137.5665,
+          "current_price": 132.0348,
+          "market_value": 9.5979,
+          "unrealized_pnl": -0.4021
+        },
+        "ED": {
+          "shares": 0.197161,
+          "avg_cost": 50.72,
+          "current_price": 48.73,
+          "market_value": 9.6076,
+          "unrealized_pnl": -0.3924
+        },
+        "STZ": {
+          "shares": 0.152091,
+          "avg_cost": 65.75,
+          "current_price": 62.31,
+          "market_value": 9.4768,
+          "unrealized_pnl": -0.5232
+        }
+      },
+      "total_value": 984.9803,
+      "total_return_pct": -1.502,
+      "num_positions": 50
+    },
+    {
+      "date": "2025-03-14",
+      "cash": 0.0,
+      "positions": {
+        "CMI": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 87.6599,
+          "market_value": 9.3349,
+          "unrealized_pnl": -0.6651
+        },
+        "NFLX": {
+          "shares": 0.118812,
+          "avg_cost": 168.3337,
+          "current_price": 170.445,
+          "market_value": 20.2508,
+          "unrealized_pnl": 0.2508
+        },
+        "NTAP": {
+          "shares": 0.118812,
+          "avg_cost": 168.3337,
+          "current_price": 170.445,
+          "market_value": 20.2508,
+          "unrealized_pnl": 0.2508
+        },
+        "NWSA": {
+          "shares": 0.178281,
+          "avg_cost": 168.2738,
+          "current_price": 170.445,
+          "market_value": 30.3871,
+          "unrealized_pnl": 0.3871
+        },
+        "ACGL": {
+          "shares": 0.153746,
+          "avg_cost": 257.8046,
+          "current_price": 262.833,
+          "market_value": 40.4096,
+          "unrealized_pnl": 0.7731
+        },
+        "ADSK": {
+          "shares": 0.15602,
+          "avg_cost": 128.1884,
+          "current_price": 132.2934,
+          "market_value": 20.6405,
+          "unrealized_pnl": 0.6405
+        },
+        "AIG": {
+          "shares": 0.121738,
+          "avg_cost": 164.2869,
+          "current_price": 166.2,
+          "market_value": 20.2329,
+          "unrealized_pnl": 0.2329
+        },
+        "AMCR": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 166.2,
+          "market_value": 30.0742,
+          "unrealized_pnl": 0.0742
+        },
+        "AMT": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 166.2,
+          "market_value": 30.0742,
+          "unrealized_pnl": 0.0742
+        },
+        "AVGO": {
+          "shares": 0.767027,
+          "avg_cost": 39.1121,
+          "current_price": 39.9905,
+          "market_value": 30.6738,
+          "unrealized_pnl": 0.6738
+        },
+        "AXP": {
+          "shares": 0.180952,
+          "avg_cost": 165.7899,
+          "current_price": 166.2,
+          "market_value": 30.0742,
+          "unrealized_pnl": 0.0742
+        },
+        "AZO": {
+          "shares": 0.550619,
+          "avg_cost": 18.1614,
+          "current_price": 18.6463,
+          "market_value": 10.267,
+          "unrealized_pnl": 0.267
+        },
+        "BR": {
+          "shares": 0.767027,
+          "avg_cost": 39.1121,
+          "current_price": 39.9905,
+          "market_value": 30.6738,
+          "unrealized_pnl": 0.6738
+        },
+        "CARR": {
+          "shares": 0.067568,
+          "avg_cost": 148.0,
+          "current_price": 161.81,
+          "market_value": 10.9331,
+          "unrealized_pnl": 0.9331
+        },
+        "COST": {
+          "shares": 0.771986,
+          "avg_cost": 38.8608,
+          "current_price": 39.2644,
+          "market_value": 30.3115,
+          "unrealized_pnl": 0.3115
+        },
+        "CRH": {
+          "shares": 0.106489,
+          "avg_cost": 93.906,
+          "current_price": 87.6599,
+          "market_value": 9.3349,
+          "unrealized_pnl": -0.6651
+        },
+        "CTRA": {
+          "shares": 0.157803,
+          "avg_cost": 63.37,
+          "current_price": 64.3,
+          "market_value": 10.1468,
+          "unrealized_pnl": 0.1468
+        },
+        "DELL": {
+          "shares": 0.188679,
+          "avg_cost": 53.0,
+          "current_price": 52.65,
+          "market_value": 9.934,
+          "unrealized_pnl": -0.066
+        },
+        "EIX": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.8,
+          "market_value": 19.7757,
+          "unrealized_pnl": -0.2243
+        },
+        "ETN": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.8,
+          "market_value": 19.7757,
+          "unrealized_pnl": -0.2243
+        },
+        "EW": {
+          "shares": 0.293555,
+          "avg_cost": 102.1954,
+          "current_price": 101.8,
+          "market_value": 29.8839,
+          "unrealized_pnl": -0.1161
+        },
+        "FANG": {
+          "shares": 0.377216,
+          "avg_cost": 53.02,
+          "current_price": 52.65,
+          "market_value": 19.8604,
+          "unrealized_pnl": -0.1396
+        },
+        "FIX": {
+          "shares": 0.397924,
+          "avg_cost": 50.2609,
+          "current_price": 50.03,
+          "market_value": 19.9081,
+          "unrealized_pnl": -0.0919
+        },
+        "GWW": {
+          "shares": 0.237525,
+          "avg_cost": 91.3146,
+          "current_price": 88.2745,
+          "market_value": 20.9674,
+          "unrealized_pnl": -0.7221
+        },
+        "MCK": {
+          "shares": 0.125302,
+          "avg_cost": 79.8074,
+          "current_price": 82.9284,
+          "market_value": 10.3911,
+          "unrealized_pnl": 0.3911
+        },
+        "NDAQ": {
+          "shares": 0.118839,
+          "avg_cost": 168.2948,
+          "current_price": 170.445,
+          "market_value": 20.2555,
+          "unrealized_pnl": 0.2555
+        },
+        "NEE": {
+          "shares": 0.08031,
+          "avg_cost": 249.0337,
+          "current_price": 240.8332,
+          "market_value": 19.3414,
+          "unrealized_pnl": -0.6586
+        },
+        "NKE": {
+          "shares": 0.121695,
+          "avg_cost": 246.5179,
+          "current_price": 240.8332,
+          "market_value": 29.3082,
+          "unrealized_pnl": -0.6918
+        },
+        "NWS": {
+          "shares": 0.121695,
+          "avg_cost": 246.5179,
+          "current_price": 240.8332,
+          "market_value": 29.3082,
+          "unrealized_pnl": -0.6918
+        },
+        "PEG": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 94.2202,
+          "market_value": 21.7432,
+          "unrealized_pnl": 1.7432
+        },
+        "PG": {
+          "shares": 0.46154,
+          "avg_cost": 86.6664,
+          "current_price": 94.2202,
+          "market_value": 43.4864,
+          "unrealized_pnl": 3.4864
+        },
+        "PGR": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 94.2202,
+          "market_value": 21.7432,
+          "unrealized_pnl": 1.7432
+        },
+        "PLD": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 94.2202,
+          "market_value": 21.7432,
+          "unrealized_pnl": 1.7432
+        },
+        "PRU": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 94.2202,
+          "market_value": 21.7432,
+          "unrealized_pnl": 1.7432
+        },
+        "PTC": {
+          "shares": 0.23077,
+          "avg_cost": 86.6664,
+          "current_price": 94.2202,
+          "market_value": 21.7432,
+          "unrealized_pnl": 1.7432
+        },
+        "SATS": {
+          "shares": 0.19426,
+          "avg_cost": 102.9547,
+          "current_price": 101.8,
+          "market_value": 19.7757,
+          "unrealized_pnl": -0.2243
+        },
+        "T": {
+          "shares": 0.0689,
+          "avg_cost": 145.1376,
+          "current_price": 140.7774,
+          "market_value": 9.6996,
+          "unrealized_pnl": -0.3004
+        },
+        "TROW": {
+          "shares": 0.144621,
+          "avg_cost": 138.292,
+          "current_price": 140.5311,
+          "market_value": 20.3238,
+          "unrealized_pnl": 0.3238
+        },
+        "TSN": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.866,
+          "market_value": 20.6684,
+          "unrealized_pnl": 0.6684
+        },
+        "TYL": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.866,
+          "market_value": 20.6684,
+          "unrealized_pnl": 0.6684
+        },
+        "UBER": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.866,
+          "market_value": 20.6684,
+          "unrealized_pnl": 0.6684
+        },
+        "USB": {
+          "shares": 0.122395,
+          "avg_cost": 163.405,
+          "current_price": 168.866,
+          "market_value": 20.6684,
+          "unrealized_pnl": 0.6684
+        },
+        "VMC": {
+          "shares": 0.218216,
+          "avg_cost": 91.6525,
+          "current_price": 88.2745,
+          "market_value": 19.2629,
+          "unrealized_pnl": -0.7371
+        },
+        "VST": {
+          "shares": 0.220073,
+          "avg_cost": 91.626,
+          "current_price": 88.2745,
+          "market_value": 19.4268,
+          "unrealized_pnl": -0.7376
+        },
+        "WAT": {
+          "shares": 0.084833,
+          "avg_cost": 235.757,
+          "current_price": 249.98,
+          "market_value": 21.2066,
+          "unrealized_pnl": 1.2066
+        },
+        "WM": {
+          "shares": 0.184361,
+          "avg_cost": 108.4827,
+          "current_price": 100.1131,
+          "market_value": 18.457,
+          "unrealized_pnl": -1.543
+        },
+        "CPB": {
+          "shares": 0.072692,
+          "avg_cost": 137.5665,
+          "current_price": 136.2513,
+          "market_value": 9.9044,
+          "unrealized_pnl": -0.0956
+        },
+        "ED": {
+          "shares": 0.197161,
+          "avg_cost": 50.72,
+          "current_price": 50.03,
+          "market_value": 9.864,
+          "unrealized_pnl": -0.136
+        }
+      },
+      "total_value": 1015.5763,
+      "total_return_pct": 1.5576,
+      "num_positions": 48
+    }
+  ]
+}

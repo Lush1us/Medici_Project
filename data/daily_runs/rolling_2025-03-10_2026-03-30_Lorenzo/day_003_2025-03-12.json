@@ -1,0 +1,2084 @@
+{
+  "date": "2025-03-12",
+  "watchlist_tickers": [
+    "CMI",
+    "NFLX",
+    "NTAP",
+    "NWSA",
+    "STZ",
+    "ACGL",
+    "ADP",
+    "ADSK",
+    "AIG",
+    "AMCR",
+    "AMT",
+    "APTV",
+    "ATO",
+    "AVGO",
+    "AXP",
+    "AZO",
+    "BR",
+    "BRK-B",
+    "CARR",
+    "COST",
+    "CPB",
+    "CRH",
+    "CTRA",
+    "DELL",
+    "DHR",
+    "ED",
+    "EIX",
+    "ETN",
+    "EW",
+    "FANG",
+    "FIX",
+    "GWW",
+    "LUV",
+    "MCK",
+    "NDAQ",
+    "NEE",
+    "NEM",
+    "NKE",
+    "NWS",
+    "PEG",
+    "PG",
+    "PGR",
+    "PLD",
+    "PRU",
+    "PTC",
+    "SATS",
+    "T",
+    "TROW",
+    "TSN",
+    "TXT",
+    "TYL",
+    "UBER",
+    "USB",
+    "VMC",
+    "VST",
+    "WAT",
+    "WEC",
+    "WM"
+  ],
+  "injected_anomalies": [],
+  "macro_regime": {
+    "regime": "risk-off",
+    "confidence": 7,
+    "reasoning": "The market is structurally in a risk-off phase as SPY is trading well below its 50-day SMA, indicating a downtrend rather than a mean-reversion opportunity. Simultaneously, credit spreads are tightening (HYG and TLT prices rising) while the VIX remains elevated, signaling that investors are fleeing equities and seeking safety across both asset classes."
+  },
+  "votes": {
+    "CMI": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The price is below the 200-day SMA, indicating a bearish structural regime that conflicts with a long position despite the recent volume spike. Momentum indicators like the STOCH and RSI are oversold, suggesting the current pullback may continue rather than reverse."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score at the 200-period is only -0.80, failing to reach the required \u00b12.0 statistical extreme for a high-conviction entry. Additionally, the negative correlation and beta to SPY indicate the trade lacks independent risk characteristics, making it unsuitable for the aggressive sizing Lorenzo employs."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 200-SMA with negative momentum acceleration and a collapsing Elder Impulse, indicating no breakout momentum to ride. RVOL is only 1.72 and CMF is negative, confirming the decline is driven by selling pressure rather than a capitulation bounce."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "CLV of -0.604 indicates smart money is actively distributing at the close, while rising Amihud suggests liquidity is thinning before a breakdown. The heavy volume and negative momentum confirm institutional exit rather than accumulation."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is only -0.80, indicating the stock is not statistically overextended and lacks the extreme deviation required for a mean-reversion fade. Additionally, the Hurst exponent of 0.73 suggests persistent trending behavior rather than the choppy, mean-reverting regime where my strategy thrives."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like CMI are penalized regardless of their short-term uptrend or volume. The deteriorating credit environment and elevated VIX mean structural weakness overrides any technical breakout signal."
+      }
+    },
+    "NFLX": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with no volume confirmation for a reversal, making it a poor candidate for a contrarian long. Adding to a position in this regime violates the rule of requiring confluence across trend, momentum, and volume signals before entry."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "NFLX is deeply oversold with a Z-Score of -2.55, but the downtrend remains intact with price below both the 50-day and 200-day SMAs. The lack of cross-asset confirmation and the absence of a structural reversal signal mean the setup is not yet ready for a high-conviction entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "NFLX is trapped in a deep downtrend below both SMAs with RVOL at 0.83, indicating a lack of the explosive volume surge needed for a breakout. The market is currently in a compression phase rather than an expansion, making it a poor candidate for a momentum entry until the squeeze releases."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating no liquidity arrival to support a breakout, and CLV of 0.32 confirms buyers are retreating to the lower half of the range. With volume below average and price trapped below the 50-day SMA, the microstructure shows no institutional absorption to justify adding to a downtrend."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NFLX is statistically overextended at a Z-score of -2.55 against the 50-day mean, creating a high-probability mean-reversion setup. RSI divergence confirms fading momentum, making this a prime candidate for a fade into the snapback."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like Netflix are penalized as the market rotates to defensive sectors. The downtrend and elevated VIX confirm structural fear, making this a fade rather than a buy opportunity."
+      }
+    },
+    "NTAP": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with price trading below both the 50-day and 200-day SMAs, indicating no structural reversal yet. Negative momentum across RSI, MACD, and CMF confirms selling pressure remains dominant despite the recent pullback."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "NTAP is in a deep downtrend with extreme oversold readings that lack the cross-asset confirmation required for a high-conviction reversal trade. The Z-score is negative but the trend structure remains intact, so I will not add to a position that has already been held."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "NTAP is trapped in a deep downtrend with price below both the 50-day and 200-day SMAs, confirming no structural break is occurring. The RVOL of 0.826 and negative CMF indicate a lack of the explosive volume expansion required for a genuine breakout."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating a liquidity vacuum, yet price is trapped near the lower band with no institutional absorption visible. The microstructure shows no divergence to justify adding to a downtrend; the signal has already decayed."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NTAP is deeply overextended at a Z-score of -2.55 against the 50-day mean, creating a high-probability mean-reversion setup. RSI divergence and extreme percentiles confirm momentum is fading, making this an ideal candidate for a statistical fade into the dip."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like NTAP are penalized as the market favors defensive assets over speculative growth. The downtrend structure and elevated VIX confirm that the macro environment is hostile to leveraged positions."
+      }
+    },
+    "NWSA": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with negative momentum and distribution, offering no confluence for a reversal setup. Adding more exposure here risks a blowup, so we maintain the current position and wait for a structural reclaim of the 50-day SMA."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is oversold at -2.55, but the price remains trapped in a downtrend below both the 50 and 200 SMAs with no structural reversal signal. Entry requires cross-asset confirmation and a shift in trend structure, which is currently absent."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 50-SMA with RVOL at 0.82, indicating a lack of the explosive volume needed to ignite a breakout. The momentum is dead as RSI and MACD are deeply oversold with no acceleration, making this a continuation of the downtrend rather than a reversal setup."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating no institutional absorption, and CLV of 0.325 confirms buyers are losing control at the close despite the slight rally. With price trapped below the 50-day SMA and negative momentum across all microstructure gauges, the setup lacks the liquidity vacuum or accumulation required for an entry."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "Price is deeply overextended at a Z-score of -2.55 with RSI divergence, creating a high-probability mean-reversion setup. The low entropy and negative autocorrelation confirm the market is due for a statistical snapback to the mean."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like NWSA are penalized as the market rotates into defensive assets. The downtrend and elevated VIX confirm structural weakness, making any breakout attempt a trap rather than a buying opportunity."
+      }
+    },
+    "STZ": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The price remains below the 50-day SMA while the ADX shows a strong downtrend with minus_di significantly higher than plus_di, indicating no valid trend continuation setup."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The price is trading below the 50-day SMA while the Z-Score 50 is negative at -2.19, indicating a structural downtrend that contradicts the required multi-factor alignment for a long entry."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "STZ is trapped in a deep bearish channel with RSI at 32, negative MACD momentum, and a negative Elder Impulse, indicating no breakout structure or money flow to ride."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The rising Amihud illiquidity and negative Corwin-S Schultz spread indicate institutional distribution rather than the quiet accumulation required for a buy signal."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "STZ is statistically overextended at a -2.2 Z-score against the 50-day mean with RSI divergence, creating a high-probability mean-reversion setup despite the high ADX indicating a broader trend context."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta speculative names like STZ are penalized regardless of their technical pullback structure. The elevated VIX and deteriorating credit environment favor defensive positioning over aggressive long exposure."
+      }
+    },
+    "ACGL": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a clear downtrend with price below both the 50 and 200-day SMAs, and all momentum indicators are deeply oversold with no signs of reversal."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold with extreme negative Z-scores, but the downtrend remains intact with no structural support or cross-asset confirmation to justify a new long position. Adding more exposure to a trending asset without a regime shift or mean-reversion trigger violates the core principle of waiting for a perfect pitch."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend below both the 50 and 200-day SMAs with momentum indicators showing severe oversold conditions and no acceleration. The breakout criteria are not met as RVOL is below 2.0 and the trend remains bearish, making this a non-setup for a momentum trader."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Despite heavy volume, the Amihud illiquidity is at zero, indicating no institutional absorption, and the Corwin-Schultz spread is likely widening as market makers step back from this fragile downtrend. The price is trapped near the lower Bollinger Band with a negative CLV, signaling that the current move is merely noise rather than a genuine inflection point."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "ACGL is statistically overextended at a Z-score of -2.57 with RSI divergence, creating a high-probability mean-reversion setup. The heavy volume confirms the overshoot, and the thesis is to fade into the extreme and capture the snapback to the 50-day mean."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta energy stocks like ACGL are penalized as the market rotates toward defensive sectors. The downtrend and elevated volatility confirm this structural shift, making the current price action a sell opportunity rather than a buy."
+      }
+    },
+    "ADP": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The price is trading below both the 50-day and 200-day SMAs in a downtrend with negative momentum and volume significantly below average, contradicting the required confluence of trend, momentum, and volume signals."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet my entry criteria as price is trading below both the 50-day and 200-day SMAs in a downtrend, and the Z-scores are only moderately oversold at -1.5 and -1.7 rather than the required \u00b12.0 extremes."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The setup fails my edge because ADP is in a deep downtrend with price below both the 50 and 200-day SMAs, and the breakout signals are flat with RVOL at 0.66 and no Bollinger Band compression."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet my entry criteria because the Amihud illiquidity is elevated at 0.0001, indicating a lack of institutional absorption, and the Corwin-Schultz spread is not showing the widening required to signal a distribution phase before a breakdown."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet my mean-reversion criteria because the Z-scores against both the 50-day and 200-day moving averages are only at -1.5 and -1.7 respectively, falling short of the \u00b12.0 deviation threshold required for a statistical fade."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta names like ADP are penalized as the market seeks defensive safety rather than cyclical growth. The downtrend and elevated VIX confirm structural fear, making this a poor time to accumulate even with a technical rebound."
+      }
+    },
+    "ADSK": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a clear downtrend trading below both the 50-day and 200-day SMAs with weak momentum confirmed by negative MACD and low RSI. While volume is elevated, the price action lacks the structural breakout or reversal signals required to justify adding to a position in this regime."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock remains structurally below both the 50-day and 200-day SMAs with a Z-score of -1.87, indicating no statistical extreme to justify a large bet. Additionally, the heavy volume and negative momentum confirm the downtrend is intact rather than a reversal setup."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below both the 50 and 200-day SMAs with negative momentum and no breakout confirmation. RVOL is only 1.46x, failing the >2.0 threshold required for a valid momentum ignition."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is flat at zero, indicating no institutional absorption despite heavy volume, which suggests retail-driven noise rather than a genuine inflection point. The price remains trapped below the 50-SMA with a negative CLV, confirming that smart money is still distributing rather than accumulating."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "ADSK is in a downtrend below the 50-SMA with negative autocorrelation, which is the opposite of the mean-reverting regime I trade. The Z-score of -1.87 is not extreme enough to justify a statistical fade, and the market structure favors trend continuation over reversion."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta technology names like ADSK are penalized as the market rotates toward defensive sectors. The downtrend and elevated VIX confirm structural fear, making this a poor time to add long positions regardless of the recent volume spike."
+      }
+    },
+    "AIG": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is in a deep downtrend below both key moving averages with no volume confirmation on the pullback to 164.57. Selling pressure is overwhelming as indicated by the negative CMF, low RSI, and high negative ADX."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "AIG is in a deep structural downtrend with Z-scores at extreme lows, but the heavy volume and negative momentum confirm selling pressure rather than a mean reversion setup. The lack of cross-asset confirmation means the risk structure does not yet justify adding to a losing position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend below both 50 and 200-day SMAs with no momentum acceleration or volume breakout to justify adding."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at 0.0001, indicating a liquidity vacuum where price impact is negligible, suggesting no institutional accumulation is occurring. With CLV at -0.91 and negative momentum, the microstructure shows sellers are in full control with no sign of inflection."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "AIG is deeply overextended with a Z-score of -3.02 against the 200-day mean and RSI at 25.5, signaling a high-probability mean-reversion snapback. The heavy volume and extreme divergence confirm the statistical edge required for a fade into the oversold territory."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "AIG is a high-beta financial name that gets penalized in a risk-off regime where defensive sectors outperform. The heavy volume confirms selling pressure, and the downtrend structure offers no macro justification for a long position."
+      }
+    },
+    "AMCR": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend below both the 50-day and 200-day SMAs with no confluence of bullish signals, despite the heavy volume indicating continued selling pressure. Adding more positions in a structural breakdown violates the core rule of never letting a trade get large enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score at the 200-period level is at -3.0, indicating a structural oversold condition that does not justify a new long position in a deep downtrend. While the 50-period Z-score is extreme, the lack of cross-asset confirmation and the deteriorating credit spread environment make this a risk structure rather than a directional opportunity."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is still trapped below the 50-day and 200-day SMAs with momentum indicators showing severe oversold conditions and no breakout structure. The RVOL of 1.59 lacks the explosive volume expansion needed to trigger a YOLO-style entry, and the trend remains firmly down."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at an extreme floor (0.0001) indicating no liquidity is being absorbed, and CLV is deeply negative (-0.91) confirming sellers are in control at the close. The heavy volume is merely panic selling in a downtrend, not the institutional accumulation required for an entry."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "The Z-score of -3.02 on the 200-day mean indicates severe overextension, providing a high-probability statistical entry for a mean-reversion fade. Heavy volume confirms the thesis is breaking down, creating a favorable risk-to-reward setup to capture the snapback to equilibrium."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like AMCR are penalized as the market rotates into defensive assets. The downtrend structure and elevated VIX confirm that capital is fleeing growth equities, making this a sell opportunity regardless of technical volume."
+      }
+    },
+    "AMT": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend with price well below both the 50-day and 200-day SMAs, and momentum indicators are severely oversold with no signs of reversal."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-Score at the 200-period is -3.03, indicating a severe oversold condition that contradicts the current downtrend structure and heavy selling volume. Without cross-asset confirmation from credit spreads or a reversal in the Hurst exponent, the statistical extreme is likely a continuation signal rather than a mean reversion opportunity."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend with RSI at 25 and momentum indicators showing no signs of acceleration or reversal. RVOL is only 1.59, failing to meet the >2.0 threshold required for a breakout entry."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at a critical floor of 0.0001, indicating the market is too fragile to absorb new liquidity without a massive spike in volatility, which contradicts the accumulation setup. The negative CLV of -0.91 confirms sellers are still in control at the close, and the heavy volume is likely distribution rather than institutional buying."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "The Z-score of -3.02 on the 200-day mean signals extreme overextension, making the statistical probability of a mean-reversion snapback very high. RSI divergence confirms momentum is fading at these lows, presenting the ideal entry for a counter-trend fade."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like AMT face severe downside pressure and should be avoided despite their technical breakdown. The deteriorating credit environment and elevated VIX confirm that defensive positioning is required, making this a sell."
+      }
+    },
+    "APTV": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet the required confluence of three independent signals because the price is trapped in a high-volatility consolidation zone with a weak trend strength (ADX < 25) and no volume confirmation on the current move."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet entry criteria because the Z-score at the 200-period is only 2.29, which is insufficient for a high-conviction trade, and the correlation to SPY is dangerously low at 0.18, indicating a lack of structural alignment required for a large position."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to ignite because RVOL is suppressed at 0.805, volume is below average, and momentum acceleration is negative, indicating a lack of the volatility expansion required for a YOLO breakout."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to trigger a buy signal because the Close Location Value (CLV) is negative (-0.2178), indicating sellers controlled the close, and Amihud is flat (0.0) showing no evidence of institutional absorption or liquidity arrival."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "The setup fails because the Z-score against the 200-day mean is only 2.29, which is insufficient for a statistical fade, and the market remains in a confirmed uptrend above the 50-day SMA."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta growth names like APTV are penalized regardless of their technical uptrend. The elevated VIX and deteriorating credit environment favor defensive positioning over speculative exposure."
+      }
+    },
+    "ATO": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The current price is trading below the 50-day and 200-day moving averages, contradicting the required structural uptrend for a position entry."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet the required multi-factor alignment because Z-scores are only marginally extreme (1.72 and 0.97) and the negative correlation with SPY indicates a lack of independent risk characteristics."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to ignite because RVOL is flat at 1.00 and the Bar Range Ratio is contracting at 0.94, indicating a lack of the explosive volume and range expansion required for a breakout entry."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The Corwin-Schutz spread is not provided to confirm liquidity withdrawal, and the Amihud value is too low to indicate institutional absorption, leaving the microstructure signals flat and insufficient for entry."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "ATO is currently in a clear uptrend with price above both the 50-day and 200-day SMAs, which contradicts the mean-reversion strategy that requires price to be at statistical extremes (Z-score \u00b12.0+) to justify a fade."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta names like ATO face significant headwinds despite their technical uptrend. The elevated VIX and deteriorating credit environment penalize cyclical exposure, making a hold the prudent macro choice."
+      }
+    },
+    "AVGO": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a confirmed downtrend below both the 50-day and 200-day SMAs with negative momentum and distribution signals. Adding to a position with a 2.5 standard deviation Z-score and no immediate structural reversal is a violation of the 1.5% risk rule and confluence requirements."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "AVGO is in a deep structural downtrend with price below both the 50 and 200 SMAs, and the Z-score of -2.57 indicates extreme oversold conditions that have not yet triggered a reversal."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "AVGO is trapped in a deep downtrend with price below both the 50-day and 200-day SMAs, and momentum indicators like RSI and MACD are deeply oversold without a clear reversal signal. The RVOL is below 2.0 and volume is flat, indicating a lack of the aggressive money flow needed to ignite a breakout from this compression."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 50-SMA with a negative CLV and rising Amihud, indicating institutional absorption has failed and liquidity is drying up. The microstructure signals show no divergence to support a reversal, so the edge is not present yet."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "AVGO is statistically overextended with a Z-score of -2.57 and RSI divergence, signaling a high-probability mean-reversion snapback. The market is in a downtrend regime, which Piero exploits by fading the extreme rather than chasing momentum."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like AVGO face severe headwinds as capital rotates into defensive assets. The downtrend structure and elevated VIX confirm the macro environment is unsupportive of aggressive growth positions."
+      }
+    },
+    "AXP": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a downtrend with negative momentum and distribution, making it a poor candidate for a new position. Adding more exposure here risks compounding losses in a regime that favors waiting for a structural reversal or sector rotation."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "AXP is in a deep structural downtrend with Z-scores at extreme lows, but the heavy volume and negative momentum suggest a potential short squeeze rather than a mean reversion setup. The lack of cross-asset confirmation (e.g., credit spreads or volatility regime shift) means the edge is insufficient to justify adding to a losing position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend with momentum indicators like RSI and MACD oversold, offering no immediate breakout signal. RVOL is only 1.59x and momentum acceleration is weak, so adding position size risks catching a falling knife."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at a fragile floor while CLV sits deep in negative territory, indicating institutions are not yet absorbing supply. The heavy volume on a down day confirms distribution rather than the quiet accumulation required for an entry."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "AXP is deeply overextended at a Z-score of -3.02, triggering the statistical mean-reversion thesis with RSI divergence confirming fading momentum. The negative autocorrelation and extreme percentile rank suggest the downtrend is exhausted, making the current snapback to the mean the highest probability trade."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta financials like AXP are penalized as credit spreads widen and liquidity dries up. The downtrend and elevated VIX confirm the structural bias against aggressive cyclical names."
+      }
+    },
+    "AZO": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is deeply in a downtrend, trading below both the 50-day and 200-day SMAs with weak volume and negative momentum indicators. Adding to a position in a structural downtrend violates the core rule of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price remains structurally trapped below the 50-day and 200-day SMAs in a confirmed downtrend with no cross-asset confirmation to reverse the thesis. The Z-scores are negative but not at the extreme \u00b12.0 threshold required for a high-conviction entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below both the 50 and 200-day SMAs with RVOL at 0.66, indicating a lack of the explosive volume surge needed for a breakout. Momentum is weak with RSI near 38 and negative ROC, showing no signs of the acceleration required to ignite a new trend."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a liquidity vacuum with rising Amihud and negative CLV, indicating institutions are not absorbing supply before a breakout. The microstructure signals show deteriorating internals and no volume backing for a reversal, so the inflection point has not yet formed."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores are only at -1.6, which is statistically insufficient for a mean-reversion entry, and the market remains in a downtrend below both moving averages. Adding volume to a thesis that requires extreme overextension would increase risk without improving the probability of a snapback."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like AZO are penalized as the market rotates into defensive assets. The downtrend and elevated VIX confirm structural weakness, making any price increase a temporary anomaly rather than a buying opportunity."
+      }
+    },
+    "BR": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with negative momentum and distribution, making it a poor candidate for a contrarian long. Adding to a position that has already declined 10% from the 50-day SMA violates the discipline of only entering on structural breakouts or trend confirmations."
+      },
+      "Lorenzo": {
+        "vote": "SELL",
+        "reasoning": "BR is in a structural downtrend with extreme oversold conditions that lack the cross-asset confirmation required for a contrarian long. The deteriorating credit spread environment and negative momentum metrics confirm this is a sell-side opportunity rather than a mean reversion setup."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep compression within the Bollinger Bands with RVOL below 2.0, indicating no explosive momentum ignition yet. The downtrend structure and negative CMF suggest we are still in a capitulation phase rather than a breakout setup."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is zero, indicating no institutional absorption, and CLV of 0.09 confirms buyers are not in control at the close. With price below the 50-SMA and negative momentum, the microstructure shows no accumulation signal to justify adding."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "BR is statistically overextended at a Z-score of -2.57 with RSI divergence, creating a high-probability mean-reversion setup. The market is currently in a downtrend, but the extreme deviation suggests a snapback toward the 50-day mean is imminent."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like BR are penalized as the market rotates into defensive assets. The downtrend and elevated VIX confirm structural weakness that overrides any individual technical setup."
+      }
+    },
+    "BRK-B": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The stock is currently in a short-term downtrend with momentum indicators (RSI, MACD histogram, Elder Impulse) signaling weakness, which contradicts the requirement for at least three independent bullish signals before entry."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet the required multi-factor alignment because the Z-score is only 0.80 (well below the \u00b12.0 threshold), the stock is deeply oversold with a negative ROC and MACD histogram, and the VIX of 27.4 indicates elevated volatility rather than the fear compression needed for a contrarian buy."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The setup fails the momentum ignition criteria with a collapsing RVOL of 0.75, negative acceleration, and a lack of volume expansion required for a breakout."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet microstructure entry criteria because Amihud is flat at zero, indicating no institutional absorption, and CLV of 0.27 suggests buyers are losing control at the close despite the uptrend."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "BRK-B is currently in a clear uptrend with positive autocorrelation and Z-scores well within the mean, lacking the extreme overextension required for a mean-reversion fade."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, even high-beta names like BRK-B face significant headwinds despite their technical uptrend. The elevated VIX and deteriorating credit environment favor defensive positioning over growth exposure."
+      }
+    },
+    "CARR": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a downtrend trading below both the 50-day and 200-day SMAs with negative momentum and distribution signals. Adding to a position in this regime violates the structural stop-loss discipline required to prevent blowups."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock remains in a structural downtrend with price below both 50- and 200-day SMAs, and the Z-score is not yet at the extreme levels required for a high-conviction entry. Adding position in this regime would dilute the portfolio's cash position needed to capture the next perfect multi-factor alignment."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price remains trapped below the 50-day and 200-day SMAs with negative momentum acceleration and declining volume ratio, indicating no breakout ignition. The RVOL is below 2.0 and the momentum oscillator is collapsing, so there is no volatility expansion or trend confirmation to ride."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating no liquidity is arriving to support the rally, and the CLV of 0.75 is a false signal given the price is still trapped below the 200-SMA. The microstructure shows no institutional absorption; the move is likely a liquidity vacuum waiting for a real break of the 50-SMA."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score of -1.71 is insufficient for a fade, and the Hurst exponent of 0.77 indicates a trending regime rather than mean-reversion. Additionally, price remains below the 50-day SMA, confirming the downtrend is still intact."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names trading below their moving averages face severe headwinds and should be avoided. The elevated VIX confirms structural fear, making this a time to exit long positions rather than chase volatility."
+      }
+    },
+    "COST": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with price below both the 50 and 200-day SMAs, indicating no structural reversal yet. Accumulation is absent as the CMF is negative and volume is only slightly elevated, failing to confirm a breakout."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price remains structurally below key moving averages with no cross-asset confirmation to justify a new position. The current Z-score and RSI levels indicate a deep sell-off rather than a mean-reversion opportunity."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep compression below the 50-day SMA with no breakout structure or volume surge to confirm a reversal. The RVOL is only 1.3 and momentum indicators are deeply oversold, signaling a continuation of the downtrend rather than a buying opportunity."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at 0.0001, indicating a liquidity vacuum where institutions are not absorbing supply, and CLV is neutral at 0.4978, showing no control at the close. With price below the 50-day SMA and negative momentum across all indicators, there is no microstructure signal to justify adding to a position in a downtrend."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "Price is significantly overextended at a -2.23 Z-score against the 50-day mean with RSI divergence confirming fading momentum. The statistical edge favors a fade into the mean as the market is statistically due for a snapback."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like COST face severe headwinds as capital rotates into defensive sectors. The downtrend and elevated VIX confirm structural fear, making any breakout attempts structurally unsupportive."
+      }
+    },
+    "CPB": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend, trading well below both the 50-day and 200-day SMAs with negative momentum across all oscillators. Adding to a position in this structural decline violates the rule of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "SELL",
+        "reasoning": "Price is trapped in a deep downtrend below both 50 and 200 SMAs with no structural reversal signals despite extreme oversold readings. Cross-asset confirmation is absent as credit spreads are deteriorating and the Hurst exponent indicates persistent mean-reversion risk rather than a trend flip."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep compression below the 50-day SMA with RVOL at only 1.05, indicating no explosive momentum ignition yet. The squeeze is valid, but we wait for the breakout candle to confirm direction before adding to a losing position."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating no institutional absorption, while CLV sits at -0.30 showing sellers control the close. The downtrend lacks the liquidity vacuum or positive spread shift required to trigger an entry."
+      },
+      "Piero": {
+        "vote": "SELL",
+        "reasoning": "CPB is currently in a downtrend below both the 50-day and 200-day SMAs, which contradicts the mean-reversion environment required for my strategy. The Z-score of -2.20 indicates overextension, but the negative autocorrelation and trend structure suggest the price will continue falling rather than snapping back."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like CPB are penalized as credit spreads widen and liquidity dries up. The downtrend and elevated VIX confirm that structural fear outweighs any technical bounce."
+      }
+    },
+    "CRH": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is trading below its 200-day SMA in a volatile regime, which contradicts the structural requirement for a new long position. While volume is elevated, the negative CMF and lack of a confirmed breakout above the 200-day level indicate the trend is not yet established for a position trade."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score at the 200-day mean is only -0.80, failing to reach the \u00b12.0 statistical extreme required for a high-conviction entry. Additionally, the negative correlation to SPY and deteriorating credit spreads indicate a lack of cross-asset confirmation for a directional swing."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 200-SMA with negative Elder Impulse and decelerating momentum, signaling no breakout ignition. RVOL is elevated but not screaming, and the trend structure remains bearish until we see a clear release from compression."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "The -0.604 CLV indicates sellers are in control at the close, and rising Amihud (0.0) signals liquidity is drying up, suggesting institutions are not accumulating. The heavy volume and negative momentum confirm this is a distribution phase rather than an inflection point."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "CRH is currently only 0.79 standard deviations below its 200-day mean, which is insufficient for a mean-reversion entry. The RSI at 49.66 shows no momentum divergence, and the market remains in a short-term uptrend rather than the choppy, overextended environment Piero trades."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "CRH is a high-beta industrial name that gets penalized in a risk-off regime where credit spreads are deteriorating. The heavy volume and volatility confirm structural fear, making the short-term uptrend unsustainable."
+      }
+    },
+    "CTRA": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The price remains deeply in a downtrend, trading well below both the 50-day and 200-day moving averages with no structural breakout signals. Adding more capital would increase risk exposure in a regime where volume distribution is negative and momentum is exhausted."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores and momentum indicators remain in oversold territory without the extreme statistical divergence required for a high-conviction long entry. Given the established downtrend and deteriorating credit spreads, the risk-reward profile does not justify adding to a position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below key moving averages with negative momentum and no volume expansion to confirm a breakout. The RVOL is flat and indicators show exhaustion rather than the volatility squeeze release needed for a YOLO entry."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is elevated at 0.0001 indicating fragile liquidity, and CLV sits at -0.212 showing sellers controlled the close despite the rally."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score of -1.69 is insufficiently extreme for a statistical fade, and the market remains in a downtrend with negative autocorrelation rather than mean-reverting behavior. Entropy is low and momentum is fading, but the deviation hasn't reached the \u00b12.0 threshold required to trigger a position."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like CTRA are penalized and should be avoided despite any technical bounce. The deteriorating credit environment and elevated VIX make this a structural sell, not a buying opportunity."
+      }
+    },
+    "DELL": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a clear downtrend trading well below both the 50-day and 200-day SMAs with negative momentum across RSI, MACD, and ROC. Adding more positions during a structural breakdown violates the discipline of only entering on confluence of trend, volume, and momentum signals."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score at -2.09 indicates extreme oversold conditions, but the Hurst exponent of 0.79 confirms a strong downtrend with no immediate mean reversion signal. Additionally, the CCI and RSI remain deeply negative, suggesting selling pressure has not yet exhausted."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "DELL is trapped in a deep downtrend with negative momentum, low volume, and no signs of the volatility expansion required for a breakout. The price remains below key moving averages with no RVOL surge to signal a reversal."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is zero, indicating no liquidity arrival or withdrawal, which contradicts the accumulation setup required for a buy. With price trapped below the 50-SMA and CLV at 0.10, the microstructure shows no institutional footprints to justify adding to a downtrend."
+      },
+      "Piero": {
+        "vote": "SELL",
+        "reasoning": "DELL is in a confirmed downtrend with price below both the 50-day and 200-day SMAs, violating the core requirement for mean-reversion setups. The Hurst exponent of 0.7931 indicates strong persistence rather than the negative autocorrelation needed for fading extremes."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta tech names like Dell face severe headwinds as capital rotates into defensive sectors. The downtrend and elevated VIX confirm structural fear, making any breakout attempts unreliable without a macro regime shift."
+      }
+    },
+    "DHR": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The price is trading below the 200-day SMA, and the negative CMF indicates distribution rather than the accumulation required for a high-probability long setup."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet Lorenzo's entry criteria because the Z-score is only 0.63 (well below the required \u00b12.0 extreme), the price is trapped in a consolidation channel with no structural break, and the negative correlation to SPY indicates a lack of independent risk characteristics."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to ignite because RVOL sits at 1.72 (below the required 2.0 threshold) and momentum is collapsing with a negative Elder Impulse and accelerating loss."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet entry criteria because the Close Location Value is deeply negative (-0.604) and Amihud is at zero, indicating institutions are absorbing supply rather than accumulating quietly."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "The Z-score is only -0.80 and the price is above the 50-day mean, indicating no statistical overextension to justify a mean-reversion fade."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta names like DHR are penalized regardless of their short-term uptrend or volume. The elevated VIX and structural fear favor defensive positions, making this a pass."
+      }
+    },
+    "ED": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The price is trading well below both the 50-day and 200-day SMAs in a confirmed downtrend with negative momentum and distribution signals. Adding to a losing position violates the risk management rule of never letting a trade get big enough to kill it."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "ED is in a deep downtrend with price below both the 50 and 200-day SMAs, and the Z-scores are near -2.0 but lack the cross-asset confirmation required for a high-conviction long setup. The negative credit spread proxy and deteriorating internal volume metrics suggest selling pressure remains structural, making this a risk structure that does not yet justify a directional bet."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 50-day and 200-day SMAs with negative momentum acceleration and weak volume relative to the average."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating no institutional absorption, while CLV sits at -0.61 confirming sellers control the close. With RVOL below 0.8, the lack of volume backing means this is noise rather than a setup to enter."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores are near the -2.0 threshold but not yet at the -2.5+ extreme required for a statistical fade entry. Additionally, the market is in a clear downtrend with negative autocorrelation, which is the opposite of the mean-reverting environment Piero trades."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names trading below their moving averages face structural headwinds regardless of technical setups. The deteriorating credit environment and elevated VIX penalize aggressive positions, making this a sell."
+      }
+    },
+    "EIX": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The price is deeply oversold in a strong downtrend with negative momentum and distribution, presenting no confluence for a reversal setup. Adding to a position that is already below both the 50-day and 200-day SMAs violates the discipline of waiting for trend confirmation."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is oversold but lacks the extreme statistical alignment required for a high-conviction long entry in this downtrend regime. Cross-asset confirmation is weak, with credit spreads deteriorating and volume failing to support a reversal."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend below both the 50-day and 200-day SMAs with no signs of volatility expansion or momentum acceleration. RVOL is under 1.0 and the bar range ratio is compressed, indicating a lack of the explosive move required for a breakout."
+      },
+      "Caterina": {
+        "vote": "SELL",
+        "reasoning": "Corwin-S Schultz spread is widening and CLV is deeply negative, signaling smart money distribution before a breakdown. Falling Amihud is absent while rising Amihud indicates liquidity is drying up, confirming the downtrend has no support."
+      },
+      "Piero": {
+        "vote": "SELL",
+        "reasoning": "EIX is deeply overextended at a Z-score of -2.15 with RSI at 22, creating a high-probability mean-reversion buy opportunity. However, the current downtrend regime and negative autocorrelation mean the statistical edge favors fading the downside rather than adding to a losing position."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like EIX are penalized as the market seeks defensive protection. The downtrend and elevated VIX confirm structural fear, making this a poor candidate for accumulation."
+      }
+    },
+    "ETN": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend with price well below both the 50-day and 200-day SMAs, and momentum indicators are severely oversold with no signs of reversal. Adding position size would violate the rule of never letting a position get big enough to kill the account in a structural downtrend."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score at -2.15 suggests oversold conditions, but the HURST exponent of 0.74 indicates a strong trending regime where mean reversion is unreliable. Additionally, the negative credit spread proxy and deteriorating internals suggest the broader risk environment is fragile, making a reversal bet premature."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend below key moving averages with no signs of volatility expansion or momentum acceleration. The RVOL and momentum indicators remain suppressed, confirming the lack of a breakout setup."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating a complete liquidity vacuum where no institutions are absorbing supply, making the current downtrend fragile and prone to a hard breakdown. The Corwin-Schultz spread is likely widening as market makers step back from this thin book, suggesting the price drop is driven by retail panic rather than smart money accumulation."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is at -2.15, which is statistically actionable, but the market is currently in a strong downtrend with high ADX and positive Hurst exponent, indicating negative autocorrelation rather than the mean-reverting regime Piero requires. Entering a fade here risks catching a falling knife in a trending environment where the statistical edge is significantly diminished."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like Etna are penalized as the market favors defensive assets. The downtrend and elevated VIX confirm structural fear, making this a poor entry point."
+      }
+    },
+    "EW": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a strong downtrend with no volume confirmation to support a reversal, making it a poor candidate for a contrarian long. Adding more exposure to a position trading a structural break in a volatile regime violates the discipline of waiting for a confluence of trend, momentum, and volume signals."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "EW is in a deep downtrend with Z-scores at extremes and negative momentum, requiring a structural bottom before any long exposure is viable. The current regime is defined by high volatility and lack of cross-asset confirmation, so adding to a losing position violates the risk-first philosophy."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend with no breakout structure, and RVOL is below 2.0, indicating a lack of aggressive money flow to justify adding to a losing position. The momentum is exhausted and negative, so we wait for a genuine volatility expansion and volume surge before considering a re-entry."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating no liquidity absorption, while CLV is deeply negative (-0.46) showing sellers control the close. The microstructure lacks the institutional footprints required for an entry, so we wait for the signal to shift."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "Price is significantly oversold at a Z-score of -2.15 against the 50-day mean with RSI divergence confirming fading momentum. The mean-reversion statistical edge is strongest here as the market is due for a snapback to equilibrium."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like EW are penalized as the market rotates into defensive sectors. The downtrend and elevated VIX confirm structural weakness that overrides any technical bounce."
+      }
+    },
+    "FANG": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with price below both the 50 and 200-day SMAs, indicating no structural reversal yet. Volume is muted relative to averages, confirming a lack of institutional accumulation despite the extreme sell-off."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score at -2.09 signals a statistical extreme, but the HURST exponent of 0.7931 confirms a strong trending regime where mean reversion is statistically unlikely. Additionally, the price remains below the 50-SMA with deteriorating credit spreads, violating the multi-factor alignment required for a high-conviction long entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "FANG is trapped in a deep downtrend with negative momentum, low volume, and no signs of volatility expansion or breakout acceleration. The price remains below key moving averages with no RVOL surge to trigger a YOLO entry."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating a complete lack of liquidity absorption, and CLV of 0.10 confirms buyers are trapped at the bottom of the range. Without institutional footprints in the order flow, the microstructure signals are noise rather than an inflection point."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "FANG is statistically overextended at a Z-score of -2.09 with RSI divergence, creating a high-probability mean-reversion setup. The low entropy and negative autocorrelation confirm the market is due for a snapback toward the 50-day mean."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like FANG are penalized as the market seeks defensive safety over speculative upside. The persistent downtrend and elevated VIX confirm structural weakness that invalidates any breakout thesis."
+      }
+    },
+    "FIX": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply in a downtrend, trading below both the 50-day and 200-day moving averages with negative volume flow and weak momentum. Adding to a position in this structural decline violates the rule of never letting a trade get big enough to kill it."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "FIX is in a deep structural downtrend with price below both the 50 and 200-day SMAs, and Z-scores are not yet at the critical \u00b12.0 threshold required for a high-conviction entry. The negative credit spread proxy and deteriorating internals further invalidate any bullish thesis, so we must wait for a clear reversal signal before risking capital."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "FIX is deeply trapped in a downtrend with price below both the 50-day and 200-day SMAs, lacking any breakout structure or momentum acceleration. RVOL is below 2.0 and volume is down, confirming no institutional buying to support a reversal."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is zero, indicating no institutional absorption, while CLV is deeply negative (-0.61) showing sellers control the close. With the price below the 50-day SMA and high volatility, the microstructure lacks the liquidity buildup required for an inflection."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores are near -2.0 but not yet at the \u00b12.5 threshold required to initiate a statistical fade, and the market remains in a downtrend regime with negative autocorrelation. Adding position here would violate the mean-reversion edge by entering before the statistical overextension is confirmed."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names trading below their key moving averages are structurally vulnerable to further downside. The elevated VIX confirms we are in a fear environment where momentum fades, making this a poor setup for accumulation."
+      }
+    },
+    "GWW": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend below both the 50-day and 200-day SMAs with extreme overbought oversold conditions, making it a poor candidate for a position trade. Current volatility and negative momentum indicate a lack of structural support, so we must wait for a clear trend reversal or consolidation before re-entering."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "While Z-scores indicate extreme oversold conditions, the 1.66x volume on a -3.14% move confirms a strong downtrend rather than a mean reversion setup. The deteriorating credit spread environment and lack of cross-asset confirmation prevent me from adding to a losing position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is in a deep downtrend below both SMAs with RSI at 22.55, indicating no momentum to initiate a breakout. The RVOL of 1.66 and negative Force Index confirm selling pressure, making this a trap for short-term traders rather than a capitulation bounce."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "The Corwin-Schultz spread is widening significantly while price is trapped below the 50-SMA, indicating institutional distribution rather than accumulation. Additionally, the Amihud illiquidity is rising, signaling that liquidity is drying up and the market is fragile."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "GWW is deeply overextended at a Z-score of -3.03 with RSI at 22.55, signaling a high-probability mean reversion snapback. The heavy volume and extreme deviation confirm the statistical edge required to fade this oversold condition."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like GWW are penalized as the market rotates into defensive sectors. The downtrend and elevated volatility confirm structural weakness, making this a sell regardless of the heavy volume."
+      }
+    },
+    "LUV": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The stock is trading below both the 50-day and 200-day SMAs in a clear downtrend with negative momentum and weak volume, directly contradicting the required trend and volume confluence for a long entry."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "LUV is trapped in a structural downtrend with price below both the 50-day and 200-day SMAs, and the Z-scores are insufficiently extreme to justify a high-conviction long position."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "LUV is trapped in a downtrend below both the 50-day and 200-day SMAs with no RVOL expansion, negative momentum acceleration, and no breakout structure to initiate a YOLO-style entry."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet my edge because Amihud is at zero (no liquidity signal), price is trapped below the 50-day SMA in a downtrend, and the Corwin-S Schultz spread is not showing the widening required for institutional distribution."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "The Z-score of -1.44 against the 50-day mean and the positive Hurst exponent (0.71) indicate the stock is neither sufficiently overextended nor in a mean-reverting regime to trigger a fade."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "LUV is a high-beta consumer discretionary stock that gets penalized in a risk-off regime with elevated VIX and deteriorating credit spreads. The downtrend structure further reduces its attractiveness as a long position."
+      }
+    },
+    "MCK": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is deeply in a downtrend, trading well below both the 50-day and 200-day SMAs with negative momentum across RSI, MACD, and CCI. Volume is insufficient to support a reversal, and the ADX confirms a strong downward trend with no signs of institutional accumulation."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "MCK is deeply oversold with negative momentum, but the downtrend structure and lack of cross-asset confirmation prevent a high-conviction entry. We must wait for a structural reversal signal before adding to a position currently held in a bearish regime."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Momentum is deeply exhausted with negative acceleration and volume significantly below average, failing to confirm any breakout potential. The price remains trapped in a downtrend below key moving averages with no signs of volatility expansion or money flow reversal."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a liquidity vacuum with Amihud at 0.0001, indicating no institutional absorption despite the +2.3% move. The CLV of 0.57 suggests buyers are merely occupying the middle of the range rather than driving a breakout, and the 0.79 volume ratio confirms this is noise without conviction."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "Price is only 1.5 standard deviations below the 50-day mean, which is insufficient for a statistical fade setup. The market remains in a downtrend with negative autocorrelation, meaning the mean-reversion thesis is not yet active."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "MCK is a high-beta cyclical exposed to credit deterioration, which is the defining characteristic of the current risk-off regime. The downtrend structure combined with elevated VIX confirms that momentum strategies are invalid until the macro environment stabilizes."
+      }
+    },
+    "NDAQ": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The price is deeply oversold in a confirmed downtrend with negative momentum and distribution signals, making a reversal unlikely in the short term. Adding more exposure to a falling knife violates the structural stop-loss discipline required to prevent blowups."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score of -2.55 indicates extreme oversold conditions, but the downtrend remains structurally intact with price below both the 50 and 200 SMAs. Without cross-asset confirmation that the mean reversion is structural rather than a temporary pullback, the edge is insufficient to justify adding to a losing position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep compression below the 50-SMA with RVOL at 0.83, indicating no explosive momentum to justify adding size. The market is in a clear downtrend with negative money flow (CMF -0.11), so we wait for a confirmed breakout above the 50-SMA with volume expansion before entering."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating a complete liquidity vacuum where price is drifting without institutional absorption or distribution. The tight bar range ratio and negative momentum acceleration confirm the market is in a fragile, low-activity consolidation phase with no clear inflection point to act on."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NDAQ is deeply overextended at a Z-score of -2.55 with RSI divergence, creating a high-probability mean-reversion setup. The statistical edge favors fading this extreme as price snaps back toward the 50-day mean."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "NDAQ is a high-beta leveraged ETF that suffers disproportionately in risk-off regimes, and its downtrend confirms the current macro bias against aggressive long positions. The elevated VIX and structural fear mean any bounce is likely a fade rather than a trend continuation."
+      }
+    },
+    "NEE": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a confirmed downtrend below both the 50-day and 200-day SMAs with oversold momentum that lacks volume confirmation for a reversal. Adding more exposure during a high-volatility regime with negative money flow violates the confluence requirement for new positions."
+      },
+      "Lorenzo": {
+        "vote": "SELL",
+        "reasoning": "NEE is in a deep downtrend with no structural support, trading below both the 50-day and 200-day SMAs while Z-scores confirm extreme oversold conditions that are unlikely to reverse in this regime. The high Hurst exponent indicates persistent momentum, and the deteriorating credit spread environment suggests this decline is driven by broader risk-off flows rather than a mean-reversion opportunity."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "NEE is in a deep downtrend with price below both the 50-day and 200-day SMAs, and momentum indicators like RSI and MACD are oversold and declining. The RVOL is only 1.2, indicating a lack of explosive volume needed to ignite a breakout, and the market structure remains bearish."
+      },
+      "Caterina": {
+        "vote": "SELL",
+        "reasoning": "Amihud is at zero indicating extreme fragility with no liquidity absorption, while CLV sits at -0.18 confirming sellers control the close. Volume is insufficient to validate a reversal in this downtrend regime."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NEE is deeply overextended at a Z-score of -2.96 with RSI divergence, creating a high-probability mean-reversion setup. The negative autocorrelation confirms the market is due for a snapback to the 200-day mean."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta utility names like NEE face severe headwinds as capital rotates into defensive sectors. The downtrend and elevated VIX confirm structural weakness that overrides any technical setup."
+      }
+    },
+    "NEM": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "NEM is deeply oversold in a confirmed downtrend with negative volume flow, making it a prime candidate for a short squeeze rather than a buy signal. Adding to a position below the 200 SMA during high volatility violates the core rule of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "NEM is in a deep structural downtrend with a Z-Score of -2.55, but lacks the cross-asset confirmation (credit spreads, volatility regime) required for a high-conviction long bet. The trade remains in the waiting room until quantitative metrics align at a statistical extreme."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend below both the 50 and 200-day SMAs with negative momentum across all oscillators. RVOL is below 1.0, indicating a lack of the explosive volume surge required for a breakout."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "NEM is trapped in a downtrend with Amihud at zero, indicating no institutional absorption despite the price being near the lower Bollinger Band. The CLV of 0.325 confirms sellers are in control at the close, and without a rising Amihud or positive CLV shift, there is no microstructure signal to justify adding to a losing position."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NEM is deeply overextended at a Z-score of -2.55 with RSI divergence, creating a high-probability mean-reversion setup. The statistical edge favors fading this extreme, but the wide stop loss required for a \u00b14.0 deviation limits immediate scale."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "NEM is a high-beta speculative play that suffers disproportionately in risk-off regimes with deteriorating credit spreads. The persistent downtrend and elevated VIX confirm the macro environment favors selling such leveraged positions."
+      }
+    },
+    "NKE": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a confirmed downtrend below both the 50-day and 200-day SMAs with extreme oversold conditions and negative volume flow. Adding to a position in this structural decline violates the rule of never letting a trade get big enough to kill it."
+      },
+      "Lorenzo": {
+        "vote": "SELL",
+        "reasoning": "NKE is in a deep structural downtrend with Z-scores and RSI indicating extreme oversold conditions that are likely a trap rather than a reversal signal. The Hurst exponent of 0.75 confirms a strong trending regime where mean reversion is statistically unlikely, and the negative momentum indicators suggest the decline has not yet exhausted."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "NKE is in a deep downtrend with RSI at 21 and momentum accelerating negatively, making it a poor candidate for a momentum breakout strategy. The current price action lacks the required RVOL expansion and structural break to justify adding to a losing position."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero, indicating no institutional absorption to support a reversal, while CLV sits at -0.18 confirming sellers control the close. The downtrend structure remains intact with no microstructure divergence to justify adding to a losing position."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NKE is deeply overextended at a Z-score of -2.96 with RSI divergence, creating a high-probability mean-reversion setup. The negative autocorrelation and low entropy confirm the market is due for a statistical snapback toward the mean."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "NKE is a high-beta cyclical name that gets penalized in a risk-off regime with deteriorating credit spreads. The downtrend confirms the macro bias against growth stocks, so I vote SELL."
+      }
+    },
+    "NWS": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a confirmed downtrend with price below both the 50-day and 200-day SMAs, while momentum indicators like RSI and MACD are deeply oversold and diverging from the price action. Adding to a position in a structural downtrend with high volatility violates the core rule of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score of -2.96 and extreme oversold conditions suggest a potential bounce, but the HURST exponent of 0.7522 confirms a strong trending regime where mean reversion is statistically unlikely. Additionally, the price remains below the 50-day SMA in a downtrend, lacking the structural alignment required for a high-conviction entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend with RSI at extreme oversold levels (-11.7% ROC), offering no momentum ignition for a breakout trade. RVOL is only 1.2 and CMF is negative, confirming selling pressure rather than capitulation reversal."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating no institutional absorption, and CLV is negative showing sellers control the close. The microstructure lacks the liquidity shift required to justify adding to a downtrend."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "NWS is statistically overextended with a Z-score of -2.96 and RSI at 21.5, creating a high-probability mean-reversion setup. The market is currently in a downtrend regime, which aligns with our strategy of fading extreme deviations in large-cap liquid stocks."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like NWS are penalized as the market seeks defensive protection. The downtrend and elevated VIX confirm structural fear, making this a fade rather than a buy opportunity."
+      }
+    },
+    "PEG": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a structural pullback below the 50-day SMA with weak momentum and negative MACD, failing the required confluence for a new position. While volume is elevated, the price action lacks the trend confirmation needed to justify adding to a held position."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is only -1.28, failing the \u00b12.0 threshold required for a high-conviction mean reversion setup, and the negative ROC indicates momentum is still draining. Without cross-asset confirmation or a structural break, the alignment is insufficient to justify adding position size."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a compression zone with RVOL below 2.0 and negative momentum acceleration, indicating no breakout energy. The pullback above the 200-SMA lacks the volume surge and volatility expansion required to ignite a trend."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trading below the 50-SMA with a negative CLV, indicating sellers are in control at the close rather than institutional accumulation. The rising Amihud (0.0001) and widening Corwin-S Schultz spread suggest liquidity is thinning, making the current move fragile and unsuitable for microstructure entries."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is only at -1.28, which is insufficient for a mean-reversion entry that requires \u00b12.0 deviation. Additionally, the Hurst exponent of 0.5056 suggests the market is transitioning from trending to random, making the statistical edge unreliable."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like PEG are penalized as structural fear outweighs technical pullbacks. The elevated VIX confirms deteriorating sentiment, making any rally on such a stock a temporary capitulation rather than a buy opportunity."
+      }
+    },
+    "PG": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is trading below the 50-day SMA while above the 200-day, indicating a structural pullback that contradicts the current trend direction. Momentum indicators are bearish with RSI and MACD both in negative territory, and the ADX is too weak to confirm a continuation."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a structural pullback with negative momentum indicators and no cross-asset confirmation to justify a new position. The Z-scores and volatility percentiles do not reach the extreme levels required for a high-conviction entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a compression zone below the 50-day SMA with RVOL at only 1.34, failing to trigger the >2.0 expansion required for a breakout entry. Momentum is decelerating with negative ROC and MACD divergence, indicating the pullback lacks the violent acceleration needed to justify adding to a position."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is elevated at 0.0001 indicating fragile liquidity, and CLV is negative (-0.0749) confirming sellers control the close despite the rally. The heavy volume lacks the sustained absorption needed for an institutional accumulation setup."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "PG is only moderately overextended at a Z-score of -1.28, which lacks the statistical significance required for a mean-reversion entry. The current pullback is a healthy consolidation within the broader uptrend rather than an extreme deviation waiting to snap back."
+      },
+      "Giovanni": {
+        "vote": "BUY",
+        "reasoning": "In a risk-off regime, defensive names like PG are the only logical long exposure when high-beta cyclicals are penalized. The pullback to the 200-SMA offers a tactical entry to capture the sector's resilience against deteriorating credit conditions."
+      }
+    },
+    "PGR": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a structural pullback below the 50-day SMA with weak momentum indicators (RSI < 40, negative MACD histogram) and no volume confirmation on the current move. Adding to a position without a clear trend reclamation or breakout validation violates the confluence requirement for new entries."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a structural pullback with negative momentum indicators and no cross-asset confirmation of a mean reversion setup. The Z-scores are within normal ranges, failing the strict \u00b12.0 threshold required for a high-conviction entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "PGR is trapped in a deep compression with RVOL at 1.34 and negative momentum acceleration, failing the >2.0 volume threshold required for a breakout. The price remains below the 50-day SMA while volume is merely 1.34x average, indicating no explosive momentum to justify adding to a held position."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trading below the 50-day SMA with a negative CLV, indicating institutional distribution rather than accumulation. The rising Amihud and widening Corwin-Schultz spread confirm liquidity is drying up before a potential breakdown."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "PGR is only marginally oversold at a 200-day Z-score of 0.37, lacking the extreme deviation (\u00b12.0+) required for a statistical fade. The current pullback is a healthy mean-reversion correction rather than an overextended snapback opportunity."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like PGR are penalized regardless of their technical pullback structure. The elevated VIX and deteriorating credit environment make this a poor risk/reward trade compared to defensive alternatives."
+      }
+    },
+    "PLD": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The price is trading below the 50-day SMA while above the 200-day SMA, indicating a structural pullback that contradicts the current bullish regime. Momentum indicators are weak with RSI and MACD in oversold territory, and the ADX is too low to confirm a sustained trend continuation."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The price is trapped in a structural pullback below the 50-SMA with negative momentum indicators and deteriorating credit spreads, failing the multi-factor alignment required for a high-conviction entry. Without a Z-score extreme or cross-asset confirmation of a regime shift, adding position risk violates the risk-first discipline."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Momentum is dead on arrival with negative ROC, collapsing Elder Impulse, and a failing breakout structure against the 50-day SMA. RVOL is merely 1.3x, far below the 2.0+ surge required to ignite a YOLO-style breakout."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trading below the 50-day SMA with a negative CLV, indicating sellers are in control rather than institutional accumulation. The rising Amihud suggests liquidity is thinning, making the current move fragile and unsuitable for microstructure entry."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is only -1.28, which is insufficient for a statistical fade, and the price is still above the 50-day mean. The RSI divergence is not present, and the market lacks the extreme overextension required for a mean-reversion setup."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta REITs like PLD are penalized as defensive yields become unattractive compared to bonds. The pullback above the 200-SMA suggests a potential reversal rather than a buying opportunity."
+      }
+    },
+    "PRU": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is trapped below the 50-day SMA while the 20-day CCI and RSI indicate weak momentum and lack of institutional accumulation. Without a confirmed reclaim of the 50-day average, adding to a position in this structural pullback violates the confluence requirement for new entries."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores are not at the required \u00b12.0 statistical extremes, and the heavy volume on a pullback indicates active selling pressure rather than a structural reversal setup. Without cross-asset confirmation or extreme mean reversion metrics, the edge does not justify increasing position size."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Momentum is collapsing with negative ROC and MACD divergence, making it a poor candidate for a momentum ignition setup. Volume is merely 1.34x average, failing the RVOL > 2.0 threshold required to confirm a breakout."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price closed near the daily low with a negative CLV and rising Amihud, signaling institutional distribution rather than accumulation. The heavy volume is absorbing supply, not initiating a new trend, so the signal has already expired."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score is only at -1.28, which is insufficient for a mean-reversion entry; we wait for the price to deviate to \u00b12.0 or beyond. Additionally, the RSI divergence is absent and the market remains in a choppy, non-mean-reverting regime with low entropy."
+      },
+      "Giovanni": {
+        "vote": "HOLD",
+        "reasoning": "In a risk-off regime, high-beta defensive names like PRU are penalized for volatility and lack of yield relative to the market's fear. The pullback above the 200-SMA confirms structural strength, but the macro environment favors holding cash or ultra-short duration over this specific equity exposure."
+      }
+    },
+    "PTC": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is trading below the 50-day SMA in a pullback, and momentum indicators like RSI and MACD are oversold with no immediate reversal signal. Given the high VIX and lack of confluence across trend, volume, and momentum, the setup does not meet the required three-signal criteria for entry."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "PTC lacks the required Z-score extreme (\u00b12.0) and cross-asset credit spread confirmation to justify a high-conviction swing trade. The current pullback presents insufficient statistical edge for a position that demands overwhelming multi-factor alignment."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 50-day SMA with RVOL at only 1.34, failing to trigger the >2.0 expansion needed for a YOLO entry. Momentum is collapsing with negative ROC and MACD divergence, indicating the pullback has no immediate structural break."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "The Corwin-Schultz spread is widening while price is below the 50-SMA, indicating institutional distribution rather than accumulation. Additionally, the negative CLV and deteriorating volume internals suggest smart money is exiting before a potential breakdown."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "Price is only 1.28 standard deviations below the 50-day mean, which is insufficient for a mean-reversion entry at the required \u00b12.0 threshold. The RSI at 42 lacks the extreme divergence needed to confirm the statistical edge for a fade."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like PTC are penalized as the market rotates toward defensive assets. The structural deterioration signaled by elevated VIX and heavy volume confirms a sell bias regardless of the technical pullback."
+      }
+    },
+    "SATS": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with negative momentum and volume distribution, making it a poor candidate for a long position. Adding more exposure here risks a blowup if the trend resumes, which violates the core principle of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price is deeply oversold at a Z-score of -2.15, but the trend remains structurally broken with price below both the 50 and 200-day SMAs. The Hurst exponent of 0.74 confirms a strong trending regime where mean reversion is unlikely to occur quickly."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 50-day SMA in a deep downtrend with no volume expansion to confirm a breakout. Momentum indicators are oversold and negative, showing no sign of the acceleration required for a YOLO entry."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating no institutional absorption, while CLV is deeply negative showing sellers control the close. The microstructure shows no liquidity arrival to justify adding to a position in a downtrend."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "Price is already deeply mean-reverted at a -2.15 Z-score, so the statistical edge for further fading is exhausted. The market remains in a strong downtrend with high ADX and negative autocorrelation, confirming the regime is not suitable for additional mean-reversion positions."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like SATS face severe beta decay and are penalized regardless of their technical downtrend. The elevated VIX confirms structural fear, making this a clear sell to preserve capital."
+      }
+    },
+    "T": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is currently held in a position, and while the ADX indicates a strong trend, the recent -1.79% close with no volume surge suggests a lack of immediate conviction to add more shares. The current price remains safely above the 50-day and 200-day SMAs, so the structural setup does not warrant a sell or a new entry."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price is trading in a healthy uptrend with strong momentum but lacks the Z-score extremes or credit spread deterioration required for a high-conviction swing. The current setup is too narrow for the outsized position sizing I typically deploy."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "RVOL is flat at 1.00 despite a -1.79% drop, indicating no momentum acceleration or capitulation bounce. The bar range ratio of 0.94 confirms compression rather than the volatility expansion required for a breakout."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is elevated at 0.0001 indicating fragile liquidity rather than institutional absorption, and the negative correlation with SPY suggests the move lacks broad market backing. The CLV of 0.0184 confirms buyers only controlled the close, not the session, so no microstructure inflection is present to justify adding."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "Price sits at a Z-score of 1.72, which is statistically significant but not yet at the extreme threshold of 2.0 required for a fade. The positive autocorrelation with SPY (-0.11) and high ADX (41) indicate a strong trending regime, which is outside Piero's mean-reversion edge."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names in an uptrend are vulnerable to sharp reversals and should be avoided despite their technicals. The elevated VIX confirms structural fear, making this a poor time to hold long positions on aggressive equities."
+      }
+    },
+    "TROW": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a structural pullback below the 50-day SMA with negative momentum and volume distribution, violating the confluence required for entry. The ADX is strong but biased against the current price action, indicating a continuation of the downtrend rather than a reversal setup."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a structural pullback with price below the 50-SMA and negative momentum, lacking the extreme statistical alignment required for a high-conviction entry. Current indicators show oversold conditions but no cross-asset confirmation to justify adding to a position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a compression zone with negative momentum and volume contraction, failing to ignite the volatility expansion required for a breakout. The RVOL is below 2.0 and the MACD histogram is collapsing, indicating no immediate momentum acceleration to justify adding."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price closed near the day's low with a negative CLV of 0.20, indicating sellers are still in control at the close. The rising Amihud (0.0001) and negative CMF confirm liquidity is drying up, suggesting the pullback is not yet an accumulation phase."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "Price is only marginally overextended at a -1.87 Z-score, which lacks the statistical edge required for a fade. Additionally, the market exhibits strong positive autocorrelation with a Hurst exponent of 0.66, indicating a trending regime where mean reversion is statistically unlikely."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "TROW is a high-beta growth stock that gets penalized in a risk-off regime characterized by elevated VIX and structural fear. The pullback above the 200-SMA while the broader market is in a deteriorating credit environment suggests the rally is hollow and vulnerable to further downside."
+      }
+    },
+    "TSN": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply in a downtrend, trading well below both the 50-day and 200-day moving averages with negative momentum across all oscillators. Adding more position to a losing trade violates the core discipline of only accumulating in established uptrends."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold with a Z-Score of -1.83, but the downtrend is confirmed by a strong ADX (37.1) and negative momentum, indicating no structural reversal yet. Without cross-asset confirmation from credit spreads or volatility percentiles, the setup lacks the multi-factor alignment required for a high-conviction long."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below both the 50 and 200-day SMAs with negative momentum acceleration and collapsing Aroon lines. The breakout attempt failed as volume ratio remains below the 2.0 threshold required for a genuine momentum ignition."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "The price is trapped in a liquidity vacuum with Amihud at zero, indicating no institutional absorption despite heavy volume. The CLV of 0.5267 suggests buyers are merely defending the range rather than initiating a breakout, so the signal has not yet matured."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score of -1.83 is below the \u00b12.0 threshold required to initiate a mean-reversion trade, and the market remains in a downtrend with negative autocorrelation. Additionally, the Hurst exponent of 0.5875 suggests persistent momentum rather than the mean-reverting regime where I operate."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like TSN are penalized as the market rotates into defensive assets. The downtrend and elevated volatility confirm structural weakness, making the recent gain a fade opportunity rather than a buy signal."
+      }
+    },
+    "TXT": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The daily close failed to reclaim the 50-day SMA, and the negative MACD histogram combined with a negative CMF indicates a lack of institutional buying pressure despite the high volume."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet entry criteria because the Z-scores are neutral, the price is trapped inside the Bollinger Bands, and the Hurst exponent indicates a trending regime where mean reversion is not statistically probable."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to ignite because RVOL is only 1.38 (below the required 2.0 threshold) and momentum is decelerating with a negative Elder Impulse and MACD histogram, indicating no breakout force despite the heavy volume."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup contradicts the accumulation thesis because the Close Location Value (CLV) of -0.9583 indicates sellers controlled the day's close, and the rising Amihud illiquidity suggests liquidity is drying up rather than arriving."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "The setup fails to meet my mean-reversion criteria because TXT is currently in a confirmed uptrend with positive autocorrelation and Z-scores well below the \u00b12.0 overextension threshold required for a statistical fade."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta names with elevated volatility are penalized regardless of their technical uptrend. The deteriorating credit environment and structural fear make this asset unsuitable for accumulation."
+      }
+    },
+    "TYL": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The price is trading below both the 50-day and 200-day SMAs in a confirmed downtrend with negative momentum and weak relative strength. Adding to a position that is already down significantly violates the rule of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a structural downtrend with no cross-asset confirmation to justify a large bet. Z-scores are negative but not at the extreme thresholds required for a high-conviction entry."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below both the 50-day and 200-day SMAs with negative momentum acceleration and collapsing volume ratios. The RVOL of 1.36 fails to trigger the >2.0 expansion threshold required for a YOLO breakout entry."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Despite the heavy volume spike, the Amihud illiquidity is zero, indicating institutions are not absorbing supply; instead, they are likely distributing into the panic. The price is trapped in a liquidity vacuum below the 50-SMA with a negative Corwin-Schultz spread, meaning the microstructure signal has no momentum to support a breakout."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "TYL is currently in a downtrend with negative autocorrelation, which is the opposite regime where Piero's mean-reversion strategy thrives. The Z-score is only -1.83, falling short of the \u00b12.0 threshold required to initiate a statistical fade."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like TYL are penalized as the market rotates into defensive assets. The downtrend and elevated VIX confirm structural weakness, making this a prime opportunity to exit longs."
+      }
+    },
+    "UBER": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a downtrend below both the 50-day and 200-day SMAs with momentum indicators showing significant weakness. Adding to a position that is already down 10% from the 50-day average violates the rule of never letting a position get big enough to kill it."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a structural downtrend with price well below both the 50-day and 200-day SMAs, confirming no immediate mean reversion setup."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below both the 50 and 200-day SMAs with negative momentum acceleration and a collapsing Elder Impulse. The RVOL is only 1.36x, which is insufficient to trigger a breakout entry, and the market is currently in a compression phase rather than an expansion."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Despite the positive CLV and elevated volume, the Amihud is at zero indicating no meaningful liquidity shift, and the price remains trapped below key moving averages in a downtrend. The microstructure lacks the institutional accumulation signature required to justify adding to a position."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "The Z-score of -1.83 is insufficient for a mean-reversion entry, falling short of the required \u00b12.0 deviation threshold. Additionally, the market is in a confirmed downtrend with negative autocorrelation, which is the exact regime Piero avoids."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta growth names like Uber face severe beta penalties and should be avoided despite their technical weakness. The deteriorating credit environment and elevated VIX confirm that structural fear outweighs any potential rebound from the downtrend."
+      }
+    },
+    "USB": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a confirmed downtrend trading below both the 50-day and 200-day SMAs with negative momentum across MACD, RSI, and CCI. Adding to a position in a structural decline violates the core rule of never letting a trade get big enough to kill it."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "Price is in a confirmed downtrend below both 50 and 200 SMAs with no structural level for entry despite oversold indicators. The thesis requires a structural break or cross-asset confirmation which is currently absent."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a downtrend below both 50 and 200 SMAs with momentum indicators showing severe exhaustion and negative acceleration. The breakout attempt lacks the required RVOL surge and volume expansion to justify adding to a losing position."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero indicating no institutional absorption, and CLV at 0.5267 shows buyers only marginally controlled the close despite heavy volume. The 4.3% gain is likely a liquidity vacuum preceding a deeper decline given the negative momentum and high ADX."
+      },
+      "Piero": {
+        "vote": "HOLD",
+        "reasoning": "Price is currently at a Z-score of -1.83, which is statistically significant but not yet at the extreme threshold of -2.0 required for a high-probability fade. The heavy volume and strong negative momentum suggest the mean-reversion setup is still in its early stages, lacking the full statistical edge needed to add to the position."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like USB are penalized as the market rotates into defensive assets. The downtrend and elevated volatility confirm structural weakness, making this a fade rather than a buy."
+      }
+    },
+    "VMC": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend below both the 50 and 200-day SMAs with oversold momentum indicators, making it a poor candidate for adding to a position. While the heavy volume suggests active selling, the structural trend remains bearish and the risk of further downside outweighs the potential for a quick bounce."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores are deeply oversold, but the downtrend is confirmed by price action below both the 50-day and 200-day SMAs with heavy selling volume. Without cross-asset confirmation that credit spreads or volatility percentiles have reversed, the structural thesis remains intact for a continuation of the decline."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the 50-day SMA in a downtrend with negative momentum acceleration and no RVOL expansion to confirm a breakout. The heavy volume is selling pressure, not the surge needed to ignite a new move."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at 0.0001, indicating extreme fragility and no institutional absorption, while CLV of -0.79 confirms sellers control the close. With ADX at 40 and price below the 50-SMA, the downtrend lacks the microstructure strength to reverse."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "The Z-scores of -2.82 and -3.03 confirm severe overextension below the 50-day and 200-day means, creating a high-probability statistical mean-reversion setup. RSI divergence at 22.55 signals fading momentum, making the current drop a prime entry point for fading the oversold condition."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta commodities like VMC are punished as liquidity dries up, making the downtrend confirmation a signal to exit rather than enter. The heavy volume on a down day indicates structural selling pressure, not a capitulation bounce."
+      }
+    },
+    "VST": {
+      "Cosimo": {
+        "vote": "SELL",
+        "reasoning": "The stock is in a confirmed downtrend trading below both the 50-day and 200-day SMAs with extreme oversold conditions and negative volume flow. Adding to a position in a structural downtrend with heavy selling volume violates the core rule of never letting a position get big enough to kill the account."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "While Z-scores indicate extreme oversold conditions, the deteriorating credit spread ratio and heavy selling volume confirm this is a structural downtrend rather than a mean reversion opportunity. The thesis requires cross-asset confirmation that is currently absent, so adding to a losing position violates the risk-first framework."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "VST is in a deep downtrend with RSI at 22.5 and momentum accelerating downward, making it a poor candidate for a momentum breakout play. The current volume spike is a distribution event rather than a reversal signal, so we wait for a clear structure break above the 50-SMA with RVOL confirmation."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at 0.0001, indicating extreme fragility with no institutional absorption, while CLV of -0.79 confirms sellers control the close. The heavy volume is merely panic distribution, not the quiet accumulation required for an entry."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "VST is deeply overextended with Z-scores of -2.81 and -3.03, triggering a statistical fade into the mean. The RSI divergence and heavy volume confirm momentum exhaustion, making this a high-probability entry for a snapback."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like VST are penalized as the market rotates into defensive sectors. The downtrend and elevated VIX confirm structural weakness, making this a sell opportunity regardless of technical breakdowns."
+      }
+    },
+    "WAT": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a confirmed downtrend with no structural breakout or volume confirmation to justify adding to a position. Current volatility and negative momentum indicate a lack of institutional buying power required for a position trade."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is deeply oversold in a strong downtrend with no structural level or cross-asset confirmation to justify a high-conviction entry. Adding to a position with a 3.0 beta and deteriorating credit spreads violates the requirement for overwhelming multi-factor alignment."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend below both the 50-day and 200-day SMAs with momentum indicators like ROC and MACD showing severe acceleration against the trend. The RVOL is elevated but not yet at the screaming levels (>2.0) required to confirm a breakout, and the high negative CMF indicates selling pressure remains dominant."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Amihud is at zero despite 1.37x volume, indicating liquidity is completely frozen and institutions are not absorbing supply. The massive 7.59% gap down with CLV at 0.30 confirms buyers are exhausted and the price is trapped in a liquidity vacuum."
+      },
+      "Piero": {
+        "vote": "SELL",
+        "reasoning": "WAT is deeply overextended with a Z-score of -1.91 and RSI divergence, signaling a high-probability mean-reversion snapback to the mean. The heavy volume and negative momentum confirm the thesis that the price is due to revert upward, making it an ideal candidate for a fade."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like WAT are penalized as their downtrend and heavy volume signal capitulation rather than a buying opportunity. The deteriorating credit environment and elevated VIX confirm that structural fear invalidates any technical breakout or momentum setup."
+      }
+    },
+    "WEC": {
+      "Cosimo": {
+        "vote": "PASS",
+        "reasoning": "The stock is in a deep downtrend trading well below both the 50-day and 200-day moving averages with negative momentum and distribution signals, which contradicts the required confluence of trend, momentum, and volume for a position entry."
+      },
+      "Lorenzo": {
+        "vote": "PASS",
+        "reasoning": "The setup fails because price is trading below the 50-day and 200-day SMAs in a downtrend, and the Z-score of -1.90 is insufficient to trigger a high-conviction buy signal."
+      },
+      "Giuliano": {
+        "vote": "PASS",
+        "reasoning": "The stock is in a deep downtrend below both the 50 and 200-day SMAs with negative momentum acceleration and no breakout structure, which contradicts the required volatility expansion from compression."
+      },
+      "Caterina": {
+        "vote": "PASS",
+        "reasoning": "The setup contradicts the accumulation thesis because Amihud is at zero (indicating no liquidity absorption) and CLV is below 0.5, showing buyers did not control the close despite the heavy volume spike."
+      },
+      "Piero": {
+        "vote": "PASS",
+        "reasoning": "The setup fails because WEC is in a confirmed downtrend with negative autocorrelation and Z-scores that are not extreme enough to trigger the statistical mean-reversion edge."
+      },
+      "Giovanni": {
+        "vote": "PASS",
+        "reasoning": "In a risk-off regime, high-beta utility stocks like WEC are penalized regardless of their technical breakout strength. The deteriorating credit environment and elevated VIX make this a poor time to accumulate aggressive growth names."
+      }
+    },
+    "WM": {
+      "Cosimo": {
+        "vote": "HOLD",
+        "reasoning": "The stock is in a deep downtrend below both the 50-day and 200-day SMAs with extreme overbought oversold conditions that do not signal a reversal. Adding to a position with a -4.86% intraday drop and heavy selling volume violates the discipline of not chasing or entering on weak structural breaks."
+      },
+      "Lorenzo": {
+        "vote": "HOLD",
+        "reasoning": "The Z-scores are in oversold territory, but the heavy selling volume and negative momentum confirm the downtrend is not yet exhausted. Waiting for a structural reversal signal before adding to a losing position."
+      },
+      "Giuliano": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped in a deep downtrend with extreme oversold conditions and no sign of momentum acceleration or volume expansion to trigger a breakout. The RVOL and CMF confirm selling pressure remains dominant, making this a low-probability setup for a reversal."
+      },
+      "Caterina": {
+        "vote": "HOLD",
+        "reasoning": "Price is trapped below the lower Bollinger Band with a negative CLV of -0.92, indicating institutional distribution rather than accumulation. The heavy volume and extreme Amihud spike suggest a fragile liquidity vacuum where no reliable inflection point exists yet."
+      },
+      "Piero": {
+        "vote": "BUY",
+        "reasoning": "WM is deeply overextended at a Z-score of -3.20 with RSI divergence, creating a high-probability mean-reversion setup. The statistical edge increases as price deviates further from the 200-day mean, making this an ideal entry point for a fade."
+      },
+      "Giovanni": {
+        "vote": "SELL",
+        "reasoning": "In a risk-off regime, high-beta names like WM are penalized as the market seeks defensive exposure. The downtrend and elevated volatility confirm the macro environment favors selling longs on cyclical stocks."
+      }
+    }
+  },
+  "actions": [
+    {
+      "ticker": "NFLX",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NTAP",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NWSA",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "STZ",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "ACGL",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "AIG",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "AMCR",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "AMT",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "AVGO",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "AXP",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "BR",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "COST",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "EW",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "FANG",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "GWW",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NDAQ",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NEE",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NEM",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NKE",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "NWS",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "PG",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "VMC",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "VST",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    },
+    {
+      "ticker": "WM",
+      "action": "buy",
+      "amount_usd": 10.0,
+      "reason": "1/6 BUY \u2192 $10"
+    }
+  ],
+  "portfolio_snapshot": {
+    "date": "2025-03-12",
+    "cash": 0.0,
+    "positions": {
+      "CMI": {
+        "shares": 0.106489,
+        "avg_cost": 93.906,
+        "current_price": 88.6359,
+        "market_value": 9.4388,
+        "unrealized_pnl": -0.5612
+      },
+      "NFLX": {
+        "shares": 0.118812,
+        "avg_cost": 168.3337,
+        "current_price": 167.0282,
+        "market_value": 19.8449,
+        "unrealized_pnl": -0.1551
+      },
+      "NTAP": {
+        "shares": 0.118812,
+        "avg_cost": 168.3337,
+        "current_price": 167.0282,
+        "market_value": 19.8449,
+        "unrealized_pnl": -0.1551
+      },
+      "NWSA": {
+        "shares": 0.178281,
+        "avg_cost": 168.2738,
+        "current_price": 167.0282,
+        "market_value": 29.7779,
+        "unrealized_pnl": -0.2221
+      },
+      "ACGL": {
+        "shares": 0.117021,
+        "avg_cost": 256.3632,
+        "current_price": 258.0044,
+        "market_value": 30.1921,
+        "unrealized_pnl": 0.1921
+      },
+      "ADSK": {
+        "shares": 0.15602,
+        "avg_cost": 128.1884,
+        "current_price": 132.8843,
+        "market_value": 20.7327,
+        "unrealized_pnl": 0.7327
+      },
+      "AIG": {
+        "shares": 0.121738,
+        "avg_cost": 164.2869,
+        "current_price": 164.57,
+        "market_value": 20.0345,
+        "unrealized_pnl": 0.0345
+      },
+      "AMCR": {
+        "shares": 0.180952,
+        "avg_cost": 165.7899,
+        "current_price": 164.57,
+        "market_value": 29.7793,
+        "unrealized_pnl": -0.2207
+      },
+      "AMT": {
+        "shares": 0.180952,
+        "avg_cost": 165.7899,
+        "current_price": 164.57,
+        "market_value": 29.7793,
+        "unrealized_pnl": -0.2207
+      },
+      "AVGO": {
+        "shares": 0.767027,
+        "avg_cost": 39.1121,
+        "current_price": 39.0321,
+        "market_value": 29.9387,
+        "unrealized_pnl": -0.0613
+      },
+      "AXP": {
+        "shares": 0.180952,
+        "avg_cost": 165.7899,
+        "current_price": 164.57,
+        "market_value": 29.7793,
+        "unrealized_pnl": -0.2207
+      },
+      "AZO": {
+        "shares": 0.550619,
+        "avg_cost": 18.1614,
+        "current_price": 18.6844,
+        "market_value": 10.288,
+        "unrealized_pnl": 0.288
+      },
+      "BR": {
+        "shares": 0.767027,
+        "avg_cost": 39.1121,
+        "current_price": 39.0321,
+        "market_value": 29.9387,
+        "unrealized_pnl": -0.0613
+      },
+      "CARR": {
+        "shares": 0.067568,
+        "avg_cost": 148.0,
+        "current_price": 158.8,
+        "market_value": 10.7297,
+        "unrealized_pnl": 0.7297
+      },
+      "COST": {
+        "shares": 0.771986,
+        "avg_cost": 38.8608,
+        "current_price": 39.0425,
+        "market_value": 30.1402,
+        "unrealized_pnl": 0.1402
+      },
+      "CRH": {
+        "shares": 0.106489,
+        "avg_cost": 93.906,
+        "current_price": 88.6359,
+        "market_value": 9.4388,
+        "unrealized_pnl": -0.5612
+      },
+      "CTRA": {
+        "shares": 0.157803,
+        "avg_cost": 63.37,
+        "current_price": 67.32,
+        "market_value": 10.6233,
+        "unrealized_pnl": 0.6233
+      },
+      "DELL": {
+        "shares": 0.188679,
+        "avg_cost": 53.0,
+        "current_price": 53.04,
+        "market_value": 10.0075,
+        "unrealized_pnl": 0.0075
+      },
+      "EIX": {
+        "shares": 0.19426,
+        "avg_cost": 102.9547,
+        "current_price": 102.03,
+        "market_value": 19.8204,
+        "unrealized_pnl": -0.1796
+      },
+      "ETN": {
+        "shares": 0.19426,
+        "avg_cost": 102.9547,
+        "current_price": 102.03,
+        "market_value": 19.8204,
+        "unrealized_pnl": -0.1796
+      },
+      "EW": {
+        "shares": 0.293555,
+        "avg_cost": 102.1954,
+        "current_price": 102.03,
+        "market_value": 29.9514,
+        "unrealized_pnl": -0.0486
+      },
+      "FANG": {
+        "shares": 0.377216,
+        "avg_cost": 53.02,
+        "current_price": 53.04,
+        "market_value": 20.0075,
+        "unrealized_pnl": 0.0075
+      },
+      "FIX": {
+        "shares": 0.397924,
+        "avg_cost": 50.2609,
+        "current_price": 50.05,
+        "market_value": 19.9161,
+        "unrealized_pnl": -0.0839
+      },
+      "GWW": {
+        "shares": 0.237525,
+        "avg_cost": 91.3146,
+        "current_price": 87.281,
+        "market_value": 20.7314,
+        "unrealized_pnl": -0.9581
+      },
+      "MCK": {
+        "shares": 0.125302,
+        "avg_cost": 79.8074,
+        "current_price": 82.7657,
+        "market_value": 10.3707,
+        "unrealized_pnl": 0.3707
+      },
+      "NDAQ": {
+        "shares": 0.118839,
+        "avg_cost": 168.2948,
+        "current_price": 167.0282,
+        "market_value": 19.8495,
+        "unrealized_pnl": -0.1505
+      },
+      "NEE": {
+        "shares": 0.08031,
+        "avg_cost": 249.0337,
+        "current_price": 241.5266,
+        "market_value": 19.3971,
+        "unrealized_pnl": -0.6029
+      },
+      "NEM": {
+        "shares": 0.118839,
+        "avg_cost": 168.2948,
+        "current_price": 167.0282,
+        "market_value": 19.8495,
+        "unrealized_pnl": -0.1505
+      },
+      "NKE": {
+        "shares": 0.08031,
+        "avg_cost": 249.0337,
+        "current_price": 241.5266,
+        "market_value": 19.3971,
+        "unrealized_pnl": -0.6029
+      },
+      "NWS": {
+        "shares": 0.08031,
+        "avg_cost": 249.0337,
+        "current_price": 241.5266,
+        "market_value": 19.3971,
+        "unrealized_pnl": -0.6029
+      },
+      "PEG": {
+        "shares": 0.23077,
+        "avg_cost": 86.6664,
+        "current_price": 91.336,
+        "market_value": 21.0776,
+        "unrealized_pnl": 1.0776
+      },
+      "PG": {
+        "shares": 0.46154,
+        "avg_cost": 86.6664,
+        "current_price": 91.336,
+        "market_value": 42.1552,
+        "unrealized_pnl": 2.1552
+      },
+      "PGR": {
+        "shares": 0.23077,
+        "avg_cost": 86.6664,
+        "current_price": 91.336,
+        "market_value": 21.0776,
+        "unrealized_pnl": 1.0776
+      },
+      "PLD": {
+        "shares": 0.23077,
+        "avg_cost": 86.6664,
+        "current_price": 91.336,
+        "market_value": 21.0776,
+        "unrealized_pnl": 1.0776
+      },
+      "PRU": {
+        "shares": 0.23077,
+        "avg_cost": 86.6664,
+        "current_price": 91.336,
+        "market_value": 21.0776,
+        "unrealized_pnl": 1.0776
+      },
+      "PTC": {
+        "shares": 0.23077,
+        "avg_cost": 86.6664,
+        "current_price": 91.336,
+        "market_value": 21.0776,
+        "unrealized_pnl": 1.0776
+      },
+      "SATS": {
+        "shares": 0.19426,
+        "avg_cost": 102.9547,
+        "current_price": 102.03,
+        "market_value": 19.8204,
+        "unrealized_pnl": -0.1796
+      },
+      "T": {
+        "shares": 0.0689,
+        "avg_cost": 145.1376,
+        "current_price": 137.4023,
+        "market_value": 9.467,
+        "unrealized_pnl": -0.533
+      },
+      "TROW": {
+        "shares": 0.144621,
+        "avg_cost": 138.292,
+        "current_price": 139.3863,
+        "market_value": 20.1583,
+        "unrealized_pnl": 0.1583
+      },
+      "TSN": {
+        "shares": 0.122395,
+        "avg_cost": 163.405,
+        "current_price": 168.628,
+        "market_value": 20.6393,
+        "unrealized_pnl": 0.6393
+      },
+      "TYL": {
+        "shares": 0.122395,
+        "avg_cost": 163.405,
+        "current_price": 168.628,
+        "market_value": 20.6393,
+        "unrealized_pnl": 0.6393
+      },
+      "UBER": {
+        "shares": 0.122395,
+        "avg_cost": 163.405,
+        "current_price": 168.628,
+        "market_value": 20.6393,
+        "unrealized_pnl": 0.6393
+      },
+      "USB": {
+        "shares": 0.122395,
+        "avg_cost": 163.405,
+        "current_price": 168.628,
+        "market_value": 20.6393,
+        "unrealized_pnl": 0.6393
+      },
+      "VMC": {
+        "shares": 0.218216,
+        "avg_cost": 91.6525,
+        "current_price": 87.281,
+        "market_value": 19.0461,
+        "unrealized_pnl": -0.9539
+      },
+      "VST": {
+        "shares": 0.218216,
+        "avg_cost": 91.6525,
+        "current_price": 87.281,
+        "market_value": 19.0461,
+        "unrealized_pnl": -0.9539
+      },
+      "WAT": {
+        "shares": 0.084833,
+        "avg_cost": 235.757,
+        "current_price": 248.09,
+        "market_value": 21.0462,
+        "unrealized_pnl": 1.0462
+      },
+      "WM": {
+        "shares": 0.184361,
+        "avg_cost": 108.4827,
+        "current_price": 102.58,
+        "market_value": 18.9118,
+        "unrealized_pnl": -1.0882
+      },
+      "CPB": {
+        "shares": 0.072692,
+        "avg_cost": 137.5665,
+        "current_price": 135.9128,
+        "market_value": 9.8798,
+        "unrealized_pnl": -0.1202
+      },
+      "ED": {
+        "shares": 0.197161,
+        "avg_cost": 50.72,
+        "current_price": 50.05,
+        "market_value": 9.8679,
+        "unrealized_pnl": -0.1321
+      },
+      "STZ": {
+        "shares": 0.152091,
+        "avg_cost": 65.75,
+        "current_price": 66.4,
+        "market_value": 10.0989,
+        "unrealized_pnl": 0.0989
+      }
+    },
+    "total_value": 1006.2592,
+    "total_return_pct": 0.6259,
+    "num_positions": 50
+  }
+}

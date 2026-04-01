@@ -1,0 +1,247 @@
+{
+  "starting_cash": 1000.0,
+  "cash": 200.0,
+  "positions": {
+    "CMI": {
+      "shares": 2.6622364434358845,
+      "avg_cost": 93.90600921883174
+    },
+    "TYL": {
+      "shares": 1.25,
+      "avg_cost": 160.0
+    },
+    "T": {
+      "shares": 1.3780024512374915,
+      "avg_cost": 145.13762281075293
+    },
+    "CRH": {
+      "shares": 1.5973418660615306,
+      "avg_cost": 93.90600921883174
+    }
+  },
+  "trade_log": [
+    {
+      "date": "2025-03-11",
+      "ticker": "CMI",
+      "action": "buy",
+      "shares": 2.662236,
+      "price": 93.906,
+      "value": 250.0,
+      "cash_after": 750.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "TYL",
+      "action": "buy",
+      "shares": 1.25,
+      "price": 160.0,
+      "value": 200.0,
+      "cash_after": 550.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "T",
+      "action": "buy",
+      "shares": 1.378002,
+      "price": 145.1376,
+      "value": 200.0,
+      "cash_after": 350.0
+    },
+    {
+      "date": "2025-03-11",
+      "ticker": "CRH",
+      "action": "buy",
+      "shares": 1.597342,
+      "price": 93.906,
+      "value": 150.0,
+      "cash_after": 200.0
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2025-03-10",
+      "cash": 200.0,
+      "positions": {
+        "CMI": {
+          "shares": 2.662236,
+          "avg_cost": 93.906,
+          "current_price": 95.1552,
+          "market_value": 253.3257,
+          "unrealized_pnl": 3.3257
+        },
+        "TYL": {
+          "shares": 1.25,
+          "avg_cost": 160.0,
+          "current_price": 156.766,
+          "market_value": 195.9575,
+          "unrealized_pnl": -4.0425
+        },
+        "T": {
+          "shares": 1.378002,
+          "avg_cost": 145.1376,
+          "current_price": 145.6449,
+          "market_value": 200.699,
+          "unrealized_pnl": 0.699
+        },
+        "CRH": {
+          "shares": 1.597342,
+          "avg_cost": 93.906,
+          "current_price": 95.1552,
+          "market_value": 151.9954,
+          "unrealized_pnl": 1.9954
+        }
+      },
+      "total_value": 1001.9776,
+      "total_return_pct": 0.1978,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-03-11",
+      "cash": 200.0,
+      "positions": {
+        "CMI": {
+          "shares": 2.662236,
+          "avg_cost": 93.906,
+          "current_price": 91.837,
+          "market_value": 244.4918,
+          "unrealized_pnl": -5.5082
+        },
+        "TYL": {
+          "shares": 1.25,
+          "avg_cost": 160.0,
+          "current_price": 161.68,
+          "market_value": 202.1,
+          "unrealized_pnl": 2.1
+        },
+        "T": {
+          "shares": 1.378002,
+          "avg_cost": 145.1376,
+          "current_price": 139.9092,
+          "market_value": 192.7952,
+          "unrealized_pnl": -7.2048
+        },
+        "CRH": {
+          "shares": 1.597342,
+          "avg_cost": 93.906,
+          "current_price": 91.837,
+          "market_value": 146.6951,
+          "unrealized_pnl": -3.3049
+        }
+      },
+      "total_value": 986.0821,
+      "total_return_pct": -1.3918,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-03-12",
+      "cash": 200.0,
+      "positions": {
+        "CMI": {
+          "shares": 2.662236,
+          "avg_cost": 93.906,
+          "current_price": 88.6359,
+          "market_value": 235.9696,
+          "unrealized_pnl": -14.0304
+        },
+        "TYL": {
+          "shares": 1.25,
+          "avg_cost": 160.0,
+          "current_price": 168.628,
+          "market_value": 210.785,
+          "unrealized_pnl": 10.785
+        },
+        "T": {
+          "shares": 1.378002,
+          "avg_cost": 145.1376,
+          "current_price": 137.4023,
+          "market_value": 189.3407,
+          "unrealized_pnl": -10.6593
+        },
+        "CRH": {
+          "shares": 1.597342,
+          "avg_cost": 93.906,
+          "current_price": 88.6359,
+          "market_value": 141.5818,
+          "unrealized_pnl": -8.4182
+        }
+      },
+      "total_value": 977.6771,
+      "total_return_pct": -2.2323,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-03-13",
+      "cash": 200.0,
+      "positions": {
+        "CMI": {
+          "shares": 2.662236,
+          "avg_cost": 93.906,
+          "current_price": 88.3431,
+          "market_value": 235.1902,
+          "unrealized_pnl": -14.8098
+        },
+        "TYL": {
+          "shares": 1.25,
+          "avg_cost": 160.0,
+          "current_price": 162.324,
+          "market_value": 202.905,
+          "unrealized_pnl": 2.905
+        },
+        "T": {
+          "shares": 1.378002,
+          "avg_cost": 145.1376,
+          "current_price": 139.041,
+          "market_value": 191.5989,
+          "unrealized_pnl": -8.4011
+        },
+        "CRH": {
+          "shares": 1.597342,
+          "avg_cost": 93.906,
+          "current_price": 88.3431,
+          "market_value": 141.1141,
+          "unrealized_pnl": -8.8859
+        }
+      },
+      "total_value": 970.8082,
+      "total_return_pct": -2.9192,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-03-14",
+      "cash": 200.0,
+      "positions": {
+        "CMI": {
+          "shares": 2.662236,
+          "avg_cost": 93.906,
+          "current_price": 87.6599,
+          "market_value": 233.3714,
+          "unrealized_pnl": -16.6286
+        },
+        "TYL": {
+          "shares": 1.25,
+          "avg_cost": 160.0,
+          "current_price": 168.866,
+          "market_value": 211.0825,
+          "unrealized_pnl": 11.0825
+        },
+        "T": {
+          "shares": 1.378002,
+          "avg_cost": 145.1376,
+          "current_price": 140.7774,
+          "market_value": 193.9915,
+          "unrealized_pnl": -6.0085
+        },
+        "CRH": {
+          "shares": 1.597342,
+          "avg_cost": 93.906,
+          "current_price": 87.6599,
+          "market_value": 140.0228,
+          "unrealized_pnl": -9.9772
+        }
+      },
+      "total_value": 978.4683,
+      "total_return_pct": -2.1532,
+      "num_positions": 4
+    }
+  ]
+}

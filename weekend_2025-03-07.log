@@ -1,0 +1,151 @@
+
+======================================================================
+MEDICI WEEKEND PIPELINE — Watchlist Builder
+  As of: 2025-03-07
+  Agents: Cosimo, Lorenzo, Giuliano, Giovanni, Caterina, Piero
+======================================================================
+
+  [STEP 1] Hard filter...
+           414 stocks passed (Close>$5, AvgVol>1M, DolVol>$10M) in 3.2s
+
+  [STEP 1.5] Giovanni macro read...
+             Regime: risk-off (conf 8)
+             The market is in a clear risk-off phase as SPY has fallen 5% over two weeks while credit spreads (HYG vs TLT) are widening, indicating deteriorating risk appetite. Despite the VIX being elevated, the breadth metric shows only 48.5% of stocks above their 200-day SMA, confirming that the recent moves are driven by a few names rather than broad participation.
+             (9s)
+
+  [STEP 2] Solo pitches (414 tickers × 5 agents)...
+           [25/414] 3 tickers pitched so far
+           [50/414] 6 tickers pitched so far
+           [75/414] 14 tickers pitched so far
+           [100/414] 15 tickers pitched so far
+           [125/414] 18 tickers pitched so far
+           [150/414] 18 tickers pitched so far
+           [175/414] 22 tickers pitched so far
+           [200/414] 22 tickers pitched so far
+           [225/414] 22 tickers pitched so far
+           [250/414] 22 tickers pitched so far
+           [275/414] 23 tickers pitched so far
+           [300/414] 27 tickers pitched so far
+           [325/414] 28 tickers pitched so far
+           [350/414] 29 tickers pitched so far
+           [375/414] 29 tickers pitched so far
+           [400/414] 32 tickers pitched so far
+           [414/414] 35 tickers pitched so far
+           Total pitched: 35 tickers
+             ADSK: Piero
+             AIG: Piero
+             AMZN: Piero
+             AVB: Piero
+             AXP: Piero
+             AZO: Piero
+             BAX: Giuliano
+             BBY: Giuliano
+             BDX: Giuliano
+             BRK-B: Giuliano
+             COST: Piero
+             CRH: Giuliano
+             CRL: Piero
+             EA: Lorenzo
+             ED: Piero
+             EVRG: Piero
+             FIS: Piero
+             FRT: Piero
+             GOOGL: Piero
+             GWW: Piero
+             LNT: Piero
+             NFLX: Piero
+             ODFL: Piero
+             OKE: Piero
+             ON: Piero
+             ORCL: Piero
+             RL: Piero
+             ROP: Piero
+             T: Piero
+             TECH: Giuliano
+             TSN: Piero
+             TYL: Piero
+             USB: Piero
+             WM: Piero
+             WMB: Piero
+
+  [STEP 3] Targeted Q&A...
+           LNT: 1 Q&A exchange
+           GOOGL: 1 Q&A exchange
+           AMZN: 1 Q&A exchange
+           AXP: 1 Q&A exchange
+           AIG: 1 Q&A exchange
+           T: 1 Q&A exchange
+           ADSK: 1 Q&A exchange
+           AZO: 1 Q&A exchange
+           AVB: 1 Q&A exchange
+           BAX: 1 Q&A exchange
+           BDX: 1 Q&A exchange
+           BRK-B: 1 Q&A exchange
+           BBY: 1 Q&A exchange
+           TECH: 1 Q&A exchange
+           CRL: 1 Q&A exchange
+           ED: 1 Q&A exchange
+           COST: 1 Q&A exchange
+           CRH: 1 Q&A exchange
+           EA: 1 Q&A exchange
+           EVRG: 1 Q&A exchange
+           FRT: 1 Q&A exchange
+           FIS: 1 Q&A exchange
+           NFLX: 1 Q&A exchange
+           ODFL: 1 Q&A exchange
+           ON: 1 Q&A exchange
+           OKE: 1 Q&A exchange
+           ORCL: 1 Q&A exchange
+           RL: 1 Q&A exchange
+           ROP: 1 Q&A exchange
+           TYL: 1 Q&A exchange
+           TSN: 1 Q&A exchange
+           USB: 1 Q&A exchange
+           GWW: 1 Q&A exchange
+           WM: 1 Q&A exchange
+           WMB: 1 Q&A exchange
+
+  [STEP 4] Voting...
+           LNT: 0 stay / 5 go → DROPPED
+           GOOGL: 0 stay / 5 go → DROPPED
+           AMZN: 0 stay / 5 go → DROPPED
+           AXP: 0 stay / 5 go → DROPPED
+           AIG: 0 stay / 5 go → DROPPED
+           T: 0 stay / 5 go → DROPPED
+           ADSK: 0 stay / 5 go → DROPPED
+           AZO: 0 stay / 5 go → DROPPED
+           AVB: 1 stay / 4 go → DROPPED
+           BAX: 0 stay / 5 go → DROPPED
+           BDX: 0 stay / 5 go → DROPPED
+           BRK-B: 0 stay / 5 go → DROPPED
+           BBY: 0 stay / 5 go → DROPPED
+           TECH: 1 stay / 4 go → DROPPED
+           CRL: 0 stay / 5 go → DROPPED
+           ED: 0 stay / 5 go → DROPPED
+           COST: 3 stay / 2 go → WATCHLIST
+           CRH: 0 stay / 5 go → DROPPED
+           EA: 0 stay / 5 go → DROPPED
+           EVRG: 0 stay / 5 go → DROPPED
+           FRT: 0 stay / 5 go → DROPPED
+           FIS: 0 stay / 5 go → DROPPED
+           NFLX: 0 stay / 5 go → DROPPED
+           ODFL: 1 stay / 4 go → DROPPED
+           ON: 0 stay / 5 go → DROPPED
+           OKE: 0 stay / 5 go → DROPPED
+           ORCL: 0 stay / 5 go → DROPPED
+           RL: 0 stay / 5 go → DROPPED
+           ROP: 0 stay / 5 go → DROPPED
+           TYL: 0 stay / 5 go → DROPPED
+           TSN: 0 stay / 5 go → DROPPED
+           USB: 0 stay / 5 go → DROPPED
+           GWW: 0 stay / 5 go → DROPPED
+           WM: 0 stay / 5 go → DROPPED
+           WMB: 0 stay / 5 go → DROPPED
+
+  Saved: /mnt/iarvis/Projects/Medici/data/watchlists/watchlist_2025-03-07.json
+
+======================================================================
+WEEKEND PIPELINE COMPLETE — 130.9 minutes
+  Watchlist: 1 tickers
+    COST   — advocates: Piero | votes: 3/5
+======================================================================

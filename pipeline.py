@@ -46,6 +46,8 @@ SECTOR_ETFS = ["XLF", "XLE", "XLK", "XLV", "XLI", "XLP", "XLY", "XLU", "XLRE", "
 
 def load_ticker(ticker: str) -> pd.DataFrame:
     path = os.path.join(DATA_DIR, f"{ticker}.parquet")
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"No data file for {ticker}: {path}")
     return pd.read_parquet(path)
 
 
@@ -121,17 +123,31 @@ Score each indicator, identify redundancies, and recommend a non-redundant subse
         "max_tokens": 4096,
     }
 
-    resp = requests.post(QWEN_API, json=payload, timeout=300)
-    resp.raise_for_status()
+    for attempt in range(3):
+        try:
+            resp = requests.post(QWEN_API, json=payload, timeout=300)
+            resp.raise_for_status()
 
-    raw = resp.json()["choices"][0]["message"]["content"]
-    cleaned = raw.strip()
-    if cleaned.startswith("```"):
-        cleaned = "\n".join(cleaned.split("\n")[1:])
-    if cleaned.endswith("```"):
-        cleaned = "\n".join(cleaned.split("\n")[:-1])
+            raw = resp.json()["choices"][0]["message"]["content"]
+            cleaned = raw.strip()
+            if cleaned.startswith("```"):
+                cleaned = "\n".join(cleaned.split("\n")[1:])
+            if cleaned.endswith("```"):
+                cleaned = "\n".join(cleaned.split("\n")[:-1])
 
-    return json.loads(cleaned.strip())
+            return json.loads(cleaned.strip())
+        except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError) as e:
+            print(f"      _score_chunk attempt {attempt+1}/3 failed: {e}")
+            if attempt < 2:
+                time.sleep(5)
+
+    # Fallback: recommend all indicators in the chunk
+    print(f"      _score_chunk giving up, keeping all {len(chunk)} indicators")
+    return {
+        "scores": [{"name": ind["name"], "score": 4, "reason": "fallback"} for ind in chunk],
+        "redundancy_groups": [],
+        "recommended_subset": [ind["name"] for ind in chunk],
+    }
 
 
 def score_indicators(market_context: dict) -> dict:
@@ -161,12 +177,18 @@ def score_indicators(market_context: dict) -> dict:
 def pack_payload(ticker: str, date: str, market_context: dict,
                  all_indicators: dict, scoring_result: dict) -> dict:
     """Pack only the surviving indicators into the final payload."""
+    
     recommended = set(scoring_result.get("recommended_subset", []))
 
-    # Also include anything scored >= threshold that Qwen didn't put in subset
-    for s in scoring_result.get("scores", []):
-        if s.get("score", 0) >= SCORE_THRESHOLD:
-            recommended.add(s["name"])
+    # Fallback: Only use raw scores if Qwen failed to provide a subset
+    if not recommended:
+        for s in scoring_result.get("scores", []):
+            if s.get("score", 0) >= 4:  # Only keep 'High value' or 'Critical'
+                recommended.add(s["name"])
+
+    # Hard cap the payload size to prevent VRAM overflow / attention collapse
+    MAX_INDICATORS = 15
+    recommended = set(list(recommended)[:MAX_INDICATORS])
 
     filtered = {k: v for k, v in all_indicators.items() if k in recommended}
 
@@ -177,7 +199,6 @@ def pack_payload(ticker: str, date: str, market_context: dict,
         "scoring_summary": {
             "total_evaluated": len(scoring_result.get("scores", [])),
             "kept": len(filtered),
-            "dropped": [s["name"] for s in scoring_result.get("scores", []) if s.get("score", 0) < SCORE_THRESHOLD],
             "redundancy_groups": scoring_result.get("redundancy_groups", []),
         },
         "indicators": filtered,
@@ -233,8 +254,8 @@ def run(ticker: str):
     print(f"[5] Packing payload...")
     payload = pack_payload(ticker, ctx["date"], ctx, all_indicators, scoring)
     kept = payload["scoring_summary"]["kept"]
-    dropped = payload["scoring_summary"]["dropped"]
-    print(f"    Kept {kept} indicators, dropped {len(dropped)}: {dropped}")
+    total = payload["scoring_summary"]["total_evaluated"]
+    print(f"    Kept {kept}/{total} indicators")
 
     # Save
     os.makedirs(OUTPUT_DIR, exist_ok=True)

@@ -1,0 +1,458 @@
+
+======================================================================
+MEDICI BACKTEST v3 — Full Consiglio
+  Period: 2025-03-10 → 2025-03-14
+  Capo:   Lorenzo
+  Agents: Cosimo, Lorenzo, Giuliano, Giovanni, Caterina, Piero
+  Cash:   $1000.00
+======================================================================
+
+  5 trading days
+
+
+  DAY 1/5 — 2025-03-10
+  ------------------------------------------------------------
+    [P1] Screener...
+         403 candidates in 3.7s
+    [P2] Pitches:
+         Cosimo    : CRH, CMI, T (23s)
+         Lorenzo   : T, CRH, WAT (23s)
+         Giuliano  : LVS, LDOS, CRH (27s)
+         Giovanni  : no picks (16s)
+         Caterina  : no picks (14s)
+         Piero     : WAT, TYL, LVS (20s)
+         Unique tickers pitched: 7 — ['CMI', 'CRH', 'LDOS', 'LVS', 'T', 'TYL', 'WAT']
+    [P3] Deep dives:
+         --- CMI ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         CMI: 85 indicators → 15 kept (170s)
+         --- CRH ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         CRH: 85 indicators → 15 kept (162s)
+         --- LDOS ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         LDOS: 86 indicators → 15 kept (172s)
+         --- LVS ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         LVS: 86 indicators → 15 kept (170s)
+         --- T ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         T: 85 indicators → 15 kept (176s)
+         --- TYL ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         TYL: 86 indicators → 15 kept (176s)
+         --- WAT ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         WAT: 86 indicators → 15 kept (162s)
+    [P4a] Debates:
+         --- CMI (advocates: Cosimo) ---
+          Cosimo    : bullish  conf=7 trade=True (21s)
+         --- CRH (advocates: Cosimo, Lorenzo, Giuliano) ---
+          Cosimo    : bullish  conf=6 trade=False (16s)
+          Lorenzo   : neutral  conf=2 trade=False (23s)
+          Giuliano  : bullish  conf=7 trade=True (15s)
+          RT Cosimo→Lorenzo           : partially_agree (24s)
+          RT Cosimo→Giuliano          : disagree (25s)
+          RT Lorenzo→Cosimo           : partially_agree (24s)
+          RT Lorenzo→Giuliano         : disagree (22s)
+          RT Giuliano→Cosimo          : disagree (25s)
+          RT Giuliano→Lorenzo         : disagree (25s)
+          RB Cosimo    : conf=7 — My edge is derived from the statistical probability of price (32s)
+          RB Lorenzo   : conf=3 — My thesis is correct because mean reversion requires structu (32s)
+          RB Giuliano  : conf=9 — The critics are paralyzed by waiting for confirmation and la (29s)
+         --- LDOS (advocates: Giuliano) ---
+          Giuliano  : bearish  conf=7 trade=True (11s)
+         --- LVS (advocates: Giuliano, Piero) ---
+          Giuliano  : bullish  conf=7 trade=True (14s)
+          Piero     : neutral  conf=2 trade=False (22s)
+          RT Giuliano→Piero           : disagree (21s)
+          RT Piero→Giuliano           : disagree (25s)
+          RB Giuliano  : conf=9 — I am not trading a statistical mean-reversion model; I am tr (28s)
+          RB Piero     : conf=8 — My edge is mathematical and contingent on the market being o (26s)
+         --- T (advocates: Cosimo, Lorenzo) ---
+          Cosimo    : bullish  conf=6 trade=True (17s)
+          Lorenzo   : neutral  conf=2 trade=False (17s)
+          RT Cosimo→Lorenzo           : partially_agree (27s)
+          RT Lorenzo→Cosimo           : disagree (31s)
+          RB Cosimo    : conf=7 — My edge is derived from repetition and discipline, not from  (31s)
+          RB Lorenzo   : conf=4 — My strategy is not about predicting the top or bottom; it is (28s)
+         --- TYL (advocates: Piero) ---
+          Piero     : bearish  conf=8 trade=True (21s)
+         --- WAT (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=6 trade=False (16s)
+          Piero     : neutral  conf=3 trade=False (16s)
+          RT Lorenzo→Piero            : partially_agree (26s)
+          RT Piero→Lorenzo            : disagree (30s)
+          RB Lorenzo   : conf=7 — The confluence of a structural break below the 200-day SMA w (28s)
+          RB Piero     : conf=7 — A high ADX combined with extreme oversold conditions (RSI <  (31s)
+    [P4b] Capo (Lorenzo) deciding...
+         Decision in 63s
+         Rationale: CMI offered the cleanest setup: confirmed trend, institutional volume, and zero correlation to broader market risk — exactly the kind of independent risk structure I demand. TYL provides the statistical extreme mean-reversion play that defines my edge. T and CRH round out the portfolio with trend-following exposure, sized smaller due to overbought readings. I wanted to short LDOS and WAT but the portfolio structure limits me to longs, so I allocated to the highest-conviction bullish setups instead.
+         Actions (4):
+           BUY CMI $250.00 — Strongest thesis of the day. Structural uptrend above 50/200 SMA, ADX >25, 2x volume confirming institutional accumulation. Negative beta to SPY gives portfolio diversification. Cosimo's thesis was essentially unchallenged in debate.
+           BUY TYL $200.00 — Extreme Z-score deviation from 200-day mean is the exact statistical dislocation I live for. RSI divergence confirms selling exhaustion. Buying the mean reversion toward 182-190 offers asymmetric R:R. Piero's math is sound here.
+           BUY T $200.00 — ADX 41 with elevated volume confirms institutional accumulation in telecom. Price above 50/200 SMA confluence. Overbought RSI is a concern but trend strength overrides — sizing moderately rather than max conviction.
+           BUY CRH $150.00 — Momentum is real — 2x volume breakout above structural levels with ADX 32.6. Giuliano's volatility expansion thesis survived debate well. Sizing down due to RSI 71 and STC at 99.99 — the entry is late but the trend is confirmed.
+      EXEC: BUY 2.6622 CMI @ $93.91 ($250.00)
+      EXEC: BUY 1.2500 TYL @ $160.00 ($200.00)
+      EXEC: BUY 1.3780 T @ $145.14 ($200.00)
+      EXEC: BUY 1.5973 CRH @ $93.91 ($150.00)
+    [>>] Portfolio: $1001.98 (+0.20%)
+
+  DAY 2/5 — 2025-03-11
+  ------------------------------------------------------------
+    [P1] Screener...
+         389 candidates in 3.5s
+    [P2] Pitches:
+         Cosimo    : no picks (15s)
+         Lorenzo   : ACGL, STZ, NWS (18s)
+         Giuliano  : STZ (14s)
+         Giovanni  : no picks (13s)
+         Caterina  : STZ, WFC, DD (17s)
+         Piero     : ACGL, NWS, NEE (19s)
+         Unique tickers pitched: 6 — ['ACGL', 'DD', 'NEE', 'NWS', 'STZ', 'WFC']
+    [P3] Deep dives:
+         --- ACGL ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         ACGL: 86 indicators → 15 kept (175s)
+         --- DD ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         DD: 86 indicators → 15 kept (177s)
+         --- NEE ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         NEE: 86 indicators → 15 kept (166s)
+         --- NWS ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         NWS: 86 indicators → 15 kept (175s)
+         --- STZ ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         STZ: 86 indicators → 15 kept (171s)
+         --- WFC ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         WFC: 86 indicators → 15 kept (169s)
+    [P4a] Debates:
+         --- ACGL (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=6 trade=False (17s)
+          Piero     : bearish  conf=9 trade=True (15s)
+          RT Lorenzo→Piero            : disagree (25s)
+          RT Piero→Lorenzo            : partially_agree (24s)
+          RB Lorenzo   : conf=9 — The statistical edge is strongest when the market is screami (32s)
+          RB Piero     : conf=7 — The market is currently in a regime of negative autocorrelat (38s)
+         --- DD (advocates: Caterina) ---
+          Caterina  : neutral  conf=3 trade=False (21s)
+         --- NEE (advocates: Piero) ---
+          Piero     : bearish  conf=6 trade=True (16s)
+         --- NWS (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=7 trade=True (15s)
+          Piero     : bearish  conf=7 trade=True (15s)
+          RT Lorenzo→Piero            : disagree (23s)
+          RT Piero→Lorenzo            : disagree (24s)
+          RB Lorenzo   : conf=6 — The confluence of a failed structural test (price failing to (33s)
+          RB Piero     : conf=8 — The statistical edge of mean reversion is derived from the p (27s)
+         --- STZ (advocates: Lorenzo, Giuliano, Caterina) ---
+          Lorenzo   : bearish  conf=6 trade=True (16s)
+          Giuliano  : bearish  conf=8 trade=True (15s)
+          Caterina  : neutral  conf=2 trade=False (14s)
+          RT Lorenzo→Giuliano         : disagree (22s)
+          RT Lorenzo→Caterina         : disagree (26s)
+          RT Giuliano→Lorenzo         : disagree (23s)
+          RT Giuliano→Caterina        : partially_agree (23s)
+          RT Caterina→Lorenzo         : disagree (24s)
+          RT Caterina→Giuliano        : disagree (25s)
+          RB Lorenzo   : conf=7 — The Z-Score extreme (2.5 sigma below 200-SMA) combined with  (34s)
+          RB Giuliano  : conf=9 — RSI at 16 with 3x volume is not a signal to wait for confirm (27s)
+          RB Caterina  : conf=3 — The only way to distinguish between a 'panic flush' (where t (30s)
+         --- WFC (advocates: Caterina) ---
+          Caterina  : neutral  conf=4 trade=False (15s)
+    [P4b] Capo (Lorenzo) deciding...
+      Claude error: 
+         Decision in 2s
+         Capo returned no decision
+    [>>] Portfolio: $986.08 (-1.39%)
+
+  DAY 3/5 — 2025-03-12
+  ------------------------------------------------------------
+    [P1] Screener...
+         372 candidates in 3.6s
+    [P2] Pitches:
+         Cosimo    : no picks (15s)
+         Lorenzo   : NWS, DD, V (18s)
+         Giuliano  : ACGL, DD (15s)
+         Giovanni  : no picks (12s)
+         Caterina  : no picks (15s)
+         Piero     : NWS, NKE, DD (20s)
+         Unique tickers pitched: 5 — ['ACGL', 'DD', 'NKE', 'NWS', 'V']
+    [P3] Deep dives:
+         --- ACGL ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         ACGL: 86 indicators → 15 kept (168s)
+         --- DD ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         DD: 86 indicators → 15 kept (166s)
+         --- NKE ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         NKE: 86 indicators → 15 kept (165s)
+         --- NWS ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         NWS: 86 indicators → 15 kept (165s)
+         --- V ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         V: 86 indicators → 15 kept (173s)
+    [P4a] Debates:
+         --- ACGL (advocates: Giuliano) ---
+          Giuliano  : neutral  conf=2 trade=False (16s)
+         --- DD (advocates: Lorenzo, Giuliano, Piero) ---
+          Lorenzo   : bearish  conf=6 trade=True (20s)
+          Giuliano  : bearish  conf=7 trade=True (14s)
+          Piero     : neutral  conf=2 trade=False (11s)
+          RT Lorenzo→Giuliano         : disagree (24s)
+          RT Lorenzo→Piero            : partially_agree (29s)
+          RT Giuliano→Lorenzo         : disagree (27s)
+          RT Giuliano→Piero           : disagree (25s)
+          RT Piero→Lorenzo            : disagree (27s)
+          RT Piero→Giuliano           : disagree (27s)
+        Lorenzo rebuttal(DD) FAILED: Unterminated string starting at: line 15 column 5 (char 2302)
+          RB Lorenzo   : FAILED (28s)
+          RB Giuliano  : conf=8 — Lorenzo and Piero are trying to apply mean-reversion filters (31s)
+        Piero rebuttal(DD) FAILED: Unterminated string starting at: line 14 column 5 (char 2366)
+          RB Piero     : FAILED (27s)
+         --- NKE (advocates: Piero) ---
+          Piero     : bearish  conf=7 trade=True (15s)
+         --- NWS (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=6 trade=False (19s)
+          Piero     : neutral  conf=4 trade=False (13s)
+          RT Lorenzo→Piero            : disagree (24s)
+          RT Piero→Lorenzo            : disagree (30s)
+          RB Lorenzo   : conf=7 — My edge is not in timing the break, but in sizing the bet ba (34s)
+          RB Piero     : conf=7 — The statistical definition of a mean-reversion setup is a pr (32s)
+         --- V (advocates: Lorenzo) ---
+          Lorenzo   : bearish  conf=6 trade=True (17s)
+    [P4b] Capo (Lorenzo) deciding...
+      Claude error: 
+         Decision in 2s
+         Capo returned no decision
+    [>>] Portfolio: $977.68 (-2.23%)
+
+  DAY 4/5 — 2025-03-13
+  ------------------------------------------------------------
+    [P1] Screener...
+         393 candidates in 3.6s
+    [P2] Pitches:
+         Cosimo    : no picks (15s)
+         Lorenzo   : NWS, IVZ, V (21s)
+         Giuliano  : no picks (14s)
+         Giovanni  : no picks (14s)
+         Caterina  : no picks (16s)
+         Piero     : NWS, IVZ, V (21s)
+         Unique tickers pitched: 3 — ['IVZ', 'NWS', 'V']
+    [P3] Deep dives:
+         --- IVZ ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         IVZ: 86 indicators → 15 kept (166s)
+         --- NWS ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         NWS: 86 indicators → 15 kept (169s)
+         --- V ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         V: 86 indicators → 15 kept (170s)
+    [P4a] Debates:
+         --- IVZ (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=6 trade=False (17s)
+          Piero     : bearish  conf=7 trade=True (19s)
+          RT Lorenzo→Piero            : disagree (24s)
+          RT Piero→Lorenzo            : disagree (30s)
+          RB Lorenzo   : conf=7 — The extreme momentum readings (CCI -202, TSI -31) in the abs (35s)
+          RB Piero     : conf=6 — The -4.2% snapdown on 1.7x volume creates a local statistica (32s)
+         --- NWS (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=4 trade=False (17s)
+          Piero     : bearish  conf=4 trade=False (14s)
+          RT Lorenzo→Piero            : partially_agree (29s)
+          RT Piero→Lorenzo            : partially_agree (29s)
+          RB Lorenzo   : conf=6 — The fundamental flaw in Piero's thesis is that it treats pri (32s)
+          RB Piero     : conf=7 — The alignment of extreme statistical deviations (Z-score -2. (27s)
+         --- V (advocates: Lorenzo, Piero) ---
+          Lorenzo   : bearish  conf=8 trade=True (16s)
+          Piero     : bearish  conf=8 trade=True (16s)
+          RT Lorenzo→Piero            : disagree (24s)
+          RT Piero→Lorenzo            : disagree (27s)
+          RB Lorenzo   : conf=7 — The statistical extreme (Z-score -3.14) combined with deteri (29s)
+          RB Piero     : conf=7 — The statistical contradiction between the extreme Z-score (- (32s)
+    [P4b] Capo (Lorenzo) deciding...
+      Claude error: 
+         Decision in 2s
+         Capo returned no decision
+    [>>] Portfolio: $970.81 (-2.92%)
+
+  DAY 5/5 — 2025-03-14
+  ------------------------------------------------------------
+    [P1] Screener...
+         369 candidates in 3.6s
+    [P2] Pitches:
+         Cosimo    : no picks (17s)
+         Lorenzo   : WM (15s)
+         Giuliano  : D, DOV (15s)
+         Giovanni  : no picks (13s)
+         Caterina  : D, DOV (16s)
+         Piero     : WM, V, D (18s)
+         Unique tickers pitched: 4 — ['D', 'DOV', 'V', 'WM']
+    [P3] Deep dives:
+         --- D ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         D: 85 indicators → 15 kept (173s)
+         --- DOV ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         DOV: 85 indicators → 15 kept (176s)
+         --- V ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         V: 86 indicators → 15 kept (166s)
+         --- WM ---
+      Chunk 1/5: 15 indicators [momentum, volume_momentum]
+      Chunk 2/5: 21 indicators [trend, volatility]
+      Chunk 3/5: 24 indicators [microstructure, vol_regime, volume]
+      Chunk 4/5: 18 indicators [mean_reversion, momentum_adv, volume_analysis]
+      Chunk 5/5: 16 indicators [breadth, cross_asset, statistical]
+         WM: 86 indicators → 15 kept (168s)
+    [P4a] Debates:
+         --- D (advocates: Giuliano, Caterina, Piero) ---
+          Giuliano  : bullish  conf=8 trade=True (13s)
+          Caterina  : neutral  conf=3 trade=False (22s)
+          Piero     : neutral  conf=2 trade=False (15s)
+          RT Giuliano→Caterina        : disagree (25s)
+          RT Giuliano→Piero           : disagree (21s)
+          RT Caterina→Giuliano        : disagree (27s)
+          RT Caterina→Piero           : disagree (25s)
+          RT Piero→Giuliano           : disagree (27s)
+          RT Piero→Caterina           : disagree (30s)
+          RB Giuliano  : conf=9 — Price action and volume surges are the only truth that matte (25s)
+        Caterina rebuttal(D) FAILED: Unterminated string starting at: line 13 column 5 (char 1931)
+          RB Caterina  : FAILED (28s)
+          RB Piero     : conf=10 — My edge is purely statistical mean reversion in choppy, rang (30s)
+         --- DOV (advocates: Giuliano, Caterina) ---
+          Giuliano  : bullish  conf=9 trade=True (14s)
+          Caterina  : bearish  conf=6 trade=False (17s)
+          RT Giuliano→Caterina        : disagree (24s)
+          RT Caterina→Giuliano        : disagree (21s)
+          RB Giuliano  : conf=8 — RVOL of 2.68 combined with a 10% intraday gain is the most r (23s)
+          RB Caterina  : conf=7 — RVOL and Elder Impulse measure the reaction of retail trader (27s)
+         --- V (advocates: Piero) ---
+          Piero     : neutral  conf=2 trade=False (15s)
+         --- WM (advocates: Lorenzo, Piero) ---
+          Lorenzo   : neutral  conf=2 trade=False (16s)
+          Piero     : bearish  conf=8 trade=True (18s)
+          RT Lorenzo→Piero            : disagree (26s)
+          RT Piero→Lorenzo            : partially_agree (30s)
+          RB Lorenzo   : conf=6 — The defining characteristic of my edge is not entering at th (30s)
+          RB Piero     : conf=6 — The statistical edge of mean reversion is strongest at the a (28s)
+    [P4b] Capo (Lorenzo) deciding...
+      Claude error: 
+         Decision in 2s
+         Capo returned no decision
+    [>>] Portfolio: $978.47 (-2.15%)
+
+
+======================================================================
+BACKTEST COMPLETE
+======================================================================
+  Final Value:  $978.47
+  Total Return: -2.15%
+  Total Trades: 4
+  Max Drawdown: -3.11%
+  Peak Value:   $1001.98
+
+  Results saved to: /mnt/iarvis/Projects/Medici/data/backtests/consiglio_2025-03-10_2025-03-14_Lorenzo

@@ -1,0 +1,1274 @@
+
+======================================================================
+MEDICI ROLLING BACKTEST
+  Period: 2025-03-10 → 2026-03-30
+  Capo: Lorenzo
+  Cash: $1000.00
+  Skip first weekend: True
+======================================================================
+
+  266 total trading days
+
+
+  ######################################################################
+  WEEK 1: watchlist from 2025-03-07, trading 2025-03-10 → 2025-03-14
+  ######################################################################
+  Using existing watchlist: 58 tickers
+
+  DAY 1 (2025-03-10)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-10
+  ============================================================
+    Watchlist: 58 tickers from 2025-03-07
+    [0] Anomaly scan...
+        40 anomalies found, evaluating top 5
+        SHW: skipped (0/5 yes)
+        SPG: skipped (0/5 yes)
+        SWKS: skipped (0/5 yes)
+        SJM: skipped (0/5 yes)
+        SW: skipped (0/5 yes)
+        Today's universe: 58 tickers (0 injected)
+        (108s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — SPY is in a deep structural downtrend with the price well below the 50-day SMA, 
+          (5s)
+    [1] Computing indicators...
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+        WM: 23 indicators (0s)
+    [2] Voting...
+        CMI   : BUY=1 PASS=5
+        NFLX  : BUY=1 PASS=5
+        NTAP  : BUY=1 PASS=5
+        NWSA  : BUY=1 PASS=5
+        STZ   : BUY=1 PASS=5
+        ACGL  : BUY=1 PASS=5
+        ADP   : BUY=0 PASS=6
+        ADSK  : BUY=1 PASS=5
+        AIG   : BUY=1 PASS=5
+        AMCR  : BUY=1 PASS=5
+        AMT   : BUY=1 PASS=5
+        APTV  : BUY=0 PASS=6
+        ATO   : BUY=0 PASS=6
+        AVGO  : BUY=1 PASS=5
+        AXP   : BUY=1 PASS=5
+        AZO   : BUY=1 PASS=5
+        BR    : BUY=1 PASS=5
+        BRK-B : BUY=0 PASS=6
+        CARR  : BUY=1 PASS=5
+        COST  : BUY=1 PASS=5
+        CPB   : BUY=0 PASS=6
+        CRH   : BUY=1 PASS=5
+        CTRA  : BUY=1 PASS=5
+        DELL  : BUY=1 PASS=5
+        DHR   : BUY=0 PASS=6
+        ED    : BUY=0 PASS=6
+        EIX   : BUY=1 PASS=5
+        ETN   : BUY=1 PASS=5
+        EW    : BUY=1 PASS=5
+        FANG  : BUY=1 PASS=5
+        FIX   : BUY=1 PASS=5
+        GWW   : BUY=1 PASS=5
+        LUV   : BUY=0 PASS=6
+        MCK   : BUY=1 PASS=5
+        NDAQ  : BUY=1 PASS=5
+        NEE   : BUY=1 PASS=5
+        NEM   : BUY=1 PASS=5
+        NKE   : BUY=1 PASS=5
+        NWS   : BUY=1 PASS=5
+        PEG   : BUY=1 PASS=5
+        PG    : BUY=2 PASS=4
+        PGR   : BUY=1 PASS=5
+        PLD   : BUY=1 PASS=5
+        PRU   : BUY=1 PASS=5
+        PTC   : BUY=1 PASS=5
+        SATS  : BUY=1 PASS=5
+        T     : BUY=1 PASS=5
+        TROW  : BUY=1 PASS=5
+        TSN   : BUY=1 PASS=5
+        TXT   : BUY=0 PASS=6
+        TYL   : BUY=1 PASS=5
+        UBER  : BUY=1 PASS=5
+        USB   : BUY=1 PASS=5
+        VMC   : BUY=1 PASS=5
+        VST   : BUY=1 PASS=5
+        WAT   : BUY=1 PASS=5
+        WEC   : BUY=1 PASS=5
+        WM    : BUY=1 PASS=5
+    [3] Executing...
+        49 actions:
+          BUY      CMI    $10 — 1/6 BUY → $10
+          BUY      NFLX   $10 — 1/6 BUY → $10
+          BUY      NTAP   $10 — 1/6 BUY → $10
+          BUY      NWSA   $10 — 1/6 BUY → $10
+          BUY      STZ    $10 — 1/6 BUY → $10
+          BUY      ACGL   $10 — 1/6 BUY → $10
+          BUY      ADSK   $10 — 1/6 BUY → $10
+          BUY      AIG    $10 — 1/6 BUY → $10
+          BUY      AMCR   $10 — 1/6 BUY → $10
+          BUY      AMT    $10 — 1/6 BUY → $10
+          BUY      AVGO   $10 — 1/6 BUY → $10
+          BUY      AXP    $10 — 1/6 BUY → $10
+          BUY      AZO    $10 — 1/6 BUY → $10
+          BUY      BR     $10 — 1/6 BUY → $10
+          BUY      CARR   $10 — 1/6 BUY → $10
+          BUY      COST   $10 — 1/6 BUY → $10
+          BUY      CRH    $10 — 1/6 BUY → $10
+          BUY      CTRA   $10 — 1/6 BUY → $10
+          BUY      DELL   $10 — 1/6 BUY → $10
+          BUY      EIX    $10 — 1/6 BUY → $10
+          BUY      ETN    $10 — 1/6 BUY → $10
+          BUY      EW     $10 — 1/6 BUY → $10
+          BUY      FANG   $10 — 1/6 BUY → $10
+          BUY      FIX    $10 — 1/6 BUY → $10
+          BUY      GWW    $10 — 1/6 BUY → $10
+          BUY      MCK    $10 — 1/6 BUY → $10
+          BUY      NDAQ   $10 — 1/6 BUY → $10
+          BUY      NEE    $10 — 1/6 BUY → $10
+          BUY      NEM    $10 — 1/6 BUY → $10
+          BUY      NKE    $10 — 1/6 BUY → $10
+          BUY      NWS    $10 — 1/6 BUY → $10
+          BUY      PEG    $10 — 1/6 BUY → $10
+          BUY      PG     $20 — 2/6 BUY → $20
+          BUY      PGR    $10 — 1/6 BUY → $10
+          BUY      PLD    $10 — 1/6 BUY → $10
+          BUY      PRU    $10 — 1/6 BUY → $10
+          BUY      PTC    $10 — 1/6 BUY → $10
+          BUY      SATS   $10 — 1/6 BUY → $10
+          BUY      T      $10 — 1/6 BUY → $10
+          BUY      TROW   $10 — 1/6 BUY → $10
+          BUY      TSN    $10 — 1/6 BUY → $10
+          BUY      TYL    $10 — 1/6 BUY → $10
+          BUY      UBER   $10 — 1/6 BUY → $10
+          BUY      USB    $10 — 1/6 BUY → $10
+          BUY      VMC    $10 — 1/6 BUY → $10
+          BUY      VST    $10 — 1/6 BUY → $10
+          BUY      WAT    $10 — 1/6 BUY → $10
+          BUY      WEC    $10 — 1/6 BUY → $10
+          BUY      WM     $10 — 1/6 BUY → $10
+      EXEC: BUY 0.1065 CMI @ $93.91 ($10.00)
+      EXEC: BUY 0.0594 NFLX @ $168.44 ($10.00)
+      EXEC: BUY 0.0594 NTAP @ $168.44 ($10.00)
+      EXEC: BUY 0.0594 NWSA @ $168.44 ($10.00)
+      EXEC: BUY 0.1619 STZ @ $61.78 ($10.00)
+      EXEC: BUY 0.0393 ACGL @ $254.75 ($10.00)
+      EXEC: BUY 0.0801 ADSK @ $124.77 ($10.00)
+      EXEC: BUY 0.0606 AIG @ $165.00 ($10.00)
+      EXEC: BUY 0.0606 AMCR @ $165.00 ($10.00)
+      EXEC: BUY 0.0606 AMT @ $165.00 ($10.00)
+      EXEC: BUY 0.2576 AVGO @ $38.83 ($10.00)
+      EXEC: BUY 0.0606 AXP @ $165.00 ($10.00)
+      EXEC: BUY 0.5506 AZO @ $18.16 ($10.00)
+      EXEC: BUY 0.2576 BR @ $38.83 ($10.00)
+      EXEC: BUY 0.0676 CARR @ $148.00 ($10.00)
+      EXEC: BUY 0.2614 COST @ $38.26 ($10.00)
+      EXEC: BUY 0.1065 CRH @ $93.91 ($10.00)
+      EXEC: BUY 0.1578 CTRA @ $63.37 ($10.00)
+      EXEC: BUY 0.1887 DELL @ $53.00 ($10.00)
+      EXEC: BUY 0.0985 EIX @ $101.53 ($10.00)
+      EXEC: BUY 0.0985 ETN @ $101.53 ($10.00)
+      EXEC: BUY 0.0985 EW @ $101.53 ($10.00)
+      EXEC: BUY 0.1887 FANG @ $53.00 ($10.00)
+      EXEC: BUY 0.2008 FIX @ $49.81 ($10.00)
+      EXEC: BUY 0.1081 GWW @ $92.49 ($10.00)
+      EXEC: BUY 0.1253 MCK @ $79.81 ($10.00)
+      EXEC: BUY 0.0594 NDAQ @ $168.44 ($10.00)
+      EXEC: BUY 0.0396 NEE @ $252.48 ($10.00)
+      EXEC: BUY 0.0594 NEM @ $168.44 ($10.00)
+      EXEC: BUY 0.0396 NKE @ $252.48 ($10.00)
+      EXEC: BUY 0.0396 NWS @ $252.48 ($10.00)
+      EXEC: BUY 0.1195 PEG @ $83.67 ($10.00)
+      EXEC: BUY 0.2390 PG @ $83.67 ($20.00)
+      EXEC: BUY 0.1195 PGR @ $83.67 ($10.00)
+      EXEC: BUY 0.1195 PLD @ $83.67 ($10.00)
+      EXEC: BUY 0.1195 PRU @ $83.67 ($10.00)
+      EXEC: BUY 0.1195 PTC @ $83.67 ($10.00)
+      EXEC: BUY 0.0985 SATS @ $101.53 ($10.00)
+      EXEC: BUY 0.0689 T @ $145.14 ($10.00)
+      EXEC: BUY 0.0735 TROW @ $136.03 ($10.00)
+      EXEC: BUY 0.0625 TSN @ $160.00 ($10.00)
+      EXEC: BUY 0.0625 TYL @ $160.00 ($10.00)
+      EXEC: BUY 0.0625 UBER @ $160.00 ($10.00)
+      EXEC: BUY 0.0625 USB @ $160.00 ($10.00)
+      EXEC: BUY 0.1081 VMC @ $92.49 ($10.00)
+      EXEC: BUY 0.1081 VST @ $92.49 ($10.00)
+      EXEC: BUY 0.0444 WAT @ $225.31 ($10.00)
+      EXEC: BUY 0.0444 WEC @ $225.31 ($10.00)
+      EXEC: BUY 0.0918 WM @ $108.93 ($10.00)
+    [>>] Portfolio: $999.89 (-0.01%)
+
+  DAY 2 (2025-03-11)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-11
+  ============================================================
+    Watchlist: 58 tickers from 2025-03-07
+    [0] Anomaly scan...
+        1 anomalies found, evaluating top 1
+        MTB: skipped (1/5 yes)
+        Today's universe: 58 tickers (0 injected)
+        (14s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — The significant divergence between SPY and the credit proxies (HYG/TLT) indicate
+          (4s)
+    [1] Computing indicators...
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+        WM: 23 indicators (0s)
+    [2] Voting...
+        CMI    [HELD]: BUY=0 SELL=1 HOLD=5
+        NFLX   [HELD]: BUY=0 SELL=2 HOLD=4
+        NTAP   [HELD]: BUY=0 SELL=2 HOLD=4
+        NWSA   [HELD]: BUY=1 SELL=1 HOLD=4
+        STZ    [HELD]: BUY=1 SELL=4 HOLD=1
+        ACGL   [HELD]: BUY=1 SELL=3 HOLD=2
+        ADP   : BUY=0 PASS=6
+        ADSK   [HELD]: BUY=1 SELL=2 HOLD=3
+        AIG    [HELD]: BUY=0 SELL=2 HOLD=4
+        AMCR   [HELD]: BUY=1 SELL=1 HOLD=4
+        AMT    [HELD]: BUY=1 SELL=2 HOLD=3
+        APTV  : BUY=0 PASS=6
+        ATO   : BUY=0 PASS=6
+        AVGO   [HELD]: BUY=1 SELL=2 HOLD=3
+        AXP    [HELD]: BUY=1 SELL=3 HOLD=2
+        AZO    [HELD]: BUY=0 SELL=1 HOLD=5
+        BR     [HELD]: BUY=1 SELL=2 HOLD=3
+        BRK-B : BUY=0 PASS=6
+        CARR   [HELD]: BUY=0 SELL=2 HOLD=4
+        COST   [HELD]: BUY=1 SELL=2 HOLD=3
+        CPB   : BUY=1 PASS=5
+        CRH    [HELD]: BUY=0 SELL=2 HOLD=4
+        CTRA   [HELD]: BUY=0 SELL=3 HOLD=3
+        DELL   [HELD]: BUY=0 SELL=2 HOLD=4
+        DHR   : BUY=0 PASS=6
+        ED    : BUY=1 PASS=5
+        EIX    [HELD]: BUY=1 SELL=1 HOLD=4
+        ETN    [HELD]: BUY=1 SELL=2 HOLD=3
+        EW     [HELD]: BUY=1 SELL=1 HOLD=4
+        FANG   [HELD]: BUY=0 SELL=2 HOLD=4
+        FIX    [HELD]: BUY=1 SELL=1 HOLD=4
+        GWW    [HELD]: BUY=1 SELL=2 HOLD=3
+        LUV   : BUY=0 PASS=6
+        MCK    [HELD]: BUY=0 SELL=2 HOLD=4
+        NDAQ   [HELD]: BUY=1 SELL=1 HOLD=4
+        NEE    [HELD]: BUY=1 SELL=1 HOLD=4
+        NEM    [HELD]: BUY=1 SELL=1 HOLD=4
+        NKE    [HELD]: BUY=1 SELL=2 HOLD=3
+        NWS    [HELD]: BUY=1 SELL=1 HOLD=4
+        PEG    [HELD]: BUY=1 SELL=2 HOLD=3
+        PG     [HELD]: BUY=2 SELL=0 HOLD=4
+        PGR    [HELD]: BUY=1 SELL=0 HOLD=5
+        PLD    [HELD]: BUY=1 SELL=1 HOLD=4
+        PRU    [HELD]: BUY=1 SELL=2 HOLD=3
+        PTC    [HELD]: BUY=1 SELL=2 HOLD=3
+        SATS   [HELD]: BUY=1 SELL=1 HOLD=4
+        T      [HELD]: BUY=0 SELL=1 HOLD=5
+        TROW   [HELD]: BUY=1 SELL=1 HOLD=4
+        TSN    [HELD]: BUY=1 SELL=2 HOLD=3
+        TXT   : BUY=0 PASS=6
+        TYL    [HELD]: BUY=1 SELL=2 HOLD=3
+        UBER   [HELD]: BUY=1 SELL=2 HOLD=3
+        USB    [HELD]: BUY=1 SELL=1 HOLD=4
+        VMC    [HELD]: BUY=1 SELL=1 HOLD=4
+        VST    [HELD]: BUY=1 SELL=1 HOLD=4
+        WAT    [HELD]: BUY=1 SELL=3 HOLD=2
+        WEC    [HELD]: BUY=0 SELL=4 HOLD=2
+        WM     [HELD]: BUY=1 SELL=1 HOLD=4
+    [3] Executing...
+        39 actions:
+          BUY      NWSA   $10 — 1/6 BUY → $10
+          SELL_ALL STZ    $0 — 4/6 SELL
+          BUY      ACGL   $10 — 1/6 BUY → $10
+          BUY      ADSK   $10 — 1/6 BUY → $10
+          BUY      AMCR   $10 — 1/6 BUY → $10
+          BUY      AMT    $10 — 1/6 BUY → $10
+          BUY      AVGO   $10 — 1/6 BUY → $10
+          BUY      AXP    $10 — 1/6 BUY → $10
+          BUY      BR     $10 — 1/6 BUY → $10
+          BUY      COST   $10 — 1/6 BUY → $10
+          BUY      CPB    $10 — 1/6 BUY → $10
+          BUY      ED     $10 — 1/6 BUY → $10
+          BUY      EIX    $10 — 1/6 BUY → $10
+          BUY      ETN    $10 — 1/6 BUY → $10
+          BUY      EW     $10 — 1/6 BUY → $10
+          BUY      FIX    $10 — 1/6 BUY → $10
+          BUY      GWW    $10 — 1/6 BUY → $10
+          BUY      NDAQ   $10 — 1/6 BUY → $10
+          BUY      NEE    $10 — 1/6 BUY → $10
+          BUY      NEM    $10 — 1/6 BUY → $10
+          BUY      NKE    $10 — 1/6 BUY → $10
+          BUY      NWS    $10 — 1/6 BUY → $10
+          BUY      PEG    $10 — 1/6 BUY → $10
+          BUY      PG     $20 — 2/6 BUY → $20
+          BUY      PGR    $10 — 1/6 BUY → $10
+          BUY      PLD    $10 — 1/6 BUY → $10
+          BUY      PRU    $10 — 1/6 BUY → $10
+          BUY      PTC    $10 — 1/6 BUY → $10
+          BUY      SATS   $10 — 1/6 BUY → $10
+          BUY      TROW   $10 — 1/6 BUY → $10
+          BUY      TSN    $10 — 1/6 BUY → $10
+          BUY      TYL    $10 — 1/6 BUY → $10
+          BUY      UBER   $10 — 1/6 BUY → $10
+          BUY      USB    $10 — 1/6 BUY → $10
+          BUY      VMC    $10 — 1/6 BUY → $10
+          BUY      VST    $10 — 1/6 BUY → $10
+          BUY      WAT    $10 — 1/6 BUY → $10
+          SELL_ALL WEC    $0 — 4/6 SELL
+          BUY      WM     $10 — 1/6 BUY → $10
+      EXEC: BUY 0.0595 NWSA @ $168.15 ($10.00)
+      EXEC: SELL ALL STZ @ $66.21
+      EXEC: BUY 0.0388 ACGL @ $257.44 ($10.00)
+      EXEC: BUY 0.0759 ADSK @ $131.80 ($10.00)
+      EXEC: BUY 0.0592 AMCR @ $168.88 ($10.00)
+      EXEC: BUY 0.0592 AMT @ $168.88 ($10.00)
+      EXEC: BUY 0.2537 AVGO @ $39.42 ($10.00)
+      EXEC: BUY 0.0592 AXP @ $168.88 ($10.00)
+      EXEC: BUY 0.2537 BR @ $39.42 ($10.00)
+      EXEC: BUY 0.2557 COST @ $39.11 ($10.00)
+      EXEC: BUY 0.0727 CPB @ $137.57 ($10.00)
+      EXEC: BUY 0.1972 ED @ $50.72 ($10.00)
+      EXEC: BUY 0.0958 EIX @ $104.42 ($10.00)
+      EXEC: BUY 0.0958 ETN @ $104.42 ($10.00)
+      EXEC: BUY 0.0958 EW @ $104.42 ($10.00)
+      EXEC: BUY 0.1972 FIX @ $50.72 ($10.00)
+      EXEC: BUY 0.1101 GWW @ $90.83 ($10.00)
+      EXEC: BUY 0.0595 NDAQ @ $168.15 ($10.00)
+      EXEC: BUY 0.0407 NEE @ $245.68 ($10.00)
+      EXEC: BUY 0.0595 NEM @ $168.15 ($10.00)
+      EXEC: BUY 0.0407 NKE @ $245.68 ($10.00)
+      EXEC: BUY 0.0407 NWS @ $245.68 ($10.00)
+      EXEC: BUY 0.1113 PEG @ $89.88 ($10.00)
+      EXEC: BUY 0.2225 PG @ $89.88 ($20.00)
+      EXEC: BUY 0.1113 PGR @ $89.88 ($10.00)
+      EXEC: BUY 0.1113 PLD @ $89.88 ($10.00)
+      EXEC: BUY 0.1113 PRU @ $89.88 ($10.00)
+      EXEC: BUY 0.1113 PTC @ $89.88 ($10.00)
+      EXEC: BUY 0.0958 SATS @ $104.42 ($10.00)
+      EXEC: BUY 0.0711 TROW @ $140.63 ($10.00)
+      EXEC: BUY 0.0599 TSN @ $166.96 ($10.00)
+      EXEC: BUY 0.0599 TYL @ $166.96 ($10.00)
+      EXEC: BUY 0.0599 UBER @ $166.96 ($10.00)
+      EXEC: BUY 0.0599 USB @ $166.96 ($10.00)
+      EXEC: BUY 0.1101 VMC @ $90.83 ($10.00)
+      EXEC: BUY 0.1101 VST @ $90.83 ($10.00)
+      EXEC: BUY 0.0404 WAT @ $247.22 ($10.00)
+      EXEC: SELL ALL WEC @ $247.22
+      EXEC: BUY 0.0926 WM @ $108.04 ($10.00)
+    [>>] Portfolio: $995.96 (-0.40%)
+
+  DAY 3 (2025-03-12)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-12
+  ============================================================
+    Watchlist: 58 tickers from 2025-03-07
+    [0] Anomaly scan...
+        34 anomalies found, evaluating top 5
+        VRSK: skipped (0/5 yes)
+        VZ: skipped (0/5 yes)
+        VRTX: skipped (0/5 yes)
+        SHW: skipped (0/5 yes)
+        SPG: skipped (0/5 yes)
+        Today's universe: 58 tickers (0 injected)
+        (74s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — The market is structurally in a risk-off phase as SPY is trading well below its 
+          (4s)
+    [1] Computing indicators...
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+        WM: 23 indicators (0s)
+    [2] Voting...
+        CMI    [HELD]: BUY=0 SELL=1 HOLD=5
+        NFLX   [HELD]: BUY=1 SELL=1 HOLD=4
+        NTAP   [HELD]: BUY=1 SELL=2 HOLD=3
+        NWSA   [HELD]: BUY=1 SELL=1 HOLD=4
+        STZ   : BUY=1 PASS=5
+        ACGL   [HELD]: BUY=1 SELL=1 HOLD=4
+        ADP   : BUY=0 PASS=6
+        ADSK   [HELD]: BUY=0 SELL=1 HOLD=5
+        AIG    [HELD]: BUY=1 SELL=2 HOLD=3
+        AMCR   [HELD]: BUY=1 SELL=1 HOLD=4
+        AMT    [HELD]: BUY=1 SELL=1 HOLD=4
+        APTV  : BUY=0 PASS=6
+        ATO   : BUY=0 PASS=6
+        AVGO   [HELD]: BUY=1 SELL=1 HOLD=4
+        AXP    [HELD]: BUY=1 SELL=1 HOLD=4
+        AZO    [HELD]: BUY=0 SELL=2 HOLD=4
+        BR     [HELD]: BUY=1 SELL=2 HOLD=3
+        BRK-B : BUY=0 PASS=6
+        CARR   [HELD]: BUY=0 SELL=1 HOLD=5
+        COST   [HELD]: BUY=1 SELL=2 HOLD=3
+        CPB    [HELD]: BUY=0 SELL=3 HOLD=3
+        CRH    [HELD]: BUY=0 SELL=1 HOLD=5
+        CTRA   [HELD]: BUY=0 SELL=1 HOLD=5
+        DELL   [HELD]: BUY=0 SELL=2 HOLD=4
+        DHR   : BUY=0 PASS=6
+        ED     [HELD]: BUY=0 SELL=2 HOLD=4
+        EIX    [HELD]: BUY=0 SELL=3 HOLD=3
+        ETN    [HELD]: BUY=0 SELL=1 HOLD=5
+        EW     [HELD]: BUY=1 SELL=1 HOLD=4
+        FANG   [HELD]: BUY=1 SELL=2 HOLD=3
+        FIX    [HELD]: BUY=0 SELL=1 HOLD=5
+        GWW    [HELD]: BUY=1 SELL=1 HOLD=4
+        LUV   : BUY=0 PASS=6
+        MCK    [HELD]: BUY=0 SELL=2 HOLD=4
+        NDAQ   [HELD]: BUY=1 SELL=1 HOLD=4
+        NEE    [HELD]: BUY=1 SELL=3 HOLD=2
+        NEM    [HELD]: BUY=1 SELL=2 HOLD=3
+        NKE    [HELD]: BUY=1 SELL=2 HOLD=3
+        NWS    [HELD]: BUY=1 SELL=1 HOLD=4
+        PEG    [HELD]: BUY=0 SELL=1 HOLD=5
+        PG     [HELD]: BUY=1 SELL=0 HOLD=5
+        PGR    [HELD]: BUY=0 SELL=1 HOLD=5
+        PLD    [HELD]: BUY=0 SELL=1 HOLD=5
+        PRU    [HELD]: BUY=0 SELL=0 HOLD=6
+        PTC    [HELD]: BUY=0 SELL=1 HOLD=5
+        SATS   [HELD]: BUY=0 SELL=1 HOLD=5
+        T      [HELD]: BUY=0 SELL=1 HOLD=5
+        TROW   [HELD]: BUY=0 SELL=1 HOLD=5
+        TSN    [HELD]: BUY=0 SELL=1 HOLD=5
+        TXT   : BUY=0 PASS=6
+        TYL    [HELD]: BUY=0 SELL=1 HOLD=5
+        UBER   [HELD]: BUY=0 SELL=1 HOLD=5
+        USB    [HELD]: BUY=0 SELL=1 HOLD=5
+        VMC    [HELD]: BUY=1 SELL=1 HOLD=4
+        VST    [HELD]: BUY=1 SELL=2 HOLD=3
+        WAT    [HELD]: BUY=0 SELL=2 HOLD=4
+        WEC   : BUY=0 PASS=6
+        WM     [HELD]: BUY=1 SELL=1 HOLD=4
+    [3] Executing...
+        24 actions:
+          BUY      NFLX   $10 — 1/6 BUY → $10
+          BUY      NTAP   $10 — 1/6 BUY → $10
+          BUY      NWSA   $10 — 1/6 BUY → $10
+          BUY      STZ    $10 — 1/6 BUY → $10
+          BUY      ACGL   $10 — 1/6 BUY → $10
+          BUY      AIG    $10 — 1/6 BUY → $10
+          BUY      AMCR   $10 — 1/6 BUY → $10
+          BUY      AMT    $10 — 1/6 BUY → $10
+          BUY      AVGO   $10 — 1/6 BUY → $10
+          BUY      AXP    $10 — 1/6 BUY → $10
+          BUY      BR     $10 — 1/6 BUY → $10
+          BUY      COST   $10 — 1/6 BUY → $10
+          BUY      EW     $10 — 1/6 BUY → $10
+          BUY      FANG   $10 — 1/6 BUY → $10
+          BUY      GWW    $10 — 1/6 BUY → $10
+          BUY      NDAQ   $10 — 1/6 BUY → $10
+          BUY      NEE    $10 — 1/6 BUY → $10
+          BUY      NEM    $10 — 1/6 BUY → $10
+          BUY      NKE    $10 — 1/6 BUY → $10
+          BUY      NWS    $10 — 1/6 BUY → $10
+          BUY      PG     $10 — 1/6 BUY → $10
+          BUY      VMC    $10 — 1/6 BUY → $10
+          BUY      VST    $10 — 1/6 BUY → $10
+          BUY      WM     $10 — 1/6 BUY → $10
+      EXEC: BUY 0.0594 NFLX @ $168.23 ($10.00)
+      EXEC: BUY 0.0594 NTAP @ $168.23 ($10.00)
+      EXEC: BUY 0.0594 NWSA @ $168.23 ($10.00)
+      EXEC: BUY 0.1521 STZ @ $65.75 ($10.00)
+      EXEC: BUY 0.0389 ACGL @ $256.92 ($10.00)
+      EXEC: BUY 0.0611 AIG @ $163.58 ($10.00)
+      EXEC: BUY 0.0611 AMCR @ $163.58 ($10.00)
+      EXEC: BUY 0.0611 AMT @ $163.58 ($10.00)
+      EXEC: BUY 0.2558 AVGO @ $39.09 ($10.00)
+      EXEC: BUY 0.0611 AXP @ $163.58 ($10.00)
+      EXEC: BUY 0.2558 BR @ $39.09 ($10.00)
+      EXEC: BUY 0.2549 COST @ $39.23 ($10.00)
+      EXEC: BUY 0.0993 EW @ $100.71 ($10.00)
+      EXEC: BUY 0.1885 FANG @ $53.04 ($10.00)
+      EXEC: BUY 0.1143 GWW @ $87.50 ($10.00)
+    [>>] Portfolio: $1006.26 (+0.63%)
+
+  DAY 4 (2025-03-13)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-13
+  ============================================================
+    Watchlist: 58 tickers from 2025-03-07
+    [0] Anomaly scan...
+        9 anomalies found, evaluating top 5
+        KIM: skipped (0/5 yes)
+        KMI: skipped (0/5 yes)
+        KKR: skipped (0/5 yes)
+        WY: skipped (0/5 yes)
+        WSM: skipped (0/5 yes)
+        Today's universe: 58 tickers (0 injected)
+        (72s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — SPY is in a deep structural decline, trading well below its 50-day SMA, while cr
+          (4s)
+    [1] Computing indicators...
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+        WM: 23 indicators (0s)
+    [2] Voting...
+        CMI    [HELD]: BUY=0 SELL=1 HOLD=5
+        NFLX   [HELD]: BUY=0 SELL=3 HOLD=3
+        NTAP   [HELD]: BUY=0 SELL=1 HOLD=5
+        NWSA   [HELD]: BUY=0 SELL=2 HOLD=4
+        STZ    [HELD]: BUY=1 SELL=2 HOLD=3
+        ACGL   [HELD]: BUY=1 SELL=1 HOLD=4
+        ADP   : BUY=0 PASS=6
+        ADSK   [HELD]: BUY=0 SELL=2 HOLD=4
+        AIG    [HELD]: BUY=1 SELL=1 HOLD=4
+        AMCR   [HELD]: BUY=1 SELL=1 HOLD=4
+        AMT    [HELD]: BUY=1 SELL=2 HOLD=3
+        APTV  : BUY=0 PASS=6
+        ATO   : BUY=0 PASS=6
+        AVGO   [HELD]: BUY=0 SELL=2 HOLD=4
+        AXP    [HELD]: BUY=1 SELL=1 HOLD=4
+        AZO    [HELD]: BUY=0 SELL=1 HOLD=5
+        BR     [HELD]: BUY=1 SELL=1 HOLD=4
+        BRK-B : BUY=0 PASS=6
+        CARR   [HELD]: BUY=0 SELL=2 HOLD=4
+        COST   [HELD]: BUY=1 SELL=1 HOLD=4
+        CPB    [HELD]: BUY=0 SELL=2 HOLD=4
+        CRH    [HELD]: BUY=0 SELL=1 HOLD=5
+        CTRA   [HELD]: BUY=1 SELL=1 HOLD=4
+        DELL   [HELD]: BUY=1 SELL=1 HOLD=4
+        DHR   : BUY=0 PASS=6
+        ED     [HELD]: BUY=1 SELL=1 HOLD=4
+        EIX    [HELD]: BUY=0 SELL=2 HOLD=4
+        ETN    [HELD]: BUY=1 SELL=1 HOLD=4
+        EW     [HELD]: BUY=1 SELL=1 HOLD=4
+        FANG   [HELD]: BUY=0 SELL=3 HOLD=3
+        FIX    [HELD]: BUY=1 SELL=1 HOLD=4
+        GWW    [HELD]: BUY=1 SELL=3 HOLD=2
+        LUV   : BUY=0 PASS=6
+        MCK    [HELD]: BUY=0 SELL=1 HOLD=5
+        NDAQ   [HELD]: BUY=1 SELL=1 HOLD=4
+        NEE    [HELD]: BUY=1 SELL=2 HOLD=3
+        NEM    [HELD]: BUY=0 SELL=2 HOLD=4
+        NKE    [HELD]: BUY=1 SELL=1 HOLD=4
+        NWS    [HELD]: BUY=1 SELL=2 HOLD=3
+        PEG    [HELD]: BUY=0 SELL=1 HOLD=5
+        PG     [HELD]: BUY=0 SELL=0 HOLD=6
+        PGR    [HELD]: BUY=0 SELL=1 HOLD=5
+        PLD    [HELD]: BUY=0 SELL=1 HOLD=5
+        PRU    [HELD]: BUY=0 SELL=1 HOLD=5
+        PTC    [HELD]: BUY=0 SELL=1 HOLD=5
+        SATS   [HELD]: BUY=1 SELL=1 HOLD=4
+        T      [HELD]: BUY=0 SELL=1 HOLD=5
+        TROW   [HELD]: BUY=1 SELL=1 HOLD=4
+        TSN    [HELD]: BUY=0 SELL=2 HOLD=4
+        TXT   : BUY=0 PASS=6
+        TYL    [HELD]: BUY=1 SELL=1 HOLD=4
+        UBER   [HELD]: BUY=0 SELL=2 HOLD=4
+        USB    [HELD]: BUY=0 SELL=1 HOLD=5
+        VMC    [HELD]: BUY=1 SELL=1 HOLD=4
+        VST    [HELD]: BUY=1 SELL=1 HOLD=4
+        WAT    [HELD]: BUY=0 SELL=2 HOLD=4
+        WEC   : BUY=0 PASS=6
+        WM     [HELD]: BUY=1 SELL=1 HOLD=4
+    [3] Executing...
+        25 actions:
+          BUY      STZ    $10 — 1/6 BUY → $10
+          BUY      ACGL   $10 — 1/6 BUY → $10
+          BUY      AIG    $10 — 1/6 BUY → $10
+          BUY      AMCR   $10 — 1/6 BUY → $10
+          BUY      AMT    $10 — 1/6 BUY → $10
+          BUY      AXP    $10 — 1/6 BUY → $10
+          BUY      BR     $10 — 1/6 BUY → $10
+          BUY      COST   $10 — 1/6 BUY → $10
+          BUY      CTRA   $10 — 1/6 BUY → $10
+          BUY      DELL   $10 — 1/6 BUY → $10
+          BUY      ED     $10 — 1/6 BUY → $10
+          BUY      ETN    $10 — 1/6 BUY → $10
+          BUY      EW     $10 — 1/6 BUY → $10
+          BUY      FIX    $10 — 1/6 BUY → $10
+          BUY      GWW    $10 — 1/6 BUY → $10
+          BUY      NDAQ   $10 — 1/6 BUY → $10
+          BUY      NEE    $10 — 1/6 BUY → $10
+          BUY      NKE    $10 — 1/6 BUY → $10
+          BUY      NWS    $10 — 1/6 BUY → $10
+          BUY      SATS   $10 — 1/6 BUY → $10
+          BUY      TROW   $10 — 1/6 BUY → $10
+          BUY      TYL    $10 — 1/6 BUY → $10
+          BUY      VMC    $10 — 1/6 BUY → $10
+          BUY      VST    $10 — 1/6 BUY → $10
+          BUY      WM     $10 — 1/6 BUY → $10
+    [>>] Portfolio: $984.98 (-1.50%)
+
+  DAY 5 (2025-03-14)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-14
+  ============================================================
+    Watchlist: 58 tickers from 2025-03-07
+    [0] Anomaly scan...
+        16 anomalies found, evaluating top 5
+        D: skipped (1/5 yes)
+        DOV: skipped (1/5 yes)
+        OKE: skipped (0/5 yes)
+        SHW: skipped (0/5 yes)
+        SPG: skipped (0/5 yes)
+        Today's universe: 58 tickers (0 injected)
+        (73s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — The market is in a clear risk-off state as SPY is trading well below its 50-day 
+          (4s)
+    [1] Computing indicators...
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+        WM: 23 indicators (0s)
+    [2] Voting...
+        CMI    [HELD]: BUY=0 SELL=1 HOLD=5
+        NFLX   [HELD]: BUY=0 SELL=1 HOLD=5
+        NTAP   [HELD]: BUY=0 SELL=2 HOLD=4
+        NWSA   [HELD]: BUY=0 SELL=2 HOLD=4
+        STZ    [HELD]: BUY=0 SELL=4 HOLD=2
+        ACGL   [HELD]: BUY=1 SELL=1 HOLD=4
+        ADP   : BUY=0 PASS=6
+        ADSK   [HELD]: BUY=0 SELL=2 HOLD=4
+        AIG    [HELD]: BUY=1 SELL=2 HOLD=3
+        AMCR   [HELD]: BUY=1 SELL=1 HOLD=4
+        AMT    [HELD]: BUY=1 SELL=2 HOLD=3
+        APTV  : BUY=1 PASS=5
+        ATO   : BUY=0 PASS=6
+        AVGO   [HELD]: BUY=0 SELL=2 HOLD=4
+        AXP    [HELD]: BUY=1 SELL=1 HOLD=4
+        AZO    [HELD]: BUY=0 SELL=1 HOLD=5
+        BR     [HELD]: BUY=0 SELL=2 HOLD=4
+        BRK-B : BUY=0 PASS=6
+        CARR   [HELD]: BUY=0 SELL=1 HOLD=5
+        COST   [HELD]: BUY=0 SELL=3 HOLD=3
+        CPB    [HELD]: BUY=0 SELL=1 HOLD=5
+        CRH    [HELD]: BUY=0 SELL=1 HOLD=5
+        CTRA   [HELD]: BUY=0 SELL=2 HOLD=4
+        DELL   [HELD]: BUY=0 SELL=1 HOLD=5
+        DHR   : BUY=0 PASS=6
+        ED     [HELD]: BUY=0 SELL=2 HOLD=4
+        EIX    [HELD]: BUY=0 SELL=1 HOLD=5
+        ETN    [HELD]: BUY=0 SELL=1 HOLD=5
+        EW     [HELD]: BUY=0 SELL=2 HOLD=4
+        FANG   [HELD]: BUY=0 SELL=2 HOLD=4
+        FIX    [HELD]: BUY=0 SELL=3 HOLD=3
+        GWW    [HELD]: BUY=1 SELL=3 HOLD=2
+        LUV   : BUY=0 PASS=6
+        MCK    [HELD]: BUY=0 SELL=1 HOLD=5
+        NDAQ   [HELD]: BUY=0 SELL=1 HOLD=5
+        NEE    [HELD]: BUY=1 SELL=1 HOLD=4
+        NEM    [HELD]: BUY=0 SELL=4 HOLD=2
+        NKE    [HELD]: BUY=1 SELL=2 HOLD=3
+        NWS    [HELD]: BUY=1 SELL=1 HOLD=4
+        PEG    [HELD]: BUY=0 SELL=1 HOLD=5
+        PG     [HELD]: BUY=0 SELL=0 HOLD=6
+        PGR    [HELD]: BUY=0 SELL=1 HOLD=5
+        PLD    [HELD]: BUY=0 SELL=1 HOLD=5
+        PRU    [HELD]: BUY=0 SELL=1 HOLD=5
+        PTC    [HELD]: BUY=0 SELL=1 HOLD=5
+        SATS   [HELD]: BUY=0 SELL=2 HOLD=4
+        T      [HELD]: BUY=0 SELL=1 HOLD=5
+        TROW   [HELD]: BUY=0 SELL=1 HOLD=5
+        TSN    [HELD]: BUY=0 SELL=1 HOLD=5
+        TXT   : BUY=0 PASS=6
+        TYL    [HELD]: BUY=0 SELL=1 HOLD=5
+        UBER   [HELD]: BUY=0 SELL=1 HOLD=5
+        USB    [HELD]: BUY=0 SELL=1 HOLD=5
+        VMC    [HELD]: BUY=0 SELL=3 HOLD=3
+        VST    [HELD]: BUY=1 SELL=2 HOLD=3
+        WAT    [HELD]: BUY=0 SELL=2 HOLD=4
+        WEC   : BUY=0 PASS=6
+        WM     [HELD]: BUY=1 SELL=1 HOLD=4
+    [3] Executing...
+        14 actions:
+          SELL_ALL STZ    $0 — 4/6 SELL
+          BUY      ACGL   $10 — 1/6 BUY → $10
+          BUY      AIG    $10 — 1/6 BUY → $10
+          BUY      AMCR   $10 — 1/6 BUY → $10
+          BUY      AMT    $10 — 1/6 BUY → $10
+          BUY      APTV   $10 — 1/6 BUY → $10
+          BUY      AXP    $10 — 1/6 BUY → $10
+          BUY      GWW    $10 — 1/6 BUY → $10
+          BUY      NEE    $10 — 1/6 BUY → $10
+          SELL_ALL NEM    $0 — 4/6 SELL
+          BUY      NKE    $10 — 1/6 BUY → $10
+          BUY      NWS    $10 — 1/6 BUY → $10
+          BUY      VST    $10 — 1/6 BUY → $10
+          BUY      WM     $10 — 1/6 BUY → $10
+      EXEC: SELL ALL STZ @ $63.36
+      EXEC: BUY 0.0381 ACGL @ $262.40 ($10.00)
+      EXEC: SELL ALL NEM @ $169.68
+      EXEC: BUY 0.0414 NKE @ $241.64 ($10.00)
+      EXEC: BUY 0.0414 NWS @ $241.64 ($10.00)
+      EXEC: BUY 0.1130 VST @ $88.51 ($10.00)
+    [>>] Portfolio: $1015.58 (+1.56%)
+
+  ######################################################################
+  WEEK 2: watchlist from 2025-03-14, trading 2025-03-17 → 2025-03-21
+  ######################################################################
+  Running weekend pipeline for 2025-03-14...
+
+======================================================================
+MEDICI WEEKEND PIPELINE — Watchlist Builder
+  As of: 2025-03-14
+  Agents: Cosimo, Lorenzo, Giuliano, Giovanni, Caterina, Piero
+======================================================================
+
+  [STEP 1] Hard filter...
+           421 stocks passed (Close>$5, AvgVol>1M, DolVol>$10M) in 4.4s
+
+  [STEP 1.5] Giovanni macro read...
+             Regime: risk-off (conf 8)
+             The market is in a clear risk-off phase as SPY has fallen 7.7% over 20 days while the VIX remains elevated at 27.45, indicating persistent structural fear. Despite HYG outperforming TLT slightly, the breadth metric is critically low at 40.2% above the 200 SMA, confirming that the index decline is driven by a broad capitulation rather than selective selling.
+             (13s)
+
+  [STEP 2] Solo pitches (421 tickers × 5 agents)...
+           [25/421] 0 tickers pitched so far
+           [50/421] 3 tickers pitched so far
+           [75/421] 9 tickers pitched so far
+           [100/421] 13 tickers pitched so far
+           [125/421] 18 tickers pitched so far
+           [150/421] 24 tickers pitched so far
+           [175/421] 26 tickers pitched so far
+           [200/421] 32 tickers pitched so far
+           [225/421] 42 tickers pitched so far
+           [250/421] 56 tickers pitched so far
+           [275/421] 61 tickers pitched so far
+           [300/421] 69 tickers pitched so far
+           [325/421] 76 tickers pitched so far
+           [350/421] 79 tickers pitched so far
+           [375/421] 82 tickers pitched so far
+           [400/421] 88 tickers pitched so far
+           [421/421] 96 tickers pitched so far
+           Total pitched: 96 tickers
+             AMAT: Cosimo, Caterina
+             ANET: Caterina
+             APO: Caterina
+             AXON: Lorenzo, Piero
+             BAC: Caterina
+             BAX: Caterina
+             BG: Caterina
+             BLK: Caterina
+             CB: Caterina
+             CHTR: Caterina
+             CMCSA: Lorenzo
+             CMG: Caterina
+             COP: Caterina, Piero
+             CRM: Caterina
+             CSGP: Caterina
+             CTRA: Caterina
+             D: Lorenzo, Giuliano, Piero
+             DASH: Caterina
+             DD: Caterina
+             DG: Caterina
+             DIS: Lorenzo, Piero
+             DOC: Caterina
+             DOV: Giuliano, Caterina, Piero
+             ECL: Caterina
+             EIX: Caterina
+             EW: Caterina
+             FTV: Caterina
+             GEV: Caterina
+             GILD: Caterina
+             GM: Caterina
+             GPC: Caterina
+             GWW: Lorenzo, Piero
+             HD: Caterina
+             HSIC: Caterina
+             HSY: Caterina
+             IBKR: Caterina
+             ICE: Caterina
+             IFF: Caterina
+             INCY: Caterina
+             INTC: Caterina
+             INVH: Lorenzo, Piero
+             IQV: Lorenzo, Piero
+             IRM: Lorenzo, Piero
+             ITW: Caterina
+             IVZ: Lorenzo, Piero
+             JBHT: Lorenzo, Piero
+             JBL: Lorenzo, Piero
+             KHC: Lorenzo, Piero
+             KLAC: Cosimo
+             KR: Lorenzo
+             LDOS: Piero
+             LEN: Piero
+             LH: Piero
+             LHX: Lorenzo, Piero
+             LIN: Caterina
+             LLY: Caterina
+             LUV: Caterina
+             LVS: Lorenzo, Piero
+             LYV: Caterina
+             MCO: Caterina
+             MPWR: Caterina
+             MRK: Piero
+             MSCI: Lorenzo, Piero
+             NEE: Lorenzo, Piero
+             NEM: Caterina
+             NKE: Lorenzo, Piero
+             NTAP: Caterina
+             NWS: Lorenzo, Piero
+             OXY: Caterina
+             PEG: Caterina
+             PG: Caterina
+             PHM: Caterina
+             PLD: Caterina
+             PPG: Caterina
+             PRU: Caterina
+             PTC: Caterina
+             SBAC: Caterina
+             SCHW: Caterina
+             SNA: Caterina
+             STX: Cosimo
+             STZ: Lorenzo
+             SYK: Caterina
+             TAP: Caterina
+             TECH: Caterina
+             TKO: Lorenzo, Piero
+             TTD: Lorenzo, Piero
+             TXT: Caterina
+             V: Piero
+             VICI: Caterina
+             VMC: Lorenzo, Piero
+             VRSK: Caterina
+             VRT: Caterina
+             VRTX: Caterina
+             VST: Lorenzo, Piero
+             WM: Lorenzo, Piero
+             WMT: Lorenzo, Piero
+
+  [STEP 3] Building watchlist (min 2 advocates)...
+           AMAT   — Cosimo, Caterina
+           AXON   — Lorenzo, Piero
+           COP    — Caterina, Piero
+           D      — Lorenzo, Giuliano, Piero
+           DIS    — Lorenzo, Piero
+           DOV    — Giuliano, Caterina, Piero
+           GWW    — Lorenzo, Piero
+           INVH   — Lorenzo, Piero
+           IQV    — Lorenzo, Piero
+           IRM    — Lorenzo, Piero
+           IVZ    — Lorenzo, Piero
+           JBHT   — Lorenzo, Piero
+           JBL    — Lorenzo, Piero
+           KHC    — Lorenzo, Piero
+           LHX    — Lorenzo, Piero
+           LVS    — Lorenzo, Piero
+           MSCI   — Lorenzo, Piero
+           NEE    — Lorenzo, Piero
+           NKE    — Lorenzo, Piero
+           NWS    — Lorenzo, Piero
+           TKO    — Lorenzo, Piero
+           TTD    — Lorenzo, Piero
+           VMC    — Lorenzo, Piero
+           VST    — Lorenzo, Piero
+           WM     — Lorenzo, Piero
+           WMT    — Lorenzo, Piero
+           Dropped 70 single-advocate tickers: ANET, APO, BAC, BAX, BG, BLK, CB, CHTR, CMCSA, CMG, CRM, CSGP, CTRA, DASH, DD, DG, DOC, ECL, EIX, EW...
+
+  Saved: /mnt/iarvis/Projects/Medici/data/watchlists/watchlist_2025-03-14.json
+
+======================================================================
+WEEKEND PIPELINE COMPLETE — 117.1 minutes
+  Watchlist: 26 tickers
+    D      — Lorenzo, Giuliano, Piero
+    DOV    — Giuliano, Caterina, Piero
+    AMAT   — Cosimo, Caterina
+    AXON   — Lorenzo, Piero
+    COP    — Caterina, Piero
+    DIS    — Lorenzo, Piero
+    GWW    — Lorenzo, Piero
+    INVH   — Lorenzo, Piero
+    IQV    — Lorenzo, Piero
+    IRM    — Lorenzo, Piero
+    IVZ    — Lorenzo, Piero
+    JBHT   — Lorenzo, Piero
+    JBL    — Lorenzo, Piero
+    KHC    — Lorenzo, Piero
+    LHX    — Lorenzo, Piero
+    LVS    — Lorenzo, Piero
+    MSCI   — Lorenzo, Piero
+    NEE    — Lorenzo, Piero
+    NKE    — Lorenzo, Piero
+    NWS    — Lorenzo, Piero
+    TKO    — Lorenzo, Piero
+    TTD    — Lorenzo, Piero
+    VMC    — Lorenzo, Piero
+    VST    — Lorenzo, Piero
+    WM     — Lorenzo, Piero
+    WMT    — Lorenzo, Piero
+======================================================================
+  Weekend pipeline done in 117 min
+  Merged: +51 carried from prev week, 0 stale dropped → 77 total
+
+  DAY 6 (2025-03-17)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-17
+  ============================================================
+    Watchlist: 77 tickers from 2025-03-14
+    [0] Anomaly scan...
+        1 anomalies found, evaluating top 1
+        CNP: skipped (0/5 yes)
+        Today's universe: 77 tickers (0 injected)
+        (20s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — The market is in a clear risk-off state as SPY is trading significantly below it
+          (4s)
+    [1] Computing indicators...
+        D: 23 indicators (0s)
+        DOV: 23 indicators (0s)
+        AMAT: 23 indicators (0s)
+        AXON: 23 indicators (0s)
+        COP: 23 indicators (0s)
+        DIS: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        INVH: 23 indicators (0s)
+        IQV: 23 indicators (0s)
+        IRM: 23 indicators (0s)
+        IVZ: 23 indicators (0s)
+        JBHT: 23 indicators (0s)
+        JBL: 23 indicators (0s)
+        KHC: 23 indicators (0s)
+        LHX: 23 indicators (0s)
+        LVS: 23 indicators (0s)
+        MSCI: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        TKO: 23 indicators (0s)
+        TTD: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WM: 23 indicators (0s)
+        WMT: 23 indicators (0s)
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+    [2] Voting...
+        D     : BUY=0 PASS=6
+        DOV   : BUY=0 PASS=6
+        AMAT  : BUY=0 PASS=6
+        AXON  : BUY=1 PASS=5
+        COP   : BUY=0 PASS=6
+        DIS   : BUY=0 PASS=6
+        GWW    [HELD]: BUY=0 SELL=2 HOLD=4
+        INVH  : BUY=1 PASS=5
+        IQV   : BUY=1 PASS=5

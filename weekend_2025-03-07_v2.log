@@ -1,0 +1,508 @@
+
+======================================================================
+MEDICI WEEKEND PIPELINE — Watchlist Builder
+  As of: 2025-03-07
+  Agents: Cosimo, Lorenzo, Giuliano, Giovanni, Caterina, Piero
+======================================================================
+
+  [STEP 1] Hard filter...
+           414 stocks passed (Close>$5, AvgVol>1M, DolVol>$10M) in 4.3s
+
+  [STEP 1.5] Giovanni macro read...
+             Regime: risk-off (conf 8)
+             The market is in a clear risk-off phase as SPY has fallen 5% over two weeks while credit spreads are tightening, indicated by HYG underperforming TLT. The breadth metric of only 48.5% above the 200 SMA confirms the rally is structurally hollow, with few stocks supporting the index.
+             (8s)
+
+  [STEP 2] Solo pitches (414 tickers × 5 agents)...
+           [25/414] 8 tickers pitched so far
+           [50/414] 23 tickers pitched so far
+           [75/414] 40 tickers pitched so far
+           [100/414] 49 tickers pitched so far
+           [125/414] 67 tickers pitched so far
+           [150/414] 80 tickers pitched so far
+           [175/414] 82 tickers pitched so far
+           [200/414] 95 tickers pitched so far
+           [225/414] 98 tickers pitched so far
+           [250/414] 102 tickers pitched so far
+           [275/414] 109 tickers pitched so far
+           [300/414] 114 tickers pitched so far
+           [325/414] 122 tickers pitched so far
+           [350/414] 126 tickers pitched so far
+           [375/414] 133 tickers pitched so far
+           [400/414] 149 tickers pitched so far
+           [414/414] 155 tickers pitched so far
+           Total pitched: 155 tickers
+             A: Lorenzo
+             ACGL: Lorenzo, Piero
+             ADM: Lorenzo
+             ADP: Lorenzo, Piero
+             ADSK: Lorenzo, Piero
+             AEE: Lorenzo
+             AEP: Piero
+             AIG: Lorenzo, Piero
+             AJG: Lorenzo
+             ALL: Caterina
+             AMAT: Lorenzo
+             AMCR: Lorenzo, Piero
+             AMT: Lorenzo, Piero
+             AMZN: Piero
+             ANET: Lorenzo
+             APD: Cosimo
+             APP: Lorenzo
+             APTV: Cosimo, Lorenzo
+             ARES: Lorenzo
+             ATO: Lorenzo, Piero
+             AVB: Piero
+             AVGO: Lorenzo, Piero
+             AVY: Piero
+             AWK: Piero
+             AXP: Lorenzo, Piero
+             AZO: Lorenzo, Piero
+             BAX: Giuliano
+             BBY: Giuliano
+             BDX: Giuliano
+             BF-B: Caterina
+             BG: Caterina
+             BK: Caterina
+             BLDR: Caterina
+             BLK: Caterina
+             BR: Lorenzo, Piero
+             BRK-B: Cosimo, Giuliano
+             BXP: Caterina
+             CARR: Lorenzo, Piero
+             CB: Caterina
+             CCI: Giuliano
+             CINF: Caterina
+             CMCSA: Lorenzo
+             CMG: Caterina
+             CMI: Cosimo, Lorenzo, Giuliano
+             COIN: Lorenzo
+             COP: Lorenzo
+             COST: Lorenzo, Piero
+             CPAY: Lorenzo
+             CPB: Lorenzo, Piero
+             CPRT: Lorenzo
+             CRH: Lorenzo, Giuliano
+             CRL: Lorenzo
+             CRM: Cosimo
+             CRWD: Caterina
+             CTRA: Lorenzo, Piero
+             CTVA: Lorenzo
+             CVS: Caterina
+             CVX: Caterina
+             D: Piero
+             DD: Piero
+             DELL: Lorenzo, Piero
+             DHR: Lorenzo, Giuliano
+             DOC: Caterina
+             DOV: Piero
+             DRI: Caterina
+             DVN: Piero
+             DXCM: Lorenzo
+             EBAY: Piero
+             ECL: Piero
+             ED: Lorenzo, Piero
+             EIX: Lorenzo, Piero
+             EQIX: Cosimo
+             ETN: Lorenzo, Piero
+             EW: Lorenzo, Piero
+             FANG: Lorenzo, Piero
+             FIS: Caterina
+             FIX: Lorenzo, Piero
+             GD: Caterina
+             GDDY: Caterina
+             GEN: Caterina
+             GIS: Caterina
+             GL: Caterina
+             GLW: Piero
+             GOOG: Caterina
+             GOOGL: Caterina
+             GS: Caterina
+             GWW: Lorenzo, Piero
+             HAL: Caterina
+             HCA: Caterina
+             HD: Cosimo
+             HLT: Cosimo
+             HOLX: Cosimo
+             HPE: Cosimo
+             HUM: Caterina
+             ISRG: Caterina
+             JNJ: Caterina
+             KDP: Caterina
+             KR: Caterina
+             LIN: Caterina
+             LUV: Lorenzo, Piero
+             LYV: Caterina
+             MCK: Lorenzo, Piero
+             MDT: Caterina
+             MET: Caterina
+             MSCI: Lorenzo
+             NDAQ: Lorenzo, Piero
+             NEE: Lorenzo, Piero
+             NEM: Caterina, Piero
+             NFLX: Lorenzo, Caterina, Piero
+             NKE: Lorenzo, Piero
+             NTAP: Lorenzo, Caterina, Piero
+             NWS: Lorenzo, Piero
+             NWSA: Lorenzo, Caterina, Piero
+             PEG: Lorenzo, Piero
+             PG: Lorenzo, Piero
+             PGR: Lorenzo, Piero
+             PLD: Lorenzo, Piero
+             PPG: Caterina
+             PPL: Caterina
+             PRU: Lorenzo, Piero
+             PTC: Lorenzo, Piero
+             ROP: Piero
+             SATS: Lorenzo, Piero
+             SLB: Cosimo
+             STZ: Lorenzo, Caterina, Piero
+             T: Lorenzo, Piero
+             TECH: Giuliano
+             TJX: Caterina
+             TMO: Caterina
+             TMUS: Caterina
+             TPL: Caterina
+             TROW: Lorenzo, Piero
+             TSCO: Piero
+             TSN: Lorenzo, Piero
+             TXT: Cosimo, Caterina
+             TYL: Lorenzo, Piero
+             UAL: Caterina
+             UBER: Lorenzo, Piero
+             UDR: Caterina
+             ULTA: Caterina
+             UNH: Piero
+             USB: Lorenzo, Piero
+             V: Piero
+             VLO: Caterina
+             VLTO: Caterina
+             VMC: Lorenzo, Piero
+             VRTX: Caterina
+             VST: Lorenzo, Piero
+             VTR: Caterina
+             WAB: Cosimo
+             WAT: Lorenzo, Piero
+             WEC: Lorenzo, Piero
+             WFC: Piero
+             WM: Lorenzo, Piero
+             WRB: Piero
+
+  [STEP 3] Building watchlist from all picks...
+           A      — Lorenzo
+           ACGL   — Lorenzo, Piero
+           ADM    — Lorenzo
+           ADP    — Lorenzo, Piero
+           ADSK   — Lorenzo, Piero
+           AEE    — Lorenzo
+           AEP    — Piero
+           AIG    — Lorenzo, Piero
+           AJG    — Lorenzo
+           ALL    — Caterina
+           AMAT   — Lorenzo
+           AMCR   — Lorenzo, Piero
+           AMT    — Lorenzo, Piero
+           AMZN   — Piero
+           ANET   — Lorenzo
+           APD    — Cosimo
+           APP    — Lorenzo
+           APTV   — Cosimo, Lorenzo
+           ARES   — Lorenzo
+           ATO    — Lorenzo, Piero
+           AVB    — Piero
+           AVGO   — Lorenzo, Piero
+           AVY    — Piero
+           AWK    — Piero
+           AXP    — Lorenzo, Piero
+           AZO    — Lorenzo, Piero
+           BAX    — Giuliano
+           BBY    — Giuliano
+           BDX    — Giuliano
+           BF-B   — Caterina
+           BG     — Caterina
+           BK     — Caterina
+           BLDR   — Caterina
+           BLK    — Caterina
+           BR     — Lorenzo, Piero
+           BRK-B  — Cosimo, Giuliano
+           BXP    — Caterina
+           CARR   — Lorenzo, Piero
+           CB     — Caterina
+           CCI    — Giuliano
+           CINF   — Caterina
+           CMCSA  — Lorenzo
+           CMG    — Caterina
+           CMI    — Cosimo, Lorenzo, Giuliano
+           COIN   — Lorenzo
+           COP    — Lorenzo
+           COST   — Lorenzo, Piero
+           CPAY   — Lorenzo
+           CPB    — Lorenzo, Piero
+           CPRT   — Lorenzo
+           CRH    — Lorenzo, Giuliano
+           CRL    — Lorenzo
+           CRM    — Cosimo
+           CRWD   — Caterina
+           CTRA   — Lorenzo, Piero
+           CTVA   — Lorenzo
+           CVS    — Caterina
+           CVX    — Caterina
+           D      — Piero
+           DD     — Piero
+           DELL   — Lorenzo, Piero
+           DHR    — Lorenzo, Giuliano
+           DOC    — Caterina
+           DOV    — Piero
+           DRI    — Caterina
+           DVN    — Piero
+           DXCM   — Lorenzo
+           EBAY   — Piero
+           ECL    — Piero
+           ED     — Lorenzo, Piero
+           EIX    — Lorenzo, Piero
+           EQIX   — Cosimo
+           ETN    — Lorenzo, Piero
+           EW     — Lorenzo, Piero
+           FANG   — Lorenzo, Piero
+           FIS    — Caterina
+           FIX    — Lorenzo, Piero
+           GD     — Caterina
+           GDDY   — Caterina
+           GEN    — Caterina
+           GIS    — Caterina
+           GL     — Caterina
+           GLW    — Piero
+           GOOG   — Caterina
+           GOOGL  — Caterina
+           GS     — Caterina
+           GWW    — Lorenzo, Piero
+           HAL    — Caterina
+           HCA    — Caterina
+           HD     — Cosimo
+           HLT    — Cosimo
+           HOLX   — Cosimo
+           HPE    — Cosimo
+           HUM    — Caterina
+           ISRG   — Caterina
+           JNJ    — Caterina
+           KDP    — Caterina
+           KR     — Caterina
+           LIN    — Caterina
+           LUV    — Lorenzo, Piero
+           LYV    — Caterina
+           MCK    — Lorenzo, Piero
+           MDT    — Caterina
+           MET    — Caterina
+           MSCI   — Lorenzo
+           NDAQ   — Lorenzo, Piero
+           NEE    — Lorenzo, Piero
+           NEM    — Caterina, Piero
+           NFLX   — Lorenzo, Caterina, Piero
+           NKE    — Lorenzo, Piero
+           NTAP   — Lorenzo, Caterina, Piero
+           NWS    — Lorenzo, Piero
+           NWSA   — Lorenzo, Caterina, Piero
+           PEG    — Lorenzo, Piero
+           PG     — Lorenzo, Piero
+           PGR    — Lorenzo, Piero
+           PLD    — Lorenzo, Piero
+           PPG    — Caterina
+           PPL    — Caterina
+           PRU    — Lorenzo, Piero
+           PTC    — Lorenzo, Piero
+           ROP    — Piero
+           SATS   — Lorenzo, Piero
+           SLB    — Cosimo
+           STZ    — Lorenzo, Caterina, Piero
+           T      — Lorenzo, Piero
+           TECH   — Giuliano
+           TJX    — Caterina
+           TMO    — Caterina
+           TMUS   — Caterina
+           TPL    — Caterina
+           TROW   — Lorenzo, Piero
+           TSCO   — Piero
+           TSN    — Lorenzo, Piero
+           TXT    — Cosimo, Caterina
+           TYL    — Lorenzo, Piero
+           UAL    — Caterina
+           UBER   — Lorenzo, Piero
+           UDR    — Caterina
+           ULTA   — Caterina
+           UNH    — Piero
+           USB    — Lorenzo, Piero
+           V      — Piero
+           VLO    — Caterina
+           VLTO   — Caterina
+           VMC    — Lorenzo, Piero
+           VRTX   — Caterina
+           VST    — Lorenzo, Piero
+           VTR    — Caterina
+           WAB    — Cosimo
+           WAT    — Lorenzo, Piero
+           WEC    — Lorenzo, Piero
+           WFC    — Piero
+           WM     — Lorenzo, Piero
+           WRB    — Piero
+
+  Saved: /mnt/iarvis/Projects/Medici/data/watchlists/watchlist_2025-03-07.json
+
+======================================================================
+WEEKEND PIPELINE COMPLETE — 116.5 minutes
+  Watchlist: 155 tickers
+    CMI    — Cosimo, Lorenzo, Giuliano
+    NFLX   — Lorenzo, Caterina, Piero
+    NTAP   — Lorenzo, Caterina, Piero
+    NWSA   — Lorenzo, Caterina, Piero
+    STZ    — Lorenzo, Caterina, Piero
+    ACGL   — Lorenzo, Piero
+    ADP    — Lorenzo, Piero
+    ADSK   — Lorenzo, Piero
+    AIG    — Lorenzo, Piero
+    AMCR   — Lorenzo, Piero
+    AMT    — Lorenzo, Piero
+    APTV   — Cosimo, Lorenzo
+    ATO    — Lorenzo, Piero
+    AVGO   — Lorenzo, Piero
+    AXP    — Lorenzo, Piero
+    AZO    — Lorenzo, Piero
+    BR     — Lorenzo, Piero
+    BRK-B  — Cosimo, Giuliano
+    CARR   — Lorenzo, Piero
+    COST   — Lorenzo, Piero
+    CPB    — Lorenzo, Piero
+    CRH    — Lorenzo, Giuliano
+    CTRA   — Lorenzo, Piero
+    DELL   — Lorenzo, Piero
+    DHR    — Lorenzo, Giuliano
+    ED     — Lorenzo, Piero
+    EIX    — Lorenzo, Piero
+    ETN    — Lorenzo, Piero
+    EW     — Lorenzo, Piero
+    FANG   — Lorenzo, Piero
+    FIX    — Lorenzo, Piero
+    GWW    — Lorenzo, Piero
+    LUV    — Lorenzo, Piero
+    MCK    — Lorenzo, Piero
+    NDAQ   — Lorenzo, Piero
+    NEE    — Lorenzo, Piero
+    NEM    — Caterina, Piero
+    NKE    — Lorenzo, Piero
+    NWS    — Lorenzo, Piero
+    PEG    — Lorenzo, Piero
+    PG     — Lorenzo, Piero
+    PGR    — Lorenzo, Piero
+    PLD    — Lorenzo, Piero
+    PRU    — Lorenzo, Piero
+    PTC    — Lorenzo, Piero
+    SATS   — Lorenzo, Piero
+    T      — Lorenzo, Piero
+    TROW   — Lorenzo, Piero
+    TSN    — Lorenzo, Piero
+    TXT    — Cosimo, Caterina
+    TYL    — Lorenzo, Piero
+    UBER   — Lorenzo, Piero
+    USB    — Lorenzo, Piero
+    VMC    — Lorenzo, Piero
+    VST    — Lorenzo, Piero
+    WAT    — Lorenzo, Piero
+    WEC    — Lorenzo, Piero
+    WM     — Lorenzo, Piero
+    A      — Lorenzo
+    ADM    — Lorenzo
+    AEE    — Lorenzo
+    AEP    — Piero
+    AJG    — Lorenzo
+    ALL    — Caterina
+    AMAT   — Lorenzo
+    AMZN   — Piero
+    ANET   — Lorenzo
+    APD    — Cosimo
+    APP    — Lorenzo
+    ARES   — Lorenzo
+    AVB    — Piero
+    AVY    — Piero
+    AWK    — Piero
+    BAX    — Giuliano
+    BBY    — Giuliano
+    BDX    — Giuliano
+    BF-B   — Caterina
+    BG     — Caterina
+    BK     — Caterina
+    BLDR   — Caterina
+    BLK    — Caterina
+    BXP    — Caterina
+    CB     — Caterina
+    CCI    — Giuliano
+    CINF   — Caterina
+    CMCSA  — Lorenzo
+    CMG    — Caterina
+    COIN   — Lorenzo
+    COP    — Lorenzo
+    CPAY   — Lorenzo
+    CPRT   — Lorenzo
+    CRL    — Lorenzo
+    CRM    — Cosimo
+    CRWD   — Caterina
+    CTVA   — Lorenzo
+    CVS    — Caterina
+    CVX    — Caterina
+    D      — Piero
+    DD     — Piero
+    DOC    — Caterina
+    DOV    — Piero
+    DRI    — Caterina
+    DVN    — Piero
+    DXCM   — Lorenzo
+    EBAY   — Piero
+    ECL    — Piero
+    EQIX   — Cosimo
+    FIS    — Caterina
+    GD     — Caterina
+    GDDY   — Caterina
+    GEN    — Caterina
+    GIS    — Caterina
+    GL     — Caterina
+    GLW    — Piero
+    GOOG   — Caterina
+    GOOGL  — Caterina
+    GS     — Caterina
+    HAL    — Caterina
+    HCA    — Caterina
+    HD     — Cosimo
+    HLT    — Cosimo
+    HOLX   — Cosimo
+    HPE    — Cosimo
+    HUM    — Caterina
+    ISRG   — Caterina
+    JNJ    — Caterina
+    KDP    — Caterina
+    KR     — Caterina
+    LIN    — Caterina
+    LYV    — Caterina
+    MDT    — Caterina
+    MET    — Caterina
+    MSCI   — Lorenzo
+    PPG    — Caterina
+    PPL    — Caterina
+    ROP    — Piero
+    SLB    — Cosimo
+    TECH   — Giuliano
+    TJX    — Caterina
+    TMO    — Caterina
+    TMUS   — Caterina
+    TPL    — Caterina
+    TSCO   — Piero
+    UAL    — Caterina
+    UDR    — Caterina
+    ULTA   — Caterina
+    UNH    — Piero
+    V      — Piero
+    VLO    — Caterina
+    VLTO   — Caterina
+    VRTX   — Caterina
+    VTR    — Caterina
+    WAB    — Cosimo
+    WFC    — Piero
+    WRB    — Piero
+======================================================================

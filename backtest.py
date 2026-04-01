@@ -1,8 +1,11 @@
 """
-Medici — Backtest Engine
+Medici — Backtest Engine v3
 
-Runs the full Consiglio pipeline day-by-day on historical data.
-The Capo (Claude) makes trading decisions based on persona theses.
+4-phase pipeline:
+  Phase 1: Python screener scans S&P 500 for candidates (no LLM)
+  Phase 2: Agents pitch 0-3 tickers each from screener output (Qwen)
+  Phase 3: Deduplicated deep dives — heavy indicators + scoring once per ticker (Qwen)
+  Phase 4: Isolated debates per ticker, then executive summary to Capo (Claude)
 """
 
 import json
@@ -18,6 +21,7 @@ from indicators import compute_all
 from registry import get_registry_for_scoring
 from context import build_context, load_vix
 from portfolio import Portfolio
+from screener import run_screener
 from pipeline import (
     load_ticker, load_optional, load_universe, load_sectors,
     score_indicators, pack_payload, DATA_DIR
@@ -29,15 +33,52 @@ OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "data", "backtests")
 QWEN_API = "http://localhost:8080/v1/chat/completions"
 QWEN_MODEL = "Qwen3.5-4B-Q6_K.gguf"
 
-PERSONAS = ["Cosimo", "Lorenzo", "Giuliano"]
+PERSONAS = ["Cosimo", "Lorenzo", "Giuliano", "Giovanni", "Caterina", "Piero"]
 
-AGENT_SYSTEM = """You are a trading analyst. Your personality, trading style, and preferences are defined below. Stay in character — your biases are part of the analysis.
+MAX_PICKS_PER_AGENT = 3
+
+# =============================================================================
+# PHASE 2: Agent Pitch Prompts
+# =============================================================================
+
+PITCH_SYSTEM = """You are a trading analyst. Your personality, trading style, and preferences are defined below. Stay in character — your biases are part of the analysis.
 
 ## Your Profile
 {persona}
 
 ## Instructions
-You will receive an end-of-day market data payload for a ticker. Analyze it and produce a trading thesis.
+You will receive today's screener output: a list of S&P 500 stocks that passed basic regime filters, along with 5 core metrics each (ADX, RSI, Price vs 200-SMA %, RVOL, Z-Score vs 50-SMA).
+
+Your job: select between 0 and {max_picks} tickers that match YOUR trading style. Do not pick tickers just because they're on the list — only pick ones where YOUR edge applies.
+
+You will also receive the current portfolio state. Factor open positions into your picks — don't propose buying what we already hold unless you want to add, and flag positions that should be closed.
+
+Respond in valid JSON only. No markdown. Format:
+{{
+  "picks": [
+    {{
+      "ticker": "SYMBOL",
+      "bias": "bullish" | "bearish",
+      "conviction": 1-10,
+      "one_liner": "why this fits your style in one sentence"
+    }}
+  ],
+  "passes_on": "brief note on why you're skipping other candidates or picking fewer than {max_picks}",
+  "portfolio_notes": "any comments on existing positions (hold, trim, close)"
+}}"""
+
+
+# =============================================================================
+# PHASE 3: Deep Dive (same as before — thesis per ticker per agent)
+# =============================================================================
+
+THESIS_SYSTEM = """You are a trading analyst. Your personality, trading style, and preferences are defined below. Stay in character — your biases are part of the analysis.
+
+## Your Profile
+{persona}
+
+## Instructions
+You will receive a deep indicator payload for a specific ticker. Produce a detailed trading thesis.
 
 Respond in valid JSON only. No markdown. Format:
 {{
@@ -59,20 +100,23 @@ Respond in valid JSON only. No markdown. Format:
 }}"""
 
 
+# =============================================================================
+# PHASE 4: Red Team, Rebuttal, and Capo
+# =============================================================================
+
 RED_TEAM_SYSTEM = """You are a trading analyst performing adversarial review. Your personality and trading style are defined below. Stay in character.
 
 ## Your Profile
 {persona}
 
 ## Instructions
-You are reviewing another advisor's trading thesis. Your job is to ruthlessly attack it:
+You are reviewing another advisor's trading thesis on {ticker}. Your job is to ruthlessly attack it:
 - Identify logical fallacies and contradictions
 - Point out data they ignored or misinterpreted
 - Challenge their assumptions about the regime
 - Find risks they underweighted or missed entirely
-- Question whether their indicators actually support their conclusion
 
-Be specific. Reference actual indicator values from the payload when attacking.
+Be specific. Reference actual indicator values when attacking.
 
 Respond in valid JSON only. No markdown. Format:
 {{
@@ -92,25 +136,30 @@ REBUTTAL_SYSTEM = """You are a trading analyst defending your thesis against cri
 {persona}
 
 ## Instructions
-You produced a trading thesis that has been challenged by other advisors. You MUST defend your thesis. You cannot abandon or withdraw it — the Capo will decide whose thesis has the most merit. Acknowledge valid criticisms but explain why your core thesis still holds despite them.
+You produced a trading thesis on {ticker} that has been challenged by other advisors. You MUST defend your thesis. You cannot abandon or withdraw it — the Capo will decide whose thesis has the most merit.
 
 Respond in valid JSON only. No markdown. Format:
 {{
   "defender": "your name",
-  "acknowledged_risks": ["valid points from critics that you accept as real risks"],
-  "rebuttals": ["point-by-point defense of your thesis"],
+  "ticker": "{ticker}",
+  "acknowledged_risks": ["valid points from critics that you accept"],
+  "rebuttals": ["point-by-point defense"],
   "revised_confidence": 1-10,
   "strongest_argument": "your single best reason this thesis is correct"
 }}"""
 
 
-CAPO_SYSTEM = """You are the Capo of the Consiglio — the final decision maker. Your trading personality is defined by the persona below, but you are not bound rigidly to it. You have the authority to override your natural tendencies when the evidence demands it.
+CAPO_SYSTEM = """You are the Capo of the Consiglio — the final decision maker. Your trading personality is informed by the persona below, but you have authority to override your tendencies when the evidence demands it.
 
 ## Your Persona
 {persona}
 
 ## Your Role
-You receive the full Consiglio deliberation: initial theses from three advisors, their red-team critiques of each other, and their rebuttals to criticism. Use this complete debate to make concrete trading decisions.
+You receive an executive summary of today's Consiglio deliberation. For each ticker debated, you see:
+- The post-rebuttal thesis from each advisor who pitched it
+- The strongest counter-arguments raised against it
+
+Use this to make concrete portfolio allocation decisions.
 
 ## Investment Mandate (from the Principal — these override all other rules)
 - You MUST deploy at least 80% of the portfolio into positions. Cash sitting idle is failure.
@@ -121,10 +170,10 @@ You receive the full Consiglio deliberation: initial theses from three advisors,
 
 ## Rules
 - You manage a portfolio starting at $1000 with fractional shares
-- You can buy or sell any ticker the advisors analyzed
+- You can buy or sell any ticker the advisors analyzed today
 - Position sizes must be in dollar amounts
-- You MUST respect the risk limits of your persona for individual positions
-- Evaluate which advisor's thesis survived the red-team debate best and weight your decisions accordingly
+- Max 8 concurrent positions
+- Evaluate which advisor's thesis survived the debate best
 - If you have open positions, actively manage them (hold, add, trim, or close)
 
 Respond in valid JSON only. No markdown. Format:
@@ -134,25 +183,26 @@ Respond in valid JSON only. No markdown. Format:
   "actions": [
     {{"ticker": "SYMBOL", "action": "buy" | "sell" | "sell_all" | "hold", "amount_usd": N, "reason": "brief"}}
   ],
-  "best_thesis": "name of the advisor whose thesis you found most compelling after the debate",
+  "best_thesis": "name of the advisor whose thesis you found most compelling",
   "rationale": "2-3 sentence overall assessment of the day",
   "risk_notes": "any portfolio-level risk concerns"
 }}"""
 
 
+# =============================================================================
+# HELPERS
+# =============================================================================
+
 def truncate_to_date(df: pd.DataFrame, as_of_date: str) -> pd.DataFrame:
-    """Return df with only rows up to and including as_of_date."""
     return df.loc[:as_of_date]
 
 
 def get_trading_days(ticker_df: pd.DataFrame, start_date: str, end_date: str) -> list:
-    """Get list of trading days between start and end from actual data."""
     mask = (ticker_df.index >= start_date) & (ticker_df.index <= end_date)
     return [d.strftime("%Y-%m-%d") for d in ticker_df.index[mask]]
 
 
 def get_next_day_open(ticker: str, as_of_date: str) -> float | None:
-    """Get the open price on the next trading day after as_of_date."""
     df = load_ticker(ticker)
     future = df.loc[as_of_date:]
     if len(future) < 2:
@@ -161,7 +211,6 @@ def get_next_day_open(ticker: str, as_of_date: str) -> float | None:
 
 
 def get_current_prices(tickers: list, as_of_date: str) -> dict:
-    """Get close prices for multiple tickers on as_of_date."""
     prices = {}
     for t in tickers:
         try:
@@ -174,58 +223,11 @@ def get_current_prices(tickers: list, as_of_date: str) -> dict:
     return prices
 
 
-def run_persona(persona_name: str, payload: dict) -> dict | None:
-    """Run a single persona through Qwen. Returns thesis dict or None."""
-    brain_path = os.path.join(CONSIGLIO_DIR, persona_name, "brain.md")
-    with open(brain_path) as f:
-        persona_text = f.read()
-
-    system = AGENT_SYSTEM.format(persona=persona_text)
-
-    compact_ind = {}
-    for k, v in payload["indicators"].items():
-        compact_ind[k] = v
-
-    user_msg = f"""End-of-day payload for {payload['ticker']} on {payload['date']}:
-
-Market Context:
-{json.dumps(payload['context'])}
-
-Available Indicators:
-{json.dumps(compact_ind)}
-
-Analyze this data in character and produce your trading thesis."""
-
-    try:
-        import requests
-        resp = requests.post(QWEN_API, json={
-            "model": QWEN_MODEL,
-            "messages": [
-                {"role": "system", "content": system},
-                {"role": "user", "content": user_msg},
-            ],
-            "temperature": 0.4,
-            "max_tokens": 2048,
-        }, timeout=300)
-        resp.raise_for_status()
-
-        raw = resp.json()["choices"][0]["message"]["content"]
-        cleaned = raw.strip()
-        if cleaned.startswith("```"):
-            cleaned = "\n".join(cleaned.split("\n")[1:])
-        if cleaned.endswith("```"):
-            cleaned = "\n".join(cleaned.split("\n")[:-1])
-        return json.loads(cleaned.strip())
-    except Exception as e:
-        print(f"      {persona_name} FAILED: {e}")
-        return None
-
-
 def _qwen_call(system: str, user_msg: str, label: str = "") -> dict | None:
     """Generic Qwen call that returns parsed JSON or None."""
-    import requests as req
+    import requests
     try:
-        resp = req.post(QWEN_API, json={
+        resp = requests.post(QWEN_API, json={
             "model": QWEN_MODEL,
             "messages": [
                 {"role": "system", "content": system},
@@ -247,36 +249,114 @@ def _qwen_call(system: str, user_msg: str, label: str = "") -> dict | None:
         return None
 
 
-def run_red_team(reviewer_name: str, target_name: str, target_thesis: dict,
-                 payload: dict) -> dict | None:
-    """One persona red-teams another's thesis."""
-    brain_path = os.path.join(CONSIGLIO_DIR, reviewer_name, "brain.md")
-    with open(brain_path) as f:
-        persona_text = f.read()
+def _load_persona(name: str) -> str:
+    path = os.path.join(CONSIGLIO_DIR, name, "brain.md")
+    with open(path) as f:
+        return f.read()
 
-    system = RED_TEAM_SYSTEM.format(persona=persona_text)
-    user_msg = f"""You are {reviewer_name}. Review {target_name}'s thesis:
+
+def _parse_wait_time(error_text: str, default: int = 60) -> int:
+    import re
+    patterns = [
+        r'(\d+)\s*(?:seconds?|s)\b',
+        r'retry.after.*?(\d+)',
+        r'wait.*?(\d+)',
+    ]
+    for p in patterns:
+        m = re.search(p, error_text, re.IGNORECASE)
+        if m:
+            return int(m.group(1)) + 5
+    return default
+
+
+# =============================================================================
+# PHASE 2: PITCH
+# =============================================================================
+
+def _condensed_persona(name: str) -> str:
+    """Extract Identity + Trading Style + Indicator Preferences sections only."""
+    text = _load_persona(name)
+    lines = text.split("\n")
+    keep = []
+    in_section = False
+    for line in lines:
+        if line.startswith("## Identity") or line.startswith("## Trading Style") or line.startswith("## Indicator Preferences"):
+            in_section = True
+            keep.append(line)
+        elif line.startswith("## ") and in_section:
+            in_section = False
+        elif in_section:
+            keep.append(line)
+    return "\n".join(keep)
+
+
+def run_pitch(persona_name: str, screener_output: list, portfolio_state: str,
+              as_of_date: str) -> dict | None:
+    """Agent picks 0-3 tickers from screener output."""
+    persona_text = _condensed_persona(persona_name)
+    system = PITCH_SYSTEM.format(
+        persona=persona_text, max_picks=MAX_PICKS_PER_AGENT
+    )
+
+    user_msg = f"""Date: {as_of_date}
+
+Screener ({len(screener_output)} candidates):
+{json.dumps(screener_output)}
+
+Portfolio: {portfolio_state}
+
+Pick 0-{MAX_PICKS_PER_AGENT} tickers."""
+
+    return _qwen_call(system, user_msg, f"{persona_name} pitch")
+
+
+# =============================================================================
+# PHASE 3: DEEP DIVE
+# =============================================================================
+
+def run_deep_thesis(persona_name: str, payload: dict) -> dict | None:
+    """Run a single persona's deep thesis on a specific ticker payload."""
+    persona_text = _load_persona(persona_name)
+    system = THESIS_SYSTEM.format(persona=persona_text)
+
+    user_msg = f"""End-of-day payload for {payload['ticker']} on {payload['date']}:
+
+Market Context:
+{json.dumps(payload['context'])}
+
+Available Indicators:
+{json.dumps(payload['indicators'])}
+
+Analyze this data in character and produce your trading thesis."""
+
+    return _qwen_call(system, user_msg, f"{persona_name}→{payload['ticker']}")
+
+
+# =============================================================================
+# PHASE 4: DEBATE (isolated per ticker)
+# =============================================================================
+
+def run_red_team(reviewer_name: str, target_name: str, target_thesis: dict,
+                 ticker: str, payload: dict) -> dict | None:
+    persona_text = _load_persona(reviewer_name)
+    system = RED_TEAM_SYSTEM.format(persona=persona_text, ticker=ticker)
+
+    user_msg = f"""You are {reviewer_name}. Review {target_name}'s thesis on {ticker}:
 
 {json.dumps(target_thesis)}
 
-Market context for reference:
-{json.dumps(payload['context'])}
-
 Key indicator values:
-{json.dumps({k: v for k, v in list(payload['indicators'].items())[:30]})}
+{json.dumps({k: v for k, v in list(payload['indicators'].items())[:20]})}
 
 Attack this thesis. Find the flaws."""
 
-    return _qwen_call(system, user_msg, f"{reviewer_name}→{target_name}")
+    return _qwen_call(system, user_msg, f"{reviewer_name}→{target_name}({ticker})")
 
 
-def run_rebuttal(defender_name: str, thesis: dict, critiques: list) -> dict | None:
-    """Persona defends their thesis against red team attacks."""
-    brain_path = os.path.join(CONSIGLIO_DIR, defender_name, "brain.md")
-    with open(brain_path) as f:
-        persona_text = f.read()
-
-    system = REBUTTAL_SYSTEM.format(persona=persona_text)
+def run_rebuttal(defender_name: str, thesis: dict, critiques: list,
+                 ticker: str) -> dict | None:
+    persona_text = _load_persona(defender_name)
+    system = REBUTTAL_SYSTEM.format(persona=persona_text, ticker=ticker)
 
     critiques_text = ""
     for c in critiques:
@@ -284,57 +364,136 @@ def run_rebuttal(defender_name: str, thesis: dict, critiques: list) -> dict | No
             reviewer = c.get("reviewer", "unknown")
             critiques_text += f"\n--- From {reviewer} ---\n{json.dumps(c)}\n"
 
-    user_msg = f"""You are {defender_name}. Your thesis:
+    user_msg = f"""You are {defender_name}. Your thesis on {ticker}:
 {json.dumps(thesis)}
 
-Criticisms from other advisors:
+Criticisms:
 {critiques_text}
 
-Defend your thesis or concede where they're right."""
+Defend your thesis."""
 
-    return _qwen_call(system, user_msg, f"{defender_name} rebuttal")
+    return _qwen_call(system, user_msg, f"{defender_name} rebuttal({ticker})")
 
 
-def run_capo(capo_persona: str, theses: dict, red_teams: dict, rebuttals: dict,
-             portfolio_state: str, as_of_date: str, ticker: str) -> dict | None:
-    """Run the Capo decision through Claude CLI. Handles rate limits."""
-    brain_path = os.path.join(CONSIGLIO_DIR, capo_persona, "brain.md")
-    with open(brain_path) as f:
-        persona_text = f.read()
+def run_ticker_debate(ticker: str, pitchers: list[str], payload: dict) -> dict:
+    """Run the full debate loop for a single ticker. Returns summary dict."""
+    # Step 1: Each pitcher produces a deep thesis
+    theses = {}
+    for name in pitchers:
+        t0 = time.time()
+        thesis = run_deep_thesis(name, payload)
+        elapsed = time.time() - t0
+        theses[name] = thesis
+        if thesis:
+            bias = thesis.get("bias", "?")
+            conf = thesis.get("confidence", "?")
+            trade = thesis.get("would_trade", "?")
+            print(f"          {name:10s}: {bias:8s} conf={conf} trade={trade} ({elapsed:.0f}s)")
+        else:
+            print(f"          {name:10s}: FAILED ({elapsed:.0f}s)")
 
+    # Step 2: Red team — each pitcher attacks each other pitcher's thesis
+    red_teams = {}
+    for reviewer in pitchers:
+        for target in pitchers:
+            if reviewer == target or theses.get(target) is None:
+                continue
+            t0 = time.time()
+            critique = run_red_team(reviewer, target, theses[target], ticker, payload)
+            elapsed = time.time() - t0
+            key = f"{reviewer}→{target}"
+            red_teams[key] = critique
+            if critique:
+                verdict = critique.get("verdict", "?")
+                print(f"          RT {key:25s}: {verdict} ({elapsed:.0f}s)")
+            else:
+                print(f"          RT {key:25s}: FAILED ({elapsed:.0f}s)")
+
+    # Step 3: Rebuttals
+    rebuttals = {}
+    for defender in pitchers:
+        if theses.get(defender) is None:
+            continue
+        critiques_for = [v for k, v in red_teams.items()
+                         if k.endswith(f"→{defender}") and v is not None]
+        if not critiques_for:
+            rebuttals[defender] = None
+            continue
+        t0 = time.time()
+        rebuttal = run_rebuttal(defender, theses[defender], critiques_for, ticker)
+        elapsed = time.time() - t0
+        rebuttals[defender] = rebuttal
+        if rebuttal:
+            new_conf = rebuttal.get("revised_confidence", "?")
+            strongest = str(rebuttal.get("strongest_argument", ""))[:60]
+            print(f"          RB {defender:10s}: conf={new_conf} — {strongest} ({elapsed:.0f}s)")
+        else:
+            print(f"          RB {defender:10s}: FAILED ({elapsed:.0f}s)")
+
+    return {
+        "ticker": ticker,
+        "theses": theses,
+        "red_teams": red_teams,
+        "rebuttals": rebuttals,
+    }
+
+
+def build_executive_summary(debates: list[dict]) -> str:
+    """Extract post-rebuttal theses and strongest counter-arguments.
+    This is what goes to the Capo — NOT the full debate transcript."""
+    sections = []
+    for debate in debates:
+        ticker = debate["ticker"]
+        lines = [f"### {ticker}"]
+
+        for name, rebuttal in debate["rebuttals"].items():
+            thesis = debate["theses"].get(name)
+            if thesis is None:
+                continue
+
+            bias = thesis.get("bias", "?")
+            conf = thesis.get("confidence", "?")
+            revised_conf = rebuttal.get("revised_confidence", conf) if rebuttal else conf
+            strongest = rebuttal.get("strongest_argument", thesis.get("thesis", "")) if rebuttal else thesis.get("thesis", "")
+            setup = thesis.get("setup", {})
+
+            lines.append(f"\n**{name}** — {bias} (confidence {conf}→{revised_conf})")
+            lines.append(f"  Thesis: {thesis.get('thesis', '?')}")
+            if thesis.get("would_trade"):
+                lines.append(f"  Entry: {setup.get('entry_trigger', '?')}")
+                lines.append(f"  Stop: {setup.get('stop_loss', '?')}")
+                lines.append(f"  Target: {setup.get('target', '?')}")
+            lines.append(f"  Strongest argument: {strongest}")
+
+            # Strongest counter-arguments against this thesis
+            counters = []
+            for key, critique in debate["red_teams"].items():
+                if critique and key.endswith(f"→{name}"):
+                    flaws = critique.get("flaws", [])
+                    if flaws:
+                        reviewer = critique.get("reviewer", key.split("→")[0])
+                        counters.append(f"{reviewer}: {flaws[0]}")
+            if counters:
+                lines.append(f"  Top counter-arguments: {'; '.join(counters[:2])}")
+
+        sections.append("\n".join(lines))
+
+    return "\n\n".join(sections)
+
+
+# =============================================================================
+# CAPO DECISION (Claude CLI)
+# =============================================================================
+
+def run_capo(capo_persona: str, executive_summary: str,
+             portfolio_state: str, as_of_date: str) -> dict | None:
+    persona_text = _load_persona(capo_persona)
     system = CAPO_SYSTEM.format(persona=persona_text)
 
-    # Build the full debate transcript
-    debate = ""
-    for name in theses:
-        thesis = theses.get(name)
-        debate += f"\n### {name} — THESIS\n"
-        if thesis:
-            debate += json.dumps(thesis) + "\n"
-        else:
-            debate += "Failed to produce thesis.\n"
-
-    debate += "\n## RED TEAM CRITIQUES\n"
-    for key, critique in red_teams.items():
-        debate += f"\n### {key}\n"
-        if critique:
-            debate += json.dumps(critique) + "\n"
-        else:
-            debate += "No critique produced.\n"
-
-    debate += "\n## REBUTTALS\n"
-    for name, rebuttal in rebuttals.items():
-        debate += f"\n### {name} responds\n"
-        if rebuttal:
-            debate += json.dumps(rebuttal) + "\n"
-        else:
-            debate += "No rebuttal produced.\n"
-
     user_msg = f"""Date: {as_of_date}
-Ticker under analysis: {ticker}
 
-## Consiglio Deliberation
-{debate}
+## Executive Summary — Today's Consiglio Deliberation
+{executive_summary}
 
 ## Current Portfolio
 {portfolio_state}
@@ -347,15 +506,14 @@ Make your trading decisions for today."""
     for attempt in range(max_retries):
         try:
             result = subprocess.run(
-                ["claude", "-p", "--output-format", "json"],
+                ["claude", "-p", "--output-format", "json", "--model", "sonnet-4-6", "--effort", "medium"],
                 input=full_prompt,
                 capture_output=True, text=True, timeout=120,
             )
 
             if result.returncode != 0:
                 stderr = result.stderr.strip()
-                # Rate limit detection
-                if "rate" in stderr.lower() or "429" in stderr or "limit" in stderr.lower() or "overloaded" in stderr.lower():
+                if any(k in stderr.lower() for k in ["rate", "429", "limit", "overloaded"]):
                     wait = _parse_wait_time(stderr, default=60)
                     print(f"      Rate limited. Waiting {wait}s... (attempt {attempt+1}/{max_retries})")
                     time.sleep(wait)
@@ -366,7 +524,6 @@ Make your trading decisions for today."""
             output = json.loads(result.stdout)
             raw = output.get("result", "")
 
-            # Parse JSON from Claude's response
             cleaned = raw.strip()
             if cleaned.startswith("```"):
                 cleaned = "\n".join(cleaned.split("\n")[1:])
@@ -374,7 +531,6 @@ Make your trading decisions for today."""
                 cleaned = "\n".join(cleaned.split("\n")[:-1])
             cleaned = cleaned.strip()
 
-            # Find JSON in response (Claude might add text around it)
             start = cleaned.find("{")
             end = cleaned.rfind("}") + 1
             if start >= 0 and end > start:
@@ -391,7 +547,7 @@ Make your trading decisions for today."""
             return None
         except Exception as e:
             stderr = str(e)
-            if "rate" in stderr.lower() or "429" in stderr or "limit" in stderr.lower():
+            if any(k in stderr.lower() for k in ["rate", "429", "limit"]):
                 wait = _parse_wait_time(stderr, default=60)
                 print(f"      Rate limited. Waiting {wait}s... (attempt {attempt+1}/{max_retries})")
                 time.sleep(wait)
@@ -403,24 +559,11 @@ Make your trading decisions for today."""
     return None
 
 
-def _parse_wait_time(error_text: str, default: int = 60) -> int:
-    """Try to extract wait time from rate limit error message."""
-    import re
-    # Look for patterns like "try again in 30s" or "retry after 60 seconds"
-    patterns = [
-        r'(\d+)\s*(?:seconds?|s)\b',
-        r'retry.after.*?(\d+)',
-        r'wait.*?(\d+)',
-    ]
-    for p in patterns:
-        m = re.search(p, error_text, re.IGNORECASE)
-        if m:
-            return int(m.group(1)) + 5  # add buffer
-    return default
-
+# =============================================================================
+# TRADE EXECUTION
+# =============================================================================
 
 def execute_actions(portfolio: Portfolio, actions: list, as_of_date: str):
-    """Execute the Capo's trading decisions at next day's open."""
     for action in actions:
         ticker = action.get("ticker")
         act = action.get("action")
@@ -434,7 +577,6 @@ def execute_actions(portfolio: Portfolio, actions: list, as_of_date: str):
             print(f"      No next-day data for {ticker}, skipping")
             continue
 
-        # Get the next trading day's date for the trade log
         df = load_ticker(ticker)
         future = df.loc[as_of_date:]
         if len(future) < 2:
@@ -456,34 +598,35 @@ def execute_actions(portfolio: Portfolio, actions: list, as_of_date: str):
         elif act == "sell_all":
             ok = portfolio.sell_all(ticker, next_open, exec_date)
             if ok:
-                pos_shares = 0  # already sold
                 print(f"      EXEC: SELL ALL {ticker} @ ${next_open:.2f}")
 
 
-def run_backtest(ticker: str, start_date: str, end_date: str,
+# =============================================================================
+# MAIN BACKTEST LOOP
+# =============================================================================
+
+def run_backtest(start_date: str, end_date: str,
                  capo: str = "Lorenzo", starting_cash: float = 1000.0):
-    """Run the full backtest loop."""
-    run_id = f"{ticker}_{start_date}_{end_date}_{capo}"
+    run_id = f"consiglio_{start_date}_{end_date}_{capo}"
     run_dir = os.path.join(OUTPUT_DIR, run_id)
     os.makedirs(run_dir, exist_ok=True)
 
     print(f"\n{'='*70}")
-    print(f"MEDICI BACKTEST")
-    print(f"  Ticker: {ticker}")
+    print(f"MEDICI BACKTEST v3 — Full Consiglio")
     print(f"  Period: {start_date} → {end_date}")
     print(f"  Capo:   {capo}")
+    print(f"  Agents: {', '.join(PERSONAS)}")
     print(f"  Cash:   ${starting_cash:.2f}")
     print(f"{'='*70}")
 
-    # Load data
+    # Use SPY as the calendar
     spy_df = load_ticker("SPY")
     trading_days = get_trading_days(spy_df, start_date, end_date)
     print(f"\n  {len(trading_days)} trading days\n")
 
-    # Load cross-asset data once (full, truncation happens per day)
-    full_df = load_ticker(ticker)
-    full_spy = load_ticker("SPY") if ticker != "SPY" else full_df
+    # Pre-load cross-asset data
     full_vix = load_vix()
+    full_spy = load_ticker("SPY")
     full_hyg = load_optional("HYG")
     full_tlt = load_optional("TLT")
 
@@ -491,157 +634,209 @@ def run_backtest(ticker: str, start_date: str, end_date: str,
 
     for day_num, date in enumerate(trading_days, 1):
         print(f"\n  DAY {day_num}/{len(trading_days)} — {date}")
-        print(f"  {'-'*50}")
+        print(f"  {'-'*60}")
 
-        # Truncate all data to this date
-        df = truncate_to_date(full_df, date)
-        spy_trunc = truncate_to_date(full_spy, date)
-        vix_trunc = truncate_to_date(full_vix, date) if full_vix is not None else None
-        hyg_trunc = truncate_to_date(full_hyg, date) if full_hyg is not None else None
-        tlt_trunc = truncate_to_date(full_tlt, date) if full_tlt is not None else None
-
-        if len(df) < 200:
-            print(f"    Not enough data ({len(df)} rows), skipping")
-            continue
-
-        # 1. Compute indicators
-        print(f"    [1] Computing indicators...")
-        t0 = time.time()
-        all_indicators = compute_all(
-            df, spy_df=spy_trunc, hyg_df=hyg_trunc, tlt_df=tlt_trunc,
-        )
-        computed = sum(1 for v in all_indicators.values() if v is not None)
-        print(f"        {computed}/{len(all_indicators)} in {time.time()-t0:.1f}s")
-
-        # 2. Build context
-        ctx = build_context(ticker, df, vix_trunc)
-        print(f"    [2] Regime: {ctx['regime']}")
-
-        # 3. Score indicators
-        print(f"    [3] Scoring via Qwen...")
-        t0 = time.time()
-        scoring = score_indicators(ctx)
-        print(f"        Scored in {time.time()-t0:.0f}s")
-
-        # 4. Pack payload
-        payload = pack_payload(ticker, date, ctx, all_indicators, scoring)
-        kept = payload["scoring_summary"]["kept"]
-        print(f"    [4] Payload: {kept} indicators")
-
-        # 5. Run Consiglio — Theses
-        print(f"    [5] Consiglio — Theses:")
-        theses = {}
-        for persona in PERSONAS:
-            t0 = time.time()
-            thesis = run_persona(persona, payload)
-            elapsed = time.time() - t0
-            if thesis:
-                bias = thesis.get("bias", "?")
-                trade = thesis.get("would_trade", "?")
-                conf = thesis.get("confidence", "?")
-                print(f"        {persona:10s}: {bias:8s} conf={conf} trade={trade} ({elapsed:.0f}s)")
-            else:
-                print(f"        {persona:10s}: FAILED ({elapsed:.0f}s)")
-            theses[persona] = thesis
-
-        # 6. Red Team — Each persona critiques the other two
-        print(f"    [6] Red Team:")
-        red_teams = {}
-        for reviewer in PERSONAS:
-            for target in PERSONAS:
-                if reviewer == target:
-                    continue
-                if theses.get(target) is None:
-                    continue
-                t0 = time.time()
-                critique = run_red_team(reviewer, target, theses[target], payload)
-                elapsed = time.time() - t0
-                key = f"{reviewer}→{target}"
-                red_teams[key] = critique
-                if critique:
-                    verdict = critique.get("verdict", "?")
-                    n_flaws = len(critique.get("flaws", []))
-                    print(f"        {key:25s}: {verdict} ({n_flaws} flaws) ({elapsed:.0f}s)")
-                else:
-                    print(f"        {key:25s}: FAILED ({elapsed:.0f}s)")
-
-        # 7. Rebuttals — Each persona defends against criticism
-        print(f"    [7] Rebuttals:")
-        rebuttals = {}
-        for defender in PERSONAS:
-            if theses.get(defender) is None:
-                continue
-            # Collect critiques aimed at this defender
-            critiques_for = [v for k, v in red_teams.items()
-                            if k.endswith(f"→{defender}") and v is not None]
-            if not critiques_for:
-                rebuttals[defender] = None
-                continue
-            t0 = time.time()
-            rebuttal = run_rebuttal(defender, theses[defender], critiques_for)
-            elapsed = time.time() - t0
-            rebuttals[defender] = rebuttal
-            if rebuttal:
-                new_conf = rebuttal.get("revised_confidence", "?")
-                n_risks = len(rebuttal.get("acknowledged_risks", []))
-                strongest = rebuttal.get("strongest_argument", "")[:80]
-                print(f"        {defender:10s}: conf={new_conf} acks={n_risks} — {strongest} ({elapsed:.0f}s)")
-            else:
-                print(f"        {defender:10s}: FAILED ({elapsed:.0f}s)")
-
-        # 8. Capo decides
-        prices = get_current_prices(
-            [ticker] + list(portfolio.positions.keys()), date
-        )
+        # Current portfolio state for prompts
+        all_held = list(portfolio.positions.keys())
+        prices = get_current_prices(all_held + ["SPY"], date)
         portfolio_state = portfolio.get_state_for_prompt(prices)
 
-        print(f"    [8] Capo ({capo}) deciding...")
+        # =====================================================================
+        # PHASE 1: SCREENER (pure Python, no LLM)
+        # =====================================================================
+        print(f"    [P1] Screener...")
         t0 = time.time()
-        decision = run_capo(capo, theses, red_teams, rebuttals,
-                           portfolio_state, date, ticker)
+        candidates = run_screener(date, spy_df=full_spy)
         elapsed = time.time() - t0
-        print(f"        Decision in {elapsed:.0f}s")
+        print(f"         {len(candidates)} candidates in {elapsed:.1f}s")
+
+        if not candidates:
+            print(f"         No candidates today, skipping to portfolio management")
+            # Still need Capo to manage existing positions
+            if portfolio.positions:
+                summary = "No screener candidates today. Review existing positions only."
+                decision = run_capo(capo, summary, portfolio_state, date)
+                if decision:
+                    execute_actions(portfolio, decision.get("actions", []), date)
+            snap = portfolio.snapshot(date, get_current_prices(all_held, date))
+            print(f"    [--] Portfolio: ${snap['total_value']:.2f} ({snap['total_return_pct']:+.2f}%)")
+            portfolio.save()
+            _save_day(run_dir, day_num, date, {"screener": [], "pitches": {},
+                      "debates": [], "decision": None, "portfolio_snapshot": snap})
+            continue
+
+        # Cap screener output sent to agents (top 15 by score, compact format)
+        screener_for_agents = [
+            {k: c[k] for k in ("ticker", "adx", "rsi", "price_vs_200sma_pct", "rvol", "zscore_50")}
+            for c in candidates[:15]
+        ]
+
+        # =====================================================================
+        # PHASE 2: PITCH (each agent picks 0-3 tickers)
+        # =====================================================================
+        print(f"    [P2] Pitches:")
+        pitches = {}  # {persona: pitch_result}
+        ticker_advocates = {}  # {ticker: [persona names who pitched it]}
+
+        for persona in PERSONAS:
+            t0 = time.time()
+            pitch = run_pitch(persona, screener_for_agents, portfolio_state, date)
+            elapsed = time.time() - t0
+            pitches[persona] = pitch
+
+            if pitch and pitch.get("picks"):
+                picks = pitch["picks"][:MAX_PICKS_PER_AGENT]  # enforce hard cap
+                tickers_picked = [p["ticker"] for p in picks]
+                for p in picks:
+                    t_name = p["ticker"]
+                    ticker_advocates.setdefault(t_name, []).append(persona)
+                print(f"         {persona:10s}: {', '.join(tickers_picked)} ({elapsed:.0f}s)")
+            else:
+                print(f"         {persona:10s}: no picks ({elapsed:.0f}s)")
+
+        # Deduplicate
+        unique_tickers = sorted(ticker_advocates.keys())
+        print(f"         Unique tickers pitched: {len(unique_tickers)} — {unique_tickers}")
+
+        if not unique_tickers:
+            print(f"         No one pitched anything today")
+            if portfolio.positions:
+                summary = "No advisor pitched any tickers today. Review existing positions only."
+                decision = run_capo(capo, summary, portfolio_state, date)
+                if decision:
+                    execute_actions(portfolio, decision.get("actions", []), date)
+            snap = portfolio.snapshot(date, get_current_prices(all_held, date))
+            print(f"    [--] Portfolio: ${snap['total_value']:.2f} ({snap['total_return_pct']:+.2f}%)")
+            portfolio.save()
+            _save_day(run_dir, day_num, date, {"screener": candidates[:10], "pitches": pitches,
+                      "debates": [], "decision": None, "portfolio_snapshot": snap})
+            continue
+
+        # =====================================================================
+        # PHASE 3: DEEP DIVES (heavy indicators + scoring, once per ticker)
+        # =====================================================================
+        print(f"    [P3] Deep dives:")
+        payloads = {}  # {ticker: payload}
+
+        for ticker in unique_tickers:
+            print(f"         --- {ticker} ---")
+            try:
+                t_df = load_ticker(ticker)
+                t_df = truncate_to_date(t_df, date)
+                if len(t_df) < 200:
+                    print(f"         {ticker}: insufficient data ({len(t_df)} rows), skipping")
+                    continue
+
+                spy_trunc = truncate_to_date(full_spy, date)
+                vix_trunc = truncate_to_date(full_vix, date) if full_vix is not None else None
+                hyg_trunc = truncate_to_date(full_hyg, date) if full_hyg is not None else None
+                tlt_trunc = truncate_to_date(full_tlt, date) if full_tlt is not None else None
+
+                # Compute indicators
+                t0 = time.time()
+                all_ind = compute_all(
+                    t_df, spy_df=spy_trunc, hyg_df=hyg_trunc, tlt_df=tlt_trunc,
+                )
+                computed = sum(1 for v in all_ind.values() if v is not None)
+
+                # Build context
+                ctx = build_context(ticker, t_df, vix_trunc)
+
+                # Score indicators via Qwen
+                scoring = score_indicators(ctx)
+
+                # Pack payload
+                payload = pack_payload(ticker, date, ctx, all_ind, scoring)
+                payloads[ticker] = payload
+                elapsed = time.time() - t0
+                kept = payload["scoring_summary"]["kept"]
+                print(f"         {ticker}: {computed} indicators → {kept} kept ({elapsed:.0f}s)")
+
+            except Exception as e:
+                print(f"         {ticker}: ERROR — {e}")
+
+        if not payloads:
+            print(f"         No payloads generated")
+            snap = portfolio.snapshot(date, get_current_prices(all_held, date))
+            portfolio.save()
+            _save_day(run_dir, day_num, date, {"screener": candidates[:10], "pitches": pitches,
+                      "debates": [], "decision": None, "portfolio_snapshot": snap})
+            continue
+
+        # =====================================================================
+        # PHASE 4a: ISOLATED DEBATES (per ticker)
+        # =====================================================================
+        print(f"    [P4a] Debates:")
+        debates = []
+
+        for ticker, payload in payloads.items():
+            advocates = ticker_advocates.get(ticker, [])
+            if not advocates:
+                continue
+            print(f"         --- {ticker} (advocates: {', '.join(advocates)}) ---")
+            debate = run_ticker_debate(ticker, advocates, payload)
+            debates.append(debate)
+
+        # =====================================================================
+        # PHASE 4b: EXECUTIVE SUMMARY → CAPO
+        # =====================================================================
+        print(f"    [P4b] Capo ({capo}) deciding...")
+        exec_summary = build_executive_summary(debates)
+
+        # Add existing position context
+        if portfolio.positions:
+            exec_summary += f"\n\n### Existing Positions\n"
+            for t, pos in portfolio.positions.items():
+                p = prices.get(t, pos["avg_cost"])
+                pnl_pct = (p / pos["avg_cost"] - 1) * 100 if pos["avg_cost"] > 0 else 0
+                exec_summary += f"  {t}: {pos['shares']:.4f} @ ${pos['avg_cost']:.2f} → ${p:.2f} ({pnl_pct:+.1f}%)\n"
+
+        t0 = time.time()
+        decision = run_capo(capo, exec_summary, portfolio_state, date)
+        elapsed = time.time() - t0
+        print(f"         Decision in {elapsed:.0f}s")
 
         if decision:
             actions = decision.get("actions", [])
             rationale = decision.get("rationale", "")
-            print(f"        Rationale: {rationale}")
+            print(f"         Rationale: {rationale}")
             if actions:
-                print(f"        Actions ({len(actions)}):")
+                print(f"         Actions ({len(actions)}):")
                 for a in actions:
-                    print(f"          {a.get('action','?').upper()} {a.get('ticker','?')} ${a.get('amount_usd',0):.2f} — {a.get('reason','')}")
+                    print(f"           {a.get('action','?').upper()} {a.get('ticker','?')} ${a.get('amount_usd',0):.2f} — {a.get('reason','')}")
                 execute_actions(portfolio, actions, date)
             else:
-                print(f"        No trades today")
+                print(f"         No trades today")
         else:
-            print(f"        Capo returned no decision")
+            print(f"         Capo returned no decision")
 
-        # 9. Daily snapshot
-        prices = get_current_prices(
-            [ticker] + list(portfolio.positions.keys()), date
-        )
-        snap = portfolio.snapshot(date, prices)
-        print(f"    [9] Portfolio: ${snap['total_value']:.2f} ({snap['total_return_pct']:+.2f}%)")
+        # Daily snapshot
+        all_held_now = list(portfolio.positions.keys())
+        prices_now = get_current_prices(all_held_now, date)
+        snap = portfolio.snapshot(date, prices_now)
+        print(f"    [>>] Portfolio: ${snap['total_value']:.2f} ({snap['total_return_pct']:+.2f}%)")
 
-        # Save state after each day
         portfolio.save()
-
-        # Save day details
-        day_data = {
-            "date": date,
-            "context": ctx,
-            "scoring_kept": kept,
-            "theses": theses,
-            "red_teams": red_teams,
-            "rebuttals": rebuttals,
+        _save_day(run_dir, day_num, date, {
+            "screener_count": len(candidates),
+            "screener_top10": candidates[:10],
+            "pitches": pitches,
+            "unique_tickers": unique_tickers,
+            "payloads_generated": list(payloads.keys()),
+            "debates": [{
+                "ticker": d["ticker"],
+                "theses": d["theses"],
+                "red_teams": d["red_teams"],
+                "rebuttals": d["rebuttals"],
+            } for d in debates],
+            "executive_summary": exec_summary,
             "decision": decision,
             "portfolio_snapshot": snap,
-        }
-        day_path = os.path.join(run_dir, f"day_{day_num:03d}_{date}.json")
-        with open(day_path, "w") as f:
-            json.dump(day_data, f, indent=2, default=str)
+        })
 
-    # Final summary
+    # =========================================================================
+    # FINAL SUMMARY
+    # =========================================================================
     print(f"\n\n{'='*70}")
     print(f"BACKTEST COMPLETE")
     print(f"{'='*70}")
@@ -662,10 +857,15 @@ def run_backtest(ticker: str, start_date: str, end_date: str,
     portfolio.save()
 
 
-if __name__ == "__main__":
-    ticker = sys.argv[1] if len(sys.argv) > 1 else "SPY"
-    start = sys.argv[2] if len(sys.argv) > 2 else "2025-03-01"
-    end = sys.argv[3] if len(sys.argv) > 3 else "2025-03-31"
-    capo = sys.argv[4] if len(sys.argv) > 4 else "Lorenzo"
+def _save_day(run_dir, day_num, date, data):
+    day_path = os.path.join(run_dir, f"day_{day_num:03d}_{date}.json")
+    with open(day_path, "w") as f:
+        json.dump(data, f, indent=2, default=str)
 
-    run_backtest(ticker, start, end, capo=capo)
+
+if __name__ == "__main__":
+    start = sys.argv[1] if len(sys.argv) > 1 else "2025-03-10"
+    end = sys.argv[2] if len(sys.argv) > 2 else "2025-03-14"
+    capo = sys.argv[3] if len(sys.argv) > 3 else "Lorenzo"
+
+    run_backtest(start, end, capo=capo)

@@ -1272,3 +1272,196 @@ WEEKEND PIPELINE COMPLETE — 117.1 minutes
         GWW    [HELD]: BUY=0 SELL=2 HOLD=4
         INVH  : BUY=1 PASS=5
         IQV   : BUY=1 PASS=5
+        IRM   : BUY=1 PASS=5
+        IVZ   : BUY=1 PASS=5
+        JBHT  : BUY=0 PASS=6
+        JBL   : BUY=0 PASS=6
+        KHC   : BUY=0 PASS=6
+        LHX   : BUY=0 PASS=6
+        LVS   : BUY=1 PASS=5
+        MSCI  : BUY=0 PASS=6
+        NEE    [HELD]: BUY=0 SELL=1 HOLD=5
+        NKE    [HELD]: BUY=0 SELL=1 HOLD=5
+        NWS    [HELD]: BUY=0 SELL=2 HOLD=4
+        TKO   : BUY=1 PASS=5
+        TTD   : BUY=0 PASS=6
+        VMC    [HELD]: BUY=0 SELL=1 HOLD=5
+        VST    [HELD]: BUY=0 SELL=1 HOLD=5
+        WM     [HELD]: BUY=1 SELL=1 HOLD=4
+        WMT   : BUY=0 PASS=6
+        CMI    [HELD]: BUY=0 SELL=1 HOLD=5
+        NFLX   [HELD]: BUY=0 SELL=1 HOLD=5
+        NTAP   [HELD]: BUY=0 SELL=2 HOLD=4
+        NWSA   [HELD]: BUY=0 SELL=1 HOLD=5
+        STZ   : BUY=0 PASS=6
+        ACGL   [HELD]: BUY=0 SELL=1 HOLD=5
+        ADP   : BUY=0 PASS=6
+        ADSK   [HELD]: BUY=0 SELL=1 HOLD=5
+        AIG    [HELD]: BUY=1 SELL=1 HOLD=4
+        AMCR   [HELD]: BUY=0 SELL=1 HOLD=5
+        AMT    [HELD]: BUY=0 SELL=1 HOLD=5
+        APTV  : BUY=0 PASS=6
+        ATO   : BUY=0 PASS=6
+        AVGO   [HELD]: BUY=0 SELL=1 HOLD=5
+        AXP    [HELD]: BUY=0 SELL=2 HOLD=4
+        AZO    [HELD]: BUY=0 SELL=1 HOLD=5
+        BR     [HELD]: BUY=0 SELL=1 HOLD=5
+        BRK-B : BUY=0 PASS=6
+        CARR   [HELD]: BUY=0 SELL=2 HOLD=4
+        COST   [HELD]: BUY=0 SELL=2 HOLD=4
+        CPB    [HELD]: BUY=0 SELL=2 HOLD=4
+        CRH    [HELD]: BUY=0 SELL=1 HOLD=5
+        CTRA   [HELD]: BUY=0 SELL=3 HOLD=3
+        DELL   [HELD]: BUY=0 SELL=2 HOLD=4
+        DHR   : BUY=0 PASS=6
+        ED     [HELD]: BUY=0 SELL=1 HOLD=5
+        EIX    [HELD]: BUY=0 SELL=3 HOLD=3
+        ETN    [HELD]: BUY=0 SELL=1 HOLD=5
+        EW     [HELD]: BUY=0 SELL=2 HOLD=4
+        FANG   [HELD]: BUY=0 SELL=2 HOLD=4
+        FIX    [HELD]: BUY=0 SELL=1 HOLD=5
+        LUV   : BUY=0 PASS=6
+        MCK    [HELD]: BUY=0 SELL=1 HOLD=5
+        NDAQ   [HELD]: BUY=0 SELL=1 HOLD=5
+        NEM   : BUY=0 PASS=6
+        PEG    [HELD]: BUY=0 SELL=1 HOLD=5
+        PG     [HELD]: BUY=1 SELL=0 HOLD=5
+        PGR    [HELD]: BUY=0 SELL=1 HOLD=5
+        PLD    [HELD]: BUY=0 SELL=1 HOLD=5
+        PRU    [HELD]: BUY=0 SELL=1 HOLD=5
+        PTC    [HELD]: BUY=0 SELL=1 HOLD=5
+        SATS   [HELD]: BUY=0 SELL=1 HOLD=5
+        T      [HELD]: BUY=0 SELL=1 HOLD=5
+        TROW   [HELD]: BUY=0 SELL=1 HOLD=5
+        TSN    [HELD]: BUY=0 SELL=1 HOLD=5
+        TXT   : BUY=0 PASS=6
+        TYL    [HELD]: BUY=0 SELL=2 HOLD=4
+        UBER   [HELD]: BUY=0 SELL=1 HOLD=5
+        USB    [HELD]: BUY=0 SELL=1 HOLD=5
+        WAT    [HELD]: BUY=0 SELL=2 HOLD=4
+        WEC   : BUY=0 PASS=6
+    [3] Executing...
+        10 actions:
+          BUY      AXON   $10 — 1/6 BUY → $10
+          BUY      INVH   $10 — 1/6 BUY → $10
+          BUY      IQV    $10 — 1/6 BUY → $10
+          BUY      IRM    $10 — 1/6 BUY → $10
+          BUY      IVZ    $10 — 1/6 BUY → $10
+          BUY      LVS    $10 — 1/6 BUY → $10
+          BUY      TKO    $10 — 1/6 BUY → $10
+          BUY      WM     $10 — 1/6 BUY → $10
+          BUY      AIG    $10 — 1/6 BUY → $10
+          BUY      PG     $10 — 1/6 BUY → $10
+    [>>] Portfolio: $1026.13 (+2.61%)
+
+  DAY 7 (2025-03-18)
+
+  ============================================================
+  DAILY PIPELINE — 2025-03-18
+  ============================================================
+    Watchlist: 77 tickers from 2025-03-14
+    [0] Anomaly scan...
+        1 anomalies found, evaluating top 1
+        WFC: skipped (0/5 yes)
+        Today's universe: 77 tickers (0 injected)
+        (22s)
+    [0.5] Giovanni macro update...
+          Regime: risk-off — The market is in a structural downtrend, with SPY significantly below its 50-day
+          (5s)
+    [1] Computing indicators...
+        D: 23 indicators (0s)
+        DOV: 23 indicators (0s)
+        AMAT: 23 indicators (0s)
+        AXON: 23 indicators (0s)
+        COP: 23 indicators (0s)
+        DIS: 23 indicators (0s)
+        GWW: 23 indicators (0s)
+        INVH: 23 indicators (0s)
+        IQV: 23 indicators (0s)
+        IRM: 23 indicators (0s)
+        IVZ: 23 indicators (0s)
+        JBHT: 23 indicators (0s)
+        JBL: 23 indicators (0s)
+        KHC: 23 indicators (0s)
+        LHX: 23 indicators (0s)
+        LVS: 23 indicators (0s)
+        MSCI: 23 indicators (0s)
+        NEE: 23 indicators (0s)
+        NKE: 23 indicators (0s)
+        NWS: 23 indicators (0s)
+        TKO: 23 indicators (0s)
+        TTD: 23 indicators (0s)
+        VMC: 23 indicators (0s)
+        VST: 23 indicators (0s)
+        WM: 23 indicators (0s)
+        WMT: 23 indicators (0s)
+        CMI: 23 indicators (0s)
+        NFLX: 23 indicators (0s)
+        NTAP: 23 indicators (0s)
+        NWSA: 23 indicators (0s)
+        STZ: 23 indicators (0s)
+        ACGL: 23 indicators (0s)
+        ADP: 23 indicators (0s)
+        ADSK: 23 indicators (0s)
+        AIG: 23 indicators (0s)
+        AMCR: 23 indicators (0s)
+        AMT: 23 indicators (0s)
+        APTV: 23 indicators (0s)
+        ATO: 23 indicators (0s)
+        AVGO: 23 indicators (0s)
+        AXP: 23 indicators (0s)
+        AZO: 23 indicators (0s)
+        BR: 23 indicators (0s)
+        BRK-B: 23 indicators (0s)
+        CARR: 23 indicators (0s)
+        COST: 23 indicators (0s)
+        CPB: 23 indicators (0s)
+        CRH: 23 indicators (0s)
+        CTRA: 23 indicators (0s)
+        DELL: 23 indicators (0s)
+        DHR: 23 indicators (0s)
+        ED: 23 indicators (0s)
+        EIX: 23 indicators (0s)
+        ETN: 23 indicators (0s)
+        EW: 23 indicators (0s)
+        FANG: 23 indicators (0s)
+        FIX: 23 indicators (0s)
+        LUV: 23 indicators (0s)
+        MCK: 23 indicators (0s)
+        NDAQ: 23 indicators (0s)
+        NEM: 23 indicators (0s)
+        PEG: 23 indicators (0s)
+        PG: 23 indicators (0s)
+        PGR: 23 indicators (0s)
+        PLD: 23 indicators (0s)
+        PRU: 23 indicators (0s)
+        PTC: 23 indicators (0s)
+        SATS: 23 indicators (0s)
+        T: 23 indicators (0s)
+        TROW: 23 indicators (0s)
+        TSN: 23 indicators (0s)
+        TXT: 23 indicators (0s)
+        TYL: 23 indicators (0s)
+        UBER: 23 indicators (0s)
+        USB: 23 indicators (0s)
+        WAT: 23 indicators (0s)
+        WEC: 23 indicators (0s)
+    [2] Voting...
+        D     : BUY=0 PASS=6
+        DOV   : BUY=0 PASS=6
+        AMAT  : BUY=0 PASS=6
+        AXON  : BUY=1 PASS=5
+        COP   : BUY=0 PASS=6
+        DIS   : BUY=0 PASS=6
+        GWW    [HELD]: BUY=0 SELL=2 HOLD=4
+        INVH  : BUY=0 PASS=6
+        IQV   : BUY=1 PASS=5
+        IRM   : BUY=0 PASS=6
+        IVZ   : BUY=1 PASS=5
+        JBHT  : BUY=0 PASS=6
+        JBL   : BUY=0 PASS=6
+        KHC   : BUY=0 PASS=6
+        LHX   : BUY=0 PASS=6
+        LVS   : BUY=1 PASS=5
+        MSCI  : BUY=0 PASS=6
+        NEE    [HELD]: BUY=0 SELL=2 HOLD=4
